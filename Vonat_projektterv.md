@@ -37,15 +37,12 @@ ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felha
 
 ### 2.2. Funkcionális követelmények
 
- - `Felhasználók kezelése (admin, raktáros, sofőr) (CRUD)`
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel `
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Biztonsági mentés automatikus létrehozása`
+    - Felhasználók kezelése (admin, felhasználó) (CRUD) 
+    - Felhasználói munkamenet megvalósítása több jogosultsági szinttel 
+    - Járatok kezelése (CRUD) 
+    - Megállók kezelése (CRUD) 
+    - Email-es értésítés a járat indulása előtti megadott időben
+    - Nyomtatható menetrend
 
 ```
 Itt lehet pontosan felsorolni a rendszerrel szemben támasztott funkcionális igényeket, azaz amit a rendszernek tudnia kell. 
@@ -57,10 +54,8 @@ Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlé
 
 ### 2.3. Nem funkcionális követelmények
 
- - `A kliens oldal böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
- - `Az érzékeny adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
+    - A kliens oldal böngészőfüggetlen legyen 
+    - Reszponzív megjelenés
 
 ```
 A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
