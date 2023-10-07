@@ -146,31 +146,19 @@ A munkát Csíkos Martin Nándor koordinálja. Fő feladata, hogy folyamatosan e
 
 ### 6.2. Csoportgyűlések
 
-`A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.`
+A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.
 
-`1. megbeszélés:`
- - `Időpont: 2021.09.15.`
- - `Hely: SZTE Irinyi épület - Szeged, Tisza Lajos krt. 103`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: Ismerkedés, projekttéma kiválasztása`
+1. megbeszélés:
+ - Időpont: 2023.09.30.
+ - Hely: Online platformon (Discord)
+ - Résztvevők: Csíkos Martin Nándor, Bíró Szabolcs, Makó Ádám, Szajkó István, Kovács János András, Patyi Péter
+ - Érintett témák: A projektterv áttekintése, megvalósítandó feladatok összeírása, kitalálása, projekttervi feladatok kiosztása
 
-`2. megbeszélés:`
- - `Időpont: 2021.09.22.`
- - `Hely: Pivovár - Szeged, Vitéz utca 26.`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása`
-
-`3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Egyeztetés az UML diagramokról, illetve az adatbázis táblák és kapcsolatok meghatározása`
-
-```
-A memókat a teljes projekt során vezetni kell, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések, milyen problémák, kérdések merültek fel.
-```
+2. megbeszélés:
+ - Időpont: 2023.10.07.
+ - Hely: Online platformon (Discord)
+ - Résztvevők: Csíkos Martin Nándor, Bíró Szabolcs, Makó Ádám, Szajkó István, Kovács János András, Patyi Péter
+ - Érintett témák: A projektterv áttekintése, megvalósítandó feladatok kiosztása időtartam becslésre, fontosságuk alapján sorba rendezése, PPT prezentáció kezdeti megbeszélése
 
 ### 6.3. Minőségbiztosítás
 
