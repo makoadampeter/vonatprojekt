@@ -127,17 +127,13 @@ Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejleszt
 
 | Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
-| `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
-
-```
-A rizikótényezők bemutatása, amely hátráltathatja a projekt befejezését. 
-Minden rizikót érdemes megemlíteni, részletezve, hogy mit jelent, 
-milyen valószínűséggel következhet be (kis, közepes és nagy), 
-mekkora a várható hatása (gyenge, közepes és erős) 
-és hogy milyen tervvel készültök, amennyiben egy ilyen esemény bekövetkezik. 
-Pl.: betegség, szoftver-hardver probléma, tag kiesése, extrém ZH időszak, pandémia, stb. 
-```
+| Betegség                                  | Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása        | nagy       | erős |
+| Kommunikációs fennakadás a csapattagokkal | A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések | kis        | erős |
+| Extrém ZH időszak | Olyan időintervallum a szorgalmi időszak során, amikor jelentős mennyiségű tárgyból kell zárthelyi vizsgát írni, ami miatt csökkenhet a projektre fordítandó idő a vizsgákra való készülés prioritása miatt. Megoldás: a feladatok átcsoportosítása | nagy        | erős |
+| Szoftver probléma | Előre nem láthatóan egy adott szoftver, vagy munkakörnyezet meghibásodása, ami az egyéni munkát befolyásolja. Megjavítása általában nem több, mint 1 nap. Megoldás: esetenként változik, ha kicsi a probléma, az adott fejlesztő megjavítja a hibát, és folytatja a feladatot, ha nagy, a feladatot át kell csoportosítani | kis        | közepes |
+| Hardver probléma | A munkaállomás meghibásodik, nem lehet rajta folytatni a munkát. Megjavítása idő- és pénzigényes lehet. Megoldás: a feladat átcsoportosítása | kis        | erős |
+| Határidővel való csúszás | 1, vagy több lehetséges probléma kimenetele lehet az, hogy az adott mérföldkőre nem készültek el feladatok, több idő kell a megvalósításukhoz, ami miatt a határidőn túl is foglalkozni kell a feladatokkal. Megoldás: a kihagyott, vagy félbehagyott feladatok minél hamarabbi befejezése határidőn túl, elkészítése | kis        | erős |
+| Tag nem foglalkozik eleget a projekttel | A projekt egyik tagja önszántából nem csinál elég feladatot, nem fejezi be a már megkezdett feladatát, nem foglalkozik a feladatokkal annyit, mint amennyit a projekt megkíván. Megoldás: tag felszólítása, vagy feladatok átcsoportosítása | kis        | erős |
 
 ## 6. Jelentések
 
