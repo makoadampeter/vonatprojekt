@@ -1,4 +1,4 @@
-# `Szallítmányozás` Projektterv `2021`
+# Vonat Projektterv 2023
 
 ## 1. Összefoglaló 
 
@@ -44,13 +44,6 @@ ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felha
     - Email-es értésítés a járat indulása előtti megadott időben
     - Nyomtatható menetrend
 
-```
-Itt lehet pontosan felsorolni a rendszerrel szemben támasztott funkcionális igényeket, azaz amit a rendszernek tudnia kell. 
-Ezeket a feladatokat kell majd a csapattagok között szétosztani a 8-as fejezetben.
-
-A CRUD rövidítés a következőt jelenti: Create, Read, Update, Delete.
-Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlése.
-```
 
 ### 2.3. Nem funkcionális követelmények
 
@@ -66,7 +59,7 @@ milyen megjelenéssel kell rendelkeznie. Ha lehetséges, akkor ezeket a feladato
 
 Az erőforrásigényünk összesen `57` személynap, átlagosan `19` személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
+A rendelkezésünkre áll összesen 6 * 70 = 420 pont.
 
 ```
 Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-21 személynap, 
@@ -90,13 +83,13 @@ A projekt a következő emberekből áll:
 
 | Név          | Pozíció          |   E-mail cím (stud-os)        |
 |--------------|------------------|-------------------------------|
-| `Teszt Elek` | Projektmenedzser | `h123456@stud.u-szeged.hu`    |
-| `Remek Elek` | Projekt tag      | `h654321@stud.u-szeged.hu`    |
-| `Lev Elek`   | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Csíkos Martin Nándor | Projektmenedzser | h256461@stud.u-szeged.hu    |
+| Bíró Szabolcs | Projekt tag      | h255485@stud.u-szeged.hu    |
+| Makó Ádám   | Projekt tag      | h267424@stud.u-szeged.hu    |
+| Szajkó István | Projekt tag      | h269397@stud.u-szeged.hu    |
+| Kovács János András   | Projekt tag      | h160330@stud.u-szeged.hu    |
+| Patyi Péter | Projekt tag      | h162761@stud.u-szeged.hu    |
 
-```
-Betölthető pozíciók: projektmenedzser, projekt tag.
-```
 
 ## 5. A munka feltételei
 
@@ -104,24 +97,26 @@ Betölthető pozíciók: projektmenedzser, projekt tag.
 
 A projekt a következő munkaállomásokat fogja használni a munka során:
 
- - `Munkaállomások: 3 db, Windows 10-es operációs rendszerrel`
- - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
- - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
- - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
+ - Munkaállomások: 4 db, Windows (Windows 10 / Windows 11) operációs rendszerrel, 2 db, Linux (Ubuntu 23.04, Arch Linux) operációs rendszerrel
+ - LG Gram 14 (CPU: i5-1135G7, RAM: 8 GB, GPU: Intel Iris Xe, OS: Ubuntu 23.04)
+ - Lenovo IdeaPad 3 15ADA05 (CPU: AMD Ryzen 5 3500U, RAM: 12 GB, GPU: Radeon Vega Mobile Gfx × 8, OS: Arch Linux)
+ - Acer Aspire 3 A315-53G-351H (CPU: i3-7020U, RAM: 8 GB, GPU: NVIDIA GeForce MX130, OS: Windows 10)
+ - Lenovo ThinkPad T460 (CPU: i5-6300U, RAM: 8 GB, GPU: Intel HD Graphics 520, OS: Windows 10)
+ - Dell Inspiron 3576 (CPU: i3-7020U, RAM 4 GB, GPU: AMD Radeon 520, OS: Windows 10)
+ - Lenovo Legion 5 (CPU: Ryzen 5 5600H, RAM: 16 GB, GPU: NVIDIA GeForce RTX 3050 Ti, OS: Windows 11)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
- - `Heroku platformszolgáltatás a webalkalmazás hosztolásához`
- - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot keretrendszer`
- - `Thymeleaf dinamikus tartalom megjelenítés a felhasználói felületen`
- - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE fejlesztőkörnyezet`
- - `Git verziókövető (GitLab)`
- 
-```
-Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
-```
+ - DigitalOcean platformszolgáltatás a webalkalmazás hosztolásához
+ - DigitalOcean által biztosított MySQL adatbázisszerver
+ - XAMPP webszerver-szoftvercsomag
+ - Docker konténerizáló platform
+ - XAMPP és Docker által nyújtott MySQL adatbáziskezelő
+ - JavaScript kliensoldali szkriptnyelv
+ - PHP szerveroldali szkriptnyelv
+ - Visual Studio Code kódszerkesztő
+ - Maven szoftverprojekt menedzselő szoftver
+ - Git verziókövető (GitLab)
 
 ### 5.2. Rizikómenedzsment
 
@@ -139,10 +134,6 @@ Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejleszt
 
 ### 6.1. Munka menedzsment
 A munkát Csíkos Martin Nándor koordinálja. Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, a megoldásban segítséget nyújt. További feladata a heti szinten tartandó csoportgyűlések időpontjának leszervezése, erről Discord platformon tájékoztatja a projektcsapatot.
-
-```
-Írd le, hogy ki menedzseli a munkát (tipikusan a projekt menedzser), mik a feladatai, és azokat hogyan hajtja végre.
-```
 
 ### 6.2. Csoportgyűlések
 
@@ -171,7 +162,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 
 ### 6.4. Átadás, eredmények elfogadása
 
-A projekt eredményeit a megrendelő, `Dr. Márkus András` fogja elfogadni. A projektterven változásokat csak a megrendelő írásos engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek. 
+A projekt eredményeit a megrendelő, Dr. Kertész Attila fogja elfogadni. A projektterven változásokat csak a megrendelő írásos engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek. 
 Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.inf.szte.hu/rf1/
 
 ### 6.5. Státuszjelentés
@@ -198,14 +189,10 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                                                        |   Határideje  |
 |:-----------:|:---------------------------------------------------------------------------:|:-------------:|
-|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2021-10-04`  |
-|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2021-10-18`  |
-|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2021-11-08`  |
-|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2021-11-27`  |
-
-```
-D - dokumentáció, P - prototípus
-```
+|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | 2023-10-10  |
+|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | 2023-10-24  |
+|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | 2023-11-14  |
+|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | 2023-12-05  |
 
 ## 8. Feladatlista
 
@@ -218,13 +205,13 @@ Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. r
 
 ### 8.1. Projektterv (1. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `megvalósításhoz szükséges lépéseket, az erőforrásigényeket, az ütemezést, a felelősöket és a feladatok sorrendjét meghatározzuk, majd vizualizáljuk Gantt diagram segítségével.`
+Ennek a feladatnak az a célja, hogy megvalósításhoz szükséges lépéseket, az erőforrásigényeket, az ütemezést, a felelősöket és a feladatok sorrendjét meghatározzuk, majd vizualizáljuk Gantt diagram segítségével.
 
 Részfeladatai a következők:
 
 #### 8.1.1. Projektterv kitöltése
 
-Felelős: `Mindenki`
+Felelős: Mindenki
 
 Tartam:  `4 nap`
 
