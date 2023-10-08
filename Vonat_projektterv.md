@@ -2,20 +2,8 @@
 
 ## 1. Összefoglaló 
 
-`A hatékony szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, és legoptimálisabb időben jusson el a rendeltetési helyére. Ez tipikusan megkövetel egy online is elérhető nyilvántartást, ahol rugalmasan és egyszerűen lehet kezelni a kapcsolódó feladatokat. Éppen ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk, amely képes leváltani a hagyományos, papír alapú nyilvántartásokat. Legyen szó árukészletről, sofőrökről vagy útvonalakról, a cél, hogy a kapcsolódó funkciókat egy letisztult felületen keresztül tudja elérni a szállítmányozással foglalkozó cég adminisztrátorai.`
+Mai rohanó világunkban nagy szerepet játszik a mobilitás, ezért fontos a tömegközlekedés megvalósítása települések, városok és országok között. A projekt keretein belül egy vasúti közlekedéssel kapcsolatos weboldalt fejlesztünk, mely kilistázza a megfelelő járatokat, azok megállóhelyeit, valamint indulási és érkezési időpontjait. Célunk megkönnyíteni az útvonaltervezést, ezért figyelembe vesszük az útvonalak hosszát, vasúti pályák állapotát, megálló helyek számát, hogy a rendszer ezek függvényében a lehető legoptimálisabb útvonalat állítsa elő utazni kívánó felhasználóink számára.
 
-```
-Ide írj egy tömör és általános leírást (4-6 mondatban), hogy miről szól a projekt és miért van a weboldalra szükség. 
-Itt konkrét funkciót még nem kell megemlíteni.
-
-A dokumentumban a szürke háttérrel rendelkező szövegnek illetve a blokkokkal (keretben) kiemelt szövegeknek két jelentése van: 
-(a) minta/sablon szöveg, amit le kell cserélni (pl. gyakorlatvezető neve).
-(b) segítő/magyarázó szöveg. 
-
-Az átadott (beadott) dokumentumban már nem szerepelhetnek se szürke hátterű, se blokkban szereplő részek!
-Azaz a dokumentum kitöltése közben ezeket formázás nélküli szövegre kell cserélni.
-Az eredetileg is feketével írt részek törlése tilos, azok közösek.
-```
 
 ## 2. A projekt bemutatása
 
