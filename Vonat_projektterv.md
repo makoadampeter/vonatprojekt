@@ -189,7 +189,7 @@ Részfeladatai a következők:
 
 Felelős: Mindenki
 
-Tartam:  `14 nap`
+Tartam:  14 nap
 
 Erőforrásigény:  1 személynap/fő
 
@@ -229,7 +229,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
@@ -245,7 +245,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
@@ -261,7 +261,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
@@ -332,7 +332,7 @@ Erőforrásigény:  5 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
 
@@ -348,7 +348,7 @@ Erőforrásigény:  1 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
@@ -364,7 +364,7 @@ Erőforrásigény:  4 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
@@ -388,7 +388,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
@@ -412,7 +412,7 @@ Erőforrásigény:  1 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -435,7 +435,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
@@ -467,7 +467,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
@@ -475,7 +475,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
@@ -491,7 +491,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
@@ -499,7 +499,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Patyi Péter
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
@@ -531,7 +531,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
@@ -571,23 +571,23 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
-| Csíkos Martin Nándor |  `1`  |  `1`  |  `6` |  `1` |    `9`   |
-| Bíró Szabolcs        |  `2`  |  `1`  |  `4` |  `1` |    `8`   |
-| Makó Ádám            |  `1`  |  `1`  |  `5` |  `4` |   `11`   |
-| Kovács János András  |  `1`  |  `1`  |  `5` |  `3` |   `10`   |
-| Szajkó István        |  `1`  |  `1`  |  `4` |  `3` |    `9`   |
-| Patyi Péter          |  `1`  |  `2`  |  `4` |  `3` |   `10`   |
+| Csíkos Martin Nándor |  1  |  1  |  6 |  1 |    9   |
+| Bíró Szabolcs        |  2  |  1  |  4 |  1 |    8   |
+| Makó Ádám            |  1  |  1  |  5 |  4 |   11   |
+| Kovács János András  |  1  |  1  |  5 |  3 |   10   |
+| Szajkó István        |  1  |  1  |  4 |  3 |    9   |
+| Patyi Péter          |  1  |  2  |  4 |  3 |   10   |
 
 ### 10.3. Részletes költségvetés
 
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| `Csíkos Martin Nándor`              | `4`     | `15`     | `35`     |  `16`    | 70        |
-| `Bíró Szabolcs`                     | `7`     | `15`     | `30`     |  `18`    | 70        |
-| `Makó Ádám`                         | `4`     | `15`     | `30`     |  `21`    | 70        |
-| `Kovács János András`               | `4`     | `15`     | `30`     |  `21`    | 70        |
-| `Szajkó István`                     | `4`     | `15`     | `30`     |  `21`    | 70        |
-| `Patyi Péter`                       | `4`     | `20`     | `26`     |  `20`    | 70        |
+| Csíkos Martin Nándor              | 4     | 15     | 35     |  16    | 70        |
+| Bíró Szabolcs`                     | 7     | 15     | 30     |  18    | 70        |
+| Makó Ádám`                         | 4     | 15     | 30     |  21    | 70        |
+| Kovács János András               | 4     | 15     | 30     |  21    | 70        |
+| Szajkó István                     | 4     | 15     | 30     |  21    | 70        |
+| Patyi Péter                       | 4     | 20     | 26     |  20    | 70        |
 
 Szeged, 2023-10-10.
