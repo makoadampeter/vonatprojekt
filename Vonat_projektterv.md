@@ -7,21 +7,13 @@ Mai rohanó világunkban nagy szerepet játszik a mobilitás, ezért fontos a t�
 
 ## 2. A projekt bemutatása
 
-`Ez a projektterv a Szallítmányozás projektet mutatja be, amely 2021-09-20-től 2021-11-27-ig tart, azaz összesen 68 napon keresztül fog futni. A projekten három fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek, annak érdekében, hogy biztosítsuk a projekt folyamatos előrehaladását.`
-
-```
-A megvalósítás további általános leírása, pl. mennyi ideig tart a projekt, mennyi főből áll a csapat, 
-mennyi átadandó lesz a megrendelőnek átadva a félév során (szintén 2-3 mondattal leírva).
-```
+Ez a projektterv a Vonat projektet mutatja be, amely 2023-09-20-től 2023-12-05-ig tart, azaz összesen 77 napon keresztül fog futni. A projekten hat fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek, annak érdekében, hogy biztosítsuk a projekt folyamatos előrehaladását.
 
 ### 2.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy egy adott szállítmányozó cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolás) nyilvántartsa annak érdekében, hogy az adminisztrátorok képesek legyenek egy-egy bejövő szállítmányozási kérést kiszolgálni a raktárak vagy külső helyszín között. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve a cég kamionjait is kezelnie kell (pl. van-e képzettsége veszélyes anyag szállítására, elérhető-e éppen a megfelelő pótkocsi a szállításhoz). A bejövő szállítmányozási kérés alapján az alkalmazás számolja ki leghamarabb mikor teljesíthető a kérés, majd jelenítsük meg grafikusan egy útvonalat, amely alapján - akár több raktár érintésével - a külső helyszínre szállítja az anyagot. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
-
-```
-Itt már specifikusabban, részletesebben írd le, hogy mik a fő célok, mit fog tudni a rendszer (4-6 mondatban), 
-ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felhasználók igényei?
-```
+A rendszernek képesnek kell lennie arra, hogy adott közlekedési eszköz (vonat) menetrendjét nyilvántartsa annak érdekében, hogy a felhasználók az indulási és érkezési időt, a megállót(hely) és a járat információit képesek legyenek lekérdezni. Ezenkívül a regisztráció és bejelentkezést követően “kedvenc” járatok mentését, opcionálisan email értésítést szolgáltasson.
+Amennyiben rendelkezik a szükséges jogosultságokkal, járatok hozzáadását, hozzátartozó információk frissítését/módosítását, illetve törlését, valamint a felhasználók kezelését.
+Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.
 
 ### 2.2. Funkcionális követelmények
 
@@ -40,7 +32,7 @@ ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felha
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen 104 személynap, átlagosan 17 személynap/fő.
+Az erőforrásigényünk összesen `57` személynap, átlagosan 18 személynap/fő.
 
 A rendelkezésünkre áll összesen 6 * 70 = 420 pont.
 
@@ -272,7 +264,15 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 
 Részfeladatai a következők:
 
-#### 8.3.1 Header - footer
+#### `8.3.1 Frontend design (összes oldalra)`
+
+Felelős: `Mindenki`
+
+Tartam:  ``
+
+Erőforrásigény:  `1 személynap/fő`
+
+#### `8.3.2 Header - footer`
 
 Felelős: Makó Ádám
 
@@ -280,7 +280,7 @@ Tartam:  ``
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.2 Felhasználók adatbázis létrehozása
+#### `8.3.3 Felhasználók adatbázis létrehozása`
 
 Felelős: Csíkos Martin Nándor
 
@@ -288,7 +288,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.3 Menetrend adatbázis létrehozása
+#### `8.3.4 Menetrend adatbázis létrehozása`
 
 Felelős: Makó Ádám
 
@@ -296,7 +296,7 @@ Tartam:  ``
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.4 Menetrend adatbázis feltöltése
+#### `8.3.5 Menetrend adatbázis feltöltése`
 
 Felelős: Makó Ádám
 
@@ -304,7 +304,7 @@ Tartam:  ``
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.5 Menetrend alapján lekérdezés (backend)
+#### `8.3.6 Menetrend alapján lekérdezés (backend)`
 
 Felelős: Csíkos Martin Nándor
 
@@ -312,7 +312,7 @@ Tartam:  10 nap
 
 Erőforrásigény:  5 személynap
 
-#### 8.3.6 Járatok alapján lekérdezés (backend)
+#### `8.3.7 Járatok alapján lekérdezés (backend)`
 
 Felelős: Bíró Szabolcs
 
@@ -320,7 +320,7 @@ Tartam:  ``
 
 Erőforrásigény:  5 személynap
 
-#### 8.3.7 Regisztráció (frontend + backend)
+#### `8.3.8 Regisztráció (frontend + backend)`
 
 Felelős: Patyi Péter
 
@@ -328,7 +328,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.8 Felhasználók adatbázis feltöltése adatokkal
+#### `8.3.9 Felhasználók adatbázis feltöltése adatokkal`
 
 Felelős: Szajkó István
 
@@ -336,7 +336,7 @@ Tartam:  ``
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.9 Bejelentkezés (frontend + backend)
+#### `8.3.10 Bejelentkezés (frontend + backend)`
 
 Felelős: Patyi Péter
 
@@ -344,7 +344,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.10 Admin felület (backend)
+#### `8.3.11 Admin felület (backend)`
 
 Felelős: Csíkos Martin Nándor
 
@@ -352,7 +352,7 @@ Tartam:  7 nap
 
 Erőforrásigény:  4 személynap
 
-#### 8.3.11 Menetrend alapján lekérdezés (frontend))
+#### `8.3.12 Menetrend alapján lekérdezés (frontend))`
 
 Felelős: Kovács János András
 
@@ -360,7 +360,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.12 Járatok alapján lekérdezés (frontend)
+#### `8.3.13 Járatok alapján lekérdezés (frontend)`
 
 Felelős: Szajkó István
 
@@ -368,7 +368,7 @@ Tartam:  ``
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.13 Admin felület (frontend)
+#### `8.3.14 Admin felület (frontend)`
 
 Felelős: Bíró Szabolcs
 
@@ -376,7 +376,7 @@ Tartam:  ``
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.14 Saját felhasználói profil megtekintése (frontend)
+#### `8.3.15 Saját felhasználói profil megtekintése (frontend)`
 
 Felelős: Kovács János András
 
@@ -384,7 +384,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.15 Tesztelési dokumentum elkészítése
+#### `8.3.16 Tesztelési dokumentum elkészítése`
 
 Felelős: Mindenki
 
@@ -392,7 +392,7 @@ Tartam:  ``
 
 Erőforrásigény:  1 személynap/fő
 
-#### 8.3.16 Prototípus kitelepítése éles környezetbe
+#### `8.3.17 Prototípus kitelepítése éles környezetbe`
 
 Felelős: Csíkos Martin Nándor
 
@@ -400,7 +400,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.17 Bemutató elkészítése
+#### 8.3.18 Bemutató elkészítése
 
 Felelős: Kovács János András
 
@@ -441,7 +441,7 @@ Erőforrásigény:  2 személynap
 
 #### `8.4.4 Felhasználói munkamenet tesztelése`
 
-Felelős: Kovács János András
+Felelős: Csíkos Martin Nándor
 
 Tartam:  4 nap
 
@@ -521,7 +521,7 @@ Erőforrásigény:  2 személynap
 
 #### `8.4.14 Prototípus kitelepítésének frissítése`
 
-Felelős: Csíkos Martin Nándor
+Felelős: Kovács János András
 
 Tartam:  3 nap
 
@@ -551,35 +551,35 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 | Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
 |------------------------|-------|-------|------|-------|----------|
-| Csíkos Martin Nándor |  1  |  2  | 13 |  1  |   17   |
-| Bíró Szabolcs        |  3  |  3  | 9  |  2  |   17   |
-| Makó Ádám            |  1  |  2  |  6 |  8  |   17   |
-| Kovács János András  |  1  |  3  |  8 |  6  |   18   |
-| Szajkó István        |  1  |  3  |  5 |  8  |   17   |
-| Patyi Péter          |  1  |  4  |  7 |  6  |   18   |
+| Csíkos Martin Nándor |  1  |  2  | 14 |  2  |   19   |
+| Bíró Szabolcs        |  3  |  3  | 10 |  2  |   18   |
+| Makó Ádám            |  1  |  2  |  7 |  8  |   18   |
+| Kovács János András  |  1  |  3  |  9 |  5  |   18   |
+| Szajkó István        |  1  |  3  |  6 |  8  |   18   |
+| Patyi Péter          |  1  |  4  |  8 |  6  |   19   |
 
 
 ### 10.2. Részletes feladatszámok
 
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
-| Csíkos Martin Nándor |  1  |  1  |  5 |  1 |    8   |
-| Bíró Szabolcs        |  2  |  1  |  3 |  1 |    7   |
-| Makó Ádám            |  1  |  1  |  4 |  4 |   10   |
-| Kovács János András  |  1  |  1  |  4 |  3 |    9   |
-| Szajkó István        |  1  |  1  |  3 |  3 |    8   |
-| Patyi Péter          |  1  |  2  |  3 |  3 |    9   |
+| Csíkos Martin Nándor |  1  |  1  |  6 |  1 |    9   |
+| Bíró Szabolcs        |  2  |  1  |  4 |  1 |    8   |
+| Makó Ádám            |  1  |  1  |  5 |  4 |   11   |
+| Kovács János András  |  1  |  1  |  5 |  3 |   10   |
+| Szajkó István        |  1  |  1  |  4 |  3 |    9   |
+| Patyi Péter          |  1  |  2  |  4 |  3 |   10   |
 
 ### 10.3. Részletes költségvetés
 
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| Csíkos Martin Nándor                | 4       | 15       | 35       |  16      | 70        |
-| Bíró Szabolcs`                      | 7       | 15       | 30       |  18      | 70        |
-| Makó Ádám`                          | 4       | 15       | 30       |  21      | 70        |
-| Kovács János András                 | 4       | 15       | 30       |  21      | 70        |
-| Szajkó István                       | 4       | 15       | 30       |  21      | 70        |
-| Patyi Péter                         | 4       | 20       | 26       |  20      | 70        |
+| Csíkos Martin Nándor              | 4     | 15     | 35     |  16    | 70        |
+| Bíró Szabolcs`                     | 7     | 15     | 30     |  18    | 70        |
+| Makó Ádám`                         | 4     | 15     | 30     |  21    | 70        |
+| Kovács János András               | 4     | 15     | 30     |  21    | 70        |
+| Szajkó István                     | 4     | 15     | 30     |  21    | 70        |
+| Patyi Péter                       | 4     | 20     | 26     |  20    | 70        |
 
 Szeged, 2023-10-10.
