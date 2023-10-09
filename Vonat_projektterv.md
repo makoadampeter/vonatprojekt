@@ -38,32 +38,22 @@ ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felha
     - A kliens oldal böngészőfüggetlen legyen 
     - Reszponzív megjelenés
 
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie. Ha lehetséges, akkor ezeket a feladatokat is ki kell osztani a csapattagok között.
-```
-
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen `57` személynap, átlagosan `19` személynap/fő.
+Az erőforrásigényünk összesen `57` személynap, átlagosan 18 személynap/fő.
 
 A rendelkezésünkre áll összesen 6 * 70 = 420 pont.
-
-```
-Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-21 személynap, 
-a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
-```
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
 A projekt megrendelője Dr. Kertész Attila. A Vonat projektet a projektcsapat fogja végrehajtani, amely hat fejlesztőből áll. A csapatban egyetemi hallgatók találhatók, akik többnyire pár éves egyetemi/középiskolai tapasztalattal rendelkeznek.
 
-Bíró Szabolcs László (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
-Csíkos Martin Nándor (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
-Kovács János András (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
-Makó Ádám Péter (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
-Patyi Péter (2 év egyetemi tapasztalat)
-Szajkó István (1 év egyetemi tapasztalat)
+- Csíkos Martin Nándor (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
+- Bíró Szabolcs László (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
+- Kovács János András (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
+- Makó Ádám Péter (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
+- Patyi Péter (2 év egyetemi tapasztalat)
+- Szajkó István (1 év egyetemi tapasztalat)
 
 ### 4.1 Projektcsapat
 
@@ -139,7 +129,6 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Csíkos Martin Nándor, Bíró Szabolcs, Makó Ádám, Szajkó István, Kovács János András, Patyi Péter
  - Érintett témák: A projektterv áttekintése, megvalósítandó feladatok kiosztása időtartam becslésre, fontosságuk alapján sorba rendezése, PPT prezentáció kezdeti megbeszélése
 
-
 3. megbeszélés:
  - Időpont: 2023.10.08.
  - Hely: Online platformon (Discord)
@@ -202,84 +191,84 @@ Felelős: Mindenki
 
 Tartam:  `14 nap`
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  1 személynap/fő
 
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: `Bíró Szabolcs`
+Felelős: Bíró Szabolcs
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 
 ### 8.2. UML és adatbázis- és képernyőtervek (2. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.`
+Ennek a feladatnak az a célja, hogy a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.
 
 Részfeladatai a következők:
 
 #### 8.2.1. Use Case diagram
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.2. Class diagram
 
-Felelős: `Bíró Szabolcs`
+Felelős: Bíró Szabolcs
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.2.3. Sequence diagram
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.2.5. Package diagram
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.6. Képernyőtervek
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.7. Bemutató elkészítése
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `5 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 
 ### 8.3. Prototípus I. (3. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.` 
+Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.
 
 Részfeladatai a következők:
 
@@ -293,266 +282,266 @@ Erőforrásigény:  `1 személynap/fő`
 
 #### `8.3.2 Header - footer`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### `8.3.3 Felhasználók adatbázis létrehozása`
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.3.4 Menetrend adatbázis létrehozása`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.5 Menetrend adatbázis feltöltése`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### `8.3.6 Menetrend alapján lekérdezés (backend)`
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  `4 nap`
 
-Erőforrásigény:  `5 személynap`
+Erőforrásigény:  5 személynap
 
 #### `8.3.7 Járatok alapján lekérdezés (backend)`
 
-Felelős: `Bíró Szabolcs`
+Felelős: Bíró Szabolcs
 
 Tartam:  ``
 
-Erőforrásigény:  `5 személynap`
+Erőforrásigény:  5 személynap
 
 #### `8.3.8 Regisztráció (frontend + backend)`
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `4 nap`
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.9 Felhasználók adatbázis feltöltése adatokkal`
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### `8.3.10 Bejelentkezés (frontend + backend)`
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `5 nap`
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.11 Admin felület (backend)`
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  ``
 
-Erőforrásigény:  `4 személynap`
+Erőforrásigény:  4 személynap
 
 #### `8.3.12 Menetrend alapján lekérdezés (frontend))`
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.13 Járatok alapján lekérdezés (frontend)`
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.14 Admin felület (frontend)`
 
-Felelős: `Bíró Szabolcs`
+Felelős: Bíró Szabolcs
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.3.15 Saját felhasználói profil megtekintése (frontend)`
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.3.16 Tesztelési dokumentum elkészítése`
 
-Felelős: `Mindenki`
+Felelős: Mindenki
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  1 személynap/fő
 
 #### `8.3.17 Prototípus kitelepítése éles környezetbe`
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.3.18 Bemutató elkészítése
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik az előző mérföldkőben összeállított tesztesetek alapján.`
+Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik az előző mérföldkőben összeállított tesztesetek alapján.
 
 Részfeladatai a következők:
 
 #### 8.4.1 Javított minőségű prototípus javított funkciókkal
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.4.2 Javított minőségű prototípus a korábbi hiányzó funkciókkal
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.4.3 Email-es értésítés
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.4 Felhasználói munkamenet tesztelése`
 
-Felelős: `Csíkos Martin Nándor`
+Felelős: Csíkos Martin Nándor
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.5 Járatok tesztelése`
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.6 Megállók tesztelése`
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `5 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.7 Email-es értésítés tesztelés`
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.8 Felhasználói profil szerkesztése (backend)`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.9 Főoldal (frontend)`
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.10 Felhasználói profil szerkesztése (frontend)`
 
-Felelős: `Patyi Péter`
+Felelős: Patyi Péter
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.11 About us (frontend)`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.12 Kapcsolat (frontend + backend)`
 
-Felelős: `Szajkó István`
+Felelős: Szajkó István
 
 Tartam:  ``
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### `8.4.13 Nyomtatási kép (menetrend és járat lekérdezések oldal)`
 
-Felelős: `Bíró Szabolcs`
+Felelős: Bíró Szabolcs
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### `8.4.14 Prototípus kitelepítésének frissítése`
 
-Felelős: `Kovács János András`
+Felelős: Kovács János András
 
 Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### `8.4.15 Bemutató elkészítése`
 
-Felelős: `Makó Ádám`
+Felelős: Makó Ádám
 
 Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 ## 9. Részletes időbeosztás
 
@@ -570,24 +559,24 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 | Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
 |------------------------|-------|-------|------|-------|----------|
-| `Csíkos Martin Nándor` |  `1`  |  `2`  | `14` |  `2`  |   `19`   |
-| `Bíró Szabolcs`        |  `3`  |  `3`  | `10` |  `2`  |   `18`   |
-| `Makó Ádám`            |  `1`  |  `2`  |  `7` |  `8`  |   `18`   |
-| `Kovács János András`  |  `1`  |  `3`  |  `9` |  `5`  |   `18`   |
-| `Szajkó István`        |  `1`  |  `3`  |  `6` |  `8`  |   `18`   |
-| `Patyi Péter`          |  `1`  |  `4`  |  `8` |  `6`  |   `19`   |
+| Csíkos Martin Nándor |  1  |  2  | 14 |  2  |   19   |
+| Bíró Szabolcs        |  3  |  3  | 10 |  2  |   18   |
+| Makó Ádám            |  1  |  2  |  7 |  8  |   18   |
+| Kovács János András  |  1  |  3  |  9 |  5  |   18   |
+| Szajkó István        |  1  |  3  |  6 |  8  |   18   |
+| Patyi Péter          |  1  |  4  |  8 |  6  |   19   |
 
 
 ### 10.2. Részletes feladatszámok
 
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
-| `Csíkos Martin Nándor` |  `1`  |  `1`  |  `6` |  `1` |    `9`   |
-| `Bíró Szabolcs`        |  `2`  |  `1`  |  `4` |  `1` |    `8`   |
-| `Makó Ádám`            |  `1`  |  `1`  |  `5` |  `4` |   `11`   |
-| `Kovács János András`  |  `1`  |  `1`  |  `5` |  `3` |   `10`   |
-| `Szajkó István`        |  `1`  |  `1`  |  `4` |  `3` |    `9`   |
-| `Patyi Péter`          |  `1`  |  `2`  |  `4` |  `3` |   `10`   |
+| Csíkos Martin Nándor |  `1`  |  `1`  |  `6` |  `1` |    `9`   |
+| Bíró Szabolcs        |  `2`  |  `1`  |  `4` |  `1` |    `8`   |
+| Makó Ádám            |  `1`  |  `1`  |  `5` |  `4` |   `11`   |
+| Kovács János András  |  `1`  |  `1`  |  `5` |  `3` |   `10`   |
+| Szajkó István        |  `1`  |  `1`  |  `4` |  `3` |    `9`   |
+| Patyi Péter          |  `1`  |  `2`  |  `4` |  `3` |   `10`   |
 
 ### 10.3. Részletes költségvetés
 
@@ -601,4 +590,4 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 | `Szajkó István`                     | `4`     | `15`     | `30`     |  `21`    | 70        |
 | `Patyi Péter`                       | `4`     | `20`     | `26`     |  `20`    | 70        |
 
-Szeged, `2023-10-10`.
+Szeged, 2023-10-10.
