@@ -17,18 +17,18 @@ Minden funkció a megfelelő felhasználói jogosultság mellett használható, 
 
 ### 2.2. Funkcionális követelmények
 
-    - Felhasználók kezelése (admin, felhasználó) (CRUD) 
-    - Felhasználói munkamenet megvalósítása több jogosultsági szinttel 
-    - Járatok kezelése (CRUD) 
-    - Megállók kezelése (CRUD) 
-    - Email-es értésítés a járat indulása előtti megadott időben
-    - Nyomtatható menetrend
+ - Felhasználók kezelése (admin, felhasználó) (CRUD) 
+ - Felhasználói munkamenet megvalósítása több jogosultsági szinttel 
+ - Járatok kezelése (CRUD) 
+ - Megállók kezelése (CRUD) 
+ - Email-es értésítés a járat indulása előtti megadott időben
+ - Nyomtatható menetrend
 
 
 ### 2.3. Nem funkcionális követelmények
 
-    - A kliens oldal böngészőfüggetlen legyen 
-    - Reszponzív megjelenés
+ - A kliens oldal böngészőfüggetlen legyen 
+ - Reszponzív megjelenés
 
 ## 3. Költség- és erőforrás-szükségletek
 
