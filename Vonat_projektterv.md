@@ -229,7 +229,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  6 nap
 
 Erőforrásigény:  3 személynap
 
@@ -324,7 +324,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
@@ -356,7 +356,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  6 nap
 
 Erőforrásigény:  3 személynap
 
@@ -411,7 +411,7 @@ Részfeladatai a következők:
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  7 nap
 
 Erőforrásigény:  3 személynap
 
@@ -443,7 +443,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -499,7 +499,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Szajkó István
 
-Tartam:  ``
+Tartam:  7 nap
 
 Erőforrásigény:  3 személynap
 
