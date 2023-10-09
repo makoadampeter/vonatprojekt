@@ -205,7 +205,7 @@ Részfeladatai a következők:
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -268,7 +268,7 @@ Részfeladatai a következők:
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
@@ -284,7 +284,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
 
@@ -292,7 +292,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
@@ -427,7 +427,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -467,7 +467,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -491,7 +491,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
@@ -523,7 +523,7 @@ Erőforrásigény:  1 személynap
 
 Felelős: Makó Ádám
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
