@@ -56,14 +56,14 @@ a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
-A projekt megrendelője `Dr. Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
- - `Remek Elek (3 év egyetemi tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
+A projekt megrendelője Dr. Kertész Attila. A Vonat projektet a projektcsapat fogja végrehajtani, amely hat fejlesztőből áll. A csapatban egyetemi hallgatók találhatók, akik többnyire pár éves egyetemi/középiskolai tapasztalattal rendelkeznek.
 
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni.
-```
+Bíró Szabolcs László (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
+Csíkos Martin Nándor (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
+Kovács János András (4 év szakgimnáziumi, 1 év technikusi, 1 év egyetemi tapasztalat)
+Makó Ádám Péter (4 év szakgimnáziumi, 1 év egyetemi tapasztalat)
+Patyi Péter (2 év egyetemi tapasztalat)
+Szajkó István (1 év egyetemi tapasztalat)
 
 ### 4.1 Projektcsapat
 
