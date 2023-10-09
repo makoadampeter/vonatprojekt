@@ -300,7 +300,7 @@ Erőforrásigény:  1 személynap
 
 Felelős: Csíkos Martin Nándor
 
-Tartam:  10 nap
+Tartam:  8 nap
 
 Erőforrásigény:  5 személynap
 
@@ -431,7 +431,7 @@ Tartam:  ``
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.4 Felhasználói munkamenet tesztelése`
+#### 8.4.4 Felhasználói munkamenet tesztelése
 
 Felelős: Kovács János András
 
@@ -439,7 +439,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.5 Járatok tesztelése`
+#### 8.4.5 Járatok tesztelése
 
 Felelős: Szajkó István
 
@@ -447,7 +447,7 @@ Tartam:  ``
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.6 Megállók tesztelése`
+#### 8.4.6 Megállók tesztelése
 
 Felelős: Patyi Péter
 
@@ -455,7 +455,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.7 Email-es értésítés tesztelés`
+#### 8.4.7 Email-es értésítés tesztelés
 
 Felelős: Kovács János András
 
@@ -463,7 +463,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.8 Felhasználói profil szerkesztése (backend)`
+#### 8.4.8 Felhasználói profil szerkesztése (backend)
 
 Felelős: Makó Ádám
 
@@ -471,7 +471,7 @@ Tartam:  ``
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.9 Főoldal (frontend)`
+#### 8.4.9 Főoldal (frontend)
 
 Felelős: Kovács János András
 
@@ -479,7 +479,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.10 Felhasználói profil szerkesztése (frontend)`
+#### 8.4.10 Felhasználói profil szerkesztése (frontend)
 
 Felelős: Patyi Péter
 
@@ -487,7 +487,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.11 About us (frontend)`
+#### 8.4.11 About us (frontend)
 
 Felelős: Makó Ádám
 
@@ -495,7 +495,7 @@ Tartam:  ``
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.12 Kapcsolat (frontend + backend)`
+#### 8.4.12 Kapcsolat (frontend + backend)
 
 Felelős: Szajkó István
 
@@ -503,7 +503,7 @@ Tartam:  ``
 
 Erőforrásigény:  3 személynap
 
-#### `8.4.13 Nyomtatási kép (menetrend és járat lekérdezések oldal)`
+#### 8.4.13 Nyomtatási kép (menetrend és járat lekérdezések oldal)
 
 Felelős: Bíró Szabolcs
 
@@ -511,7 +511,7 @@ Tartam:  ``
 
 Erőforrásigény:  2 személynap
 
-#### `8.4.14 Prototípus kitelepítésének frissítése`
+#### 8.4.14 Prototípus kitelepítésének frissítése
 
 Felelős: Csíkos Martin Nándor
 
@@ -519,7 +519,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
-#### `8.4.15 Bemutató elkészítése`
+#### 8.4.15 Bemutató elkészítése
 
 Felelős: Makó Ádám
 
