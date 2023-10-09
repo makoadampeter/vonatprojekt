@@ -229,7 +229,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `5 nap`
 
 Erőforrásigény:  3 személynap
 
@@ -364,7 +364,7 @@ Erőforrásigény:  4 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `5 nap`
 
 Erőforrásigény:  3 személynap
 
@@ -388,7 +388,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `5 nap`
 
 Erőforrásigény:  2 személynap
 
@@ -412,7 +412,7 @@ Erőforrásigény:  1 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `4 nap`
 
 Erőforrásigény:  2 személynap
 
@@ -475,7 +475,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `5 nap`
 
 Erőforrásigény:  2 személynap
 
@@ -491,7 +491,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `5 nap`
 
 Erőforrásigény:  2 személynap
 
@@ -531,7 +531,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Kovács János András
 
-Tartam:  ``
+Tartam:  `3 nap`
 
 Erőforrásigény:  1 személynap
 
