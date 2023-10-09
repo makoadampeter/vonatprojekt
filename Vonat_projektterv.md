@@ -189,10 +189,6 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
 
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat, mivel az első mérföldkőben
-2 kötelező feladat van, ezt nem bontjuk részfeladatokra.
-```
 
 ### 8.1. Projektterv (1. mérföldkő)
 
@@ -204,22 +200,19 @@ Részfeladatai a következők:
 
 Felelős: Mindenki
 
-Tartam:  `4 nap`
+Tartam:  `14 nap`
 
 Erőforrásigény:  `1 személynap/fő`
 
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: `Teszt Elek`
+Felelős: `Bíró Szabolcs`
 
-Tartam:  `2 nap`
+Tartam:  ``
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `2 személynap`
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
-```
 
 ### 8.2. UML és adatbázis- és képernyőtervek (2. mérföldkő)
 
@@ -229,63 +222,60 @@ Részfeladatai a következők:
 
 #### 8.2.1. Use Case diagram
 
-Felelős: `Teszt Elek`
+Felelős: `Makó Ádám`
 
-Tartam:  `3 nap`
+Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  `2 személynap`
 
 #### 8.2.2. Class diagram
 
-Felelős: `Lev Elek`
+Felelős: `Bíró Szabolcs`
 
-Tartam:  `4 nap`
+Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `3 személynap`
 
 #### 8.2.3. Sequence diagram
 
-Felelős: `Remek Elek`
+Felelős: `Kovács János András`
 
-Tartam:  `3 nap`
+Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `3 személynap`
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Remek Elek`
+Felelős: `Szajkó István`
 
-Tartam:  `4 nap`
+Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `3 személynap`
 
 #### 8.2.5. Package diagram
 
-Felelős: `Teszt Elek`
+Felelős: `Patyi Péter`
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `2 személynap`
 
 #### 8.2.6. Képernyőtervek
 
-Felelős: `Teszt Elek`
+Felelős: `Csíkos Martin Nándor`
 
-Tartam:  `3 nap`
+Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  `2 személynap`
 
 #### 8.2.7. Bemutató elkészítése
 
-Felelős: `Lev Elek`
+Felelős: `Patyi Péter`
 
-Tartam:  `1 nap`
+Tartam:  `5 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `2 személynap`
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
-```
 
 ### 8.3. Prototípus I. (3. mérföldkő)
 
@@ -293,167 +283,150 @@ Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre,
 
 Részfeladatai a következők:
 
-#### `8.3.1. Felhasználók kezelése (admin, raktáros, sofőr) (CR)`
+#### `8.3.1 Frontend design (összes oldalra)`
 
-Felelős: `Teszt Elek`
+Felelős: `Mindenki`
 
-Tartam:  `5 nap`
+Tartam:  ``
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `1 személynap/fő`
 
-#### `8.3.2. Felhasználók kezelése (admin, raktáros, sofőr) (UD)`
+#### `8.3.2 Header - footer`
 
-Felelős: `Remek Elek`
+Felelős: `Makó Ádám`
 
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
+#### `8.3.3 Felhasználók adatbázis létrehozása`
 
-Felelős: `Teszt Elek `
+Felelős: `Csíkos Martin Nándor`
 
-Tartam:  `10 nap`
+Tartam:  ``
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.5. Raktárak kezelése (CRUD)`
+#### `8.3.4 Menetrend adatbázis létrehozása`
 
-Felelős: `Teszt Elek`
+Felelős: `Makó Ádám`
 
-Tartam:  `3 nap`
+Tartam:  ``
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.5 Menetrend adatbázis feltöltése`
+
+Felelős: `Makó Ádám`
+
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.6. Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
+#### `8.3.6 Menetrend alapján lekérdezés (backend)`
 
-Felelős: `Remek Elek`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.7. Árukészletek kezelése (C)`
-
-Felelős: `Remek Elek `
+Felelős: `Csíkos Martin Nándor`
 
 Tartam:  `4 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `5 személynap`
 
-#### `8.3.8. Árukészletek kezelése (R)`
+#### `8.3.7 Járatok alapján lekérdezés (backend)`
 
-Felelős: `Lev Elek`
+Felelős: `Bíró Szabolcs`
 
-Tartam:  `3 nap`
+Tartam:  ``
+
+Erőforrásigény:  `5 személynap`
+
+#### `8.3.8 Regisztráció (frontend + backend)`
+
+Felelős: `Patyi Péter`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.9 Felhasználók adatbázis feltöltése adatokkal`
+
+Felelős: `Szajkó István`
+
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.9. Árukészletek kezelése (UD)`
+#### `8.3.10 Bejelentkezés (frontend + backend)`
 
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.10. Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.11. Járművek kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.12. Fuvarok/szállítmányok kezelése (CR)`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.13. Fuvarok/szállítmányok kezelése (UD)`
-
-Felelős: `Teszt Elek `
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.14. Fuvarok/szállítmányok szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Remek Elek `
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### `8.3.15. Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
-
-Felelős: `Remek Elek`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.16. Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
-
-Felelős: `Remek Elek`
+Felelős: `Patyi Péter`
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `3 személynap`
 
-#### `8.3.17. Biztonsági mentés automatikus létrehozása`
+#### `8.3.11 Admin felület (backend)`
 
-Felelős: `Lev Elek`
+Felelős: `Csíkos Martin Nándor`
 
-Tartam:  `3 nap`
+Tartam:  ``
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  `4 személynap`
 
-#### 8.3.18. Tesztelési dokumentum az összes funkcióhoz (TP, TC)
+#### `8.3.12 Menetrend alapján lekérdezés (frontend))`
+
+Felelős: `Kovács János András`
+
+Tartam:  ``
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.13 Járatok alapján lekérdezés (frontend)`
+
+Felelős: `Szajkó István`
+
+Tartam:  ``
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.14 Admin felület (frontend)`
+
+Felelős: `Bíró Szabolcs`
+
+Tartam:  ``
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.15 Saját felhasználói profil megtekintése (frontend)`
+
+Felelős: `Kovács János András`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.16 Tesztelési dokumentum elkészítése`
 
 Felelős: `Mindenki`
 
-Tartam:  `7 nap`
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap/fő`
 
-```
-Itt csak a könnyebb áttekinthetőség végett szerepel mindenki felelősként, azonban ezt a feladatot is részfeladatokra kell bontani.
-```
+#### `8.3.17 Prototípus kitelepítése éles környezetbe`
 
-#### `8.3.19. A prototípus kitelepítése éles környezetbe` 
+Felelős: `Csíkos Martin Nándor`
 
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap`
 
-```
-A feladatokat a 2.2-es és a 2.3-as pont alapján kell meghatározni és lehető legrészletesebben definiálni.
-Lehetőség szerint az összetett feladatokat bontsuk fel részfeladatokra. 
-A bemutató során a prototípus aktuális állását kell prezentálni.
-```
+#### 8.3.18 Bemutató elkészítése
+
+Felelős: `Kovács János András`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
@@ -461,106 +434,126 @@ Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkció
 
 Részfeladatai a következők:
 
-#### 8.4.1. Javított minőségű prototípus új funkciókkal
+#### 8.4.1 Javított minőségű prototípus javított funkciókkal
 
-Felelős: `Teszt Elek`
+Felelős: `Szajkó István`
 
-Tartam:  `5 nap`
+Tartam:  ``
 
-Erőforrásigény:  `2.5 személynap`
+Erőforrásigény:  `3 személynap`
 
-#### 8.4.2. Javított minőségű prototípus javított funkciókkal
+#### 8.4.2 Javított minőségű prototípus a korábbi hiányzó funkciókkal
 
-Felelős: `Lev Elek`
+Felelős: `Patyi Péter`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.4.3 Email-es értésítés
+
+Felelős: `Makó Ádám`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.4 Felhasználói munkamenet tesztelése`
+
+Felelős: `Csíkos Martin Nándor`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.5 Járatok tesztelése`
+
+Felelős: `Szajkó István`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.6 Megállók tesztelése`
+
+Felelős: `Patyi Péter`
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
+#### `8.4.7 Email-es értésítés tesztelés`
 
-Felelős: `Remek Elek`
+Felelős: `Kovács János András`
 
-Tartam:  `5 nap`
+Tartam:  ``
 
-Erőforrásigény:  `1.5 személynap`
+Erőforrásigény:  `2 személynap`
 
-#### `8.4.4. Felhasználói munkamenet tesztelése (TR)`
+#### `8.4.8 Felhasználói profil szerkesztése (backend)`
 
-Felelős: `Teszt Elek`
+Felelős: `Makó Ádám`
 
-Tartam:  `1 nap`
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.9 Főoldal (frontend)`
+
+Felelős: `Kovács János András`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.10 Felhasználói profil szerkesztése (frontend)`
+
+Felelős: `Patyi Péter`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.11 About us (frontend)`
+
+Felelős: `Makó Ádám`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.12 Kapcsolat (frontend + backend)`
+
+Felelős: `Szajkó István`
+
+Tartam:  ``
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.4.13 Nyomtatási kép (menetrend és járat lekérdezések oldal)`
+
+Felelős: `Bíró Szabolcs`
+
+Tartam:  ``
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.4.14 Prototípus kitelepítésének frissítése`
+
+Felelős: `Kovács János András`
+
+Tartam:  ``
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.4.5. Raktárak kezelésének tesztelése (TR)`
+#### `8.4.15 Bemutató elkészítése`
 
-Felelős: `Remek Elek`
+Felelős: `Makó Ádám`
 
-Tartam:  `1 nap`
+Tartam:  ``
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `2 személynap`
 
-#### `8.4.6. Árukészletek kezelésének tesztelése (TR)`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### `8.4.7. Járművek kezelésének tesztelése (TR)`
-
-Felelős: `Remek Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.8. Fuvarok kezelésének tesztelése (TR)`
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.9. Email-es funkciók tesztelése (TR)`
-
-Felelős: `Remek Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.10. Térképes funkciók tesztelése (TR)`
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.11. Biztonsági mentés tesztelése (TR)`
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.12. A prototípus kitelepítésének frissítése`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-```
-Működő végleges program, a frissített tesztelési dokumentációval. A 3. mérföldkőhöz képest funkiconálisan többet kell tudnia az oldalnak.
-
-```
 ## 9. Részletes időbeosztás
 
 ![image](./MINTA-gantt-diagram.png)
@@ -571,38 +564,41 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 ## 10. Projekt költségvetés
 
-```
-Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
-és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
-Figyeljünk arra, hogy mivel mindenkinek minden mérföldkövön dolgoznia kell, ezért a 10.3-as táblázat
-minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
-```
 
 ### 10.1. Részletes erőforrásigény (személynap)
 
 
-| Név          |   M1  |   M2  |   M3 |   M4  | Összesen |
-|--------------|-------|-------|------|-------|----------|
-| `Teszt Elek` | `1.5` | `1.5` | `11` | `5`   | `19`     |
-| `Remek Elek` | `1`   | `4`   | `13` | `3`   | `21`     |
-| `Lev Elek`   | `1`   | `2.5` | `10` | `3.5` | `17`     |
+| Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
+|------------------------|-------|-------|------|-------|----------|
+| `Csíkos Martin Nándor` |  `1`  |  `2`  | `14` |  `2`  |   `19`   |
+| `Bíró Szabolcs`        |  `3`  |  `3`  | `10` |  `2`  |   `18`   |
+| `Makó Ádám`            |  `1`  |  `2`  |  `7` |  `8`  |   `18`   |
+| `Kovács János András`  |  `1`  |  `3`  |  `9` |  `5`  |   `18`   |
+| `Szajkó István`        |  `1`  |  `3`  |  `6` |  `8`  |   `18`   |
+| `Patyi Péter`          |  `1`  |  `4`  |  `8` |  `6`  |   `19`   |
 
 
 ### 10.2. Részletes feladatszámok
 
-| Név          |   M1  |   M2  |   M3 |   M4 | Összesen |
-|--------------|-------|-------|------|------|----------|
-| `Teszt Elek` | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Remek Elek` | `1`   | `2`   | `7`  | `4`  | `14`     |
-| `Lev Elek`   | `1`   | `2`   | `7`  | `4`  | `14`     |
+| Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
+|------------------------|-------|-------|------|------|----------|
+| `Csíkos Martin Nándor` |  `1`  |  `1`  |  `6` |  `1` |    `9`   |
+| `Bíró Szabolcs`        |  `2`  |  `1`  |  `4` |  `1` |    `8`   |
+| `Makó Ádám`            |  `1`  |  `1`  |  `5` |  `4` |   `11`   |
+| `Kovács János András`  |  `1`  |  `1`  |  `5` |  `3` |   `10`   |
+| `Szajkó István`        |  `1`  |  `1`  |  `4` |  `3` |    `9`   |
+| `Patyi Péter`          |  `1`  |  `2`  |  `4` |  `3` |   `10`   |
 
 ### 10.3. Részletes költségvetés
 
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| `Teszt Elek`                        | `7`     | `10`     | `28`     |  `25`    | 70        |
-| `Remek Elek`                        | `4`     | `15`     | `35`     |  `16`    | 70        |
-| `Lev Elek`                          | `4`     | `12`     | `30`     |  `24`    | 70        |
+| `Csíkos Martin Nándor`              | `4`     | `15`     | `35`     |  `16`    | 70        |
+| `Bíró Szabolcs`                     | `7`     | `15`     | `30`     |  `18`    | 70        |
+| `Makó Ádám`                         | `4`     | `15`     | `30`     |  `21`    | 70        |
+| `Kovács János András`               | `4`     | `15`     | `30`     |  `21`    | 70        |
+| `Szajkó István`                     | `4`     | `15`     | `30`     |  `21`    | 70        |
+| `Patyi Péter`                       | `4`     | `20`     | `26`     |  `20`    | 70        |
 
-Szeged, `2021-10-25`.
+Szeged, `2023-10-10`.
