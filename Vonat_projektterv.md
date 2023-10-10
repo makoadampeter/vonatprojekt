@@ -528,7 +528,7 @@ Erőforrásigény:  1 személynap
 
 ## 9. Részletes időbeosztás
 
-![image](./MINTA-gantt-diagram.png)
+![image](./Gantt_diagram.png)
 
 ```
 Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
