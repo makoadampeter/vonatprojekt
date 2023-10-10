@@ -190,7 +190,7 @@ Erőforrásigény:  1 személynap/fő
 
 Felelős: Bíró Szabolcs
 
-Tartam:  ``
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
@@ -213,7 +213,7 @@ Erőforrásigény:  2 személynap
 
 Felelős: Bíró Szabolcs
 
-Tartam:  ``
+Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
@@ -308,7 +308,7 @@ Erőforrásigény:  5 személynap
 
 Felelős: Bíró Szabolcs
 
-Tartam:  ``
+Tartam:  7 nap
 
 Erőforrásigény:  5 személynap
 
@@ -364,7 +364,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Bíró Szabolcs
 
-Tartam:  ``
+Tartam:  8 nap
 
 Erőforrásigény:  3 személynap
 
@@ -507,7 +507,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Bíró Szabolcs
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
