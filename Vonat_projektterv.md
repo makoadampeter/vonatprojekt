@@ -380,7 +380,7 @@ Erőforrásigény:  3 személynap
 
 Felelős: Mindenki
 
-Tartam:  ``
+Tartam:  4 nap
 
 Erőforrásigény:  1 személynap/fő
 
