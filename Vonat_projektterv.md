@@ -201,15 +201,7 @@ Ennek a feladatnak az a célja, hogy a rendszerarchitektúrát, az adatbázist �
 
 Részfeladatai a következők:
 
-#### 8.2.1. Use Case diagram
-
-Felelős: Makó Ádám
-
-Tartam:  4 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.2.2. Class diagram
+#### 8.2.1. Class diagram
 
 Felelős: Bíró Szabolcs
 
@@ -217,15 +209,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.2.3. Sequence diagram
-
-Felelős: Kovács János András
-
-Tartam:  5 nap
-
-Erőforrásigény:  3 személynap
-
-#### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
+#### 8.2.2. Egyed-kapcsolat diagram adatbázishoz
 
 Felelős: Szajkó István
 
@@ -233,7 +217,7 @@ Tartam:  6 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.2.5. Package diagram
+#### 8.2.3. Package diagram
 
 Felelős: Patyi Péter
 
@@ -241,11 +225,27 @@ Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.2.6. Képernyőtervek
+#### 8.2.4. Sequence diagram
+
+Felelős: Kovács János András
+
+Tartam:  5 nap
+
+Erőforrásigény:  3 személynap
+
+#### 8.2.5. Képernyőtervek
 
 Felelős: Csíkos Martin Nándor
 
 Tartam:  5 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.2.6. Use Case diagram
+
+Felelős: Makó Ádám
+
+Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
@@ -264,15 +264,7 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 
 Részfeladatai a következők:
 
-#### 8.3.1 Header - footer
-
-Felelős: Makó Ádám
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 8.3.2 Felhasználók adatbázis létrehozása
+#### 8.3.1 Felhasználók adatbázis létrehozása
 
 Felelős: Csíkos Martin Nándor
 
@@ -280,13 +272,21 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.3 Menetrend adatbázis létrehozása
+#### 8.3.2 Menetrend adatbázis létrehozása
 
 Felelős: Makó Ádám
 
 Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
+
+#### 8.3.3 Felhasználók adatbázis feltöltése adatokkal
+
+Felelős: Szajkó István
+
+Tartam:  3 nap
+
+Erőforrásigény:  1 személynap
 
 #### 8.3.4 Menetrend adatbázis feltöltése
 
@@ -296,7 +296,23 @@ Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.5 Menetrend alapján lekérdezés (backend)
+#### 8.3.5 Header - footer
+
+Felelős: Makó Ádám
+
+Tartam:  3 nap
+
+Erőforrásigény:  1 személynap
+
+#### 8.3.6 Saját felhasználói profil megtekintése (frontend)
+
+Felelős: Kovács János András
+
+Tartam:  5 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.3.7 Menetrend alapján lekérdezés (backend)
 
 Felelős: Csíkos Martin Nándor
 
@@ -304,7 +320,7 @@ Tartam:  8 nap
 
 Erőforrásigény:  5 személynap
 
-#### 8.3.6 Járatok alapján lekérdezés (backend)
+#### 8.3.8 Járatok alapján lekérdezés (backend)
 
 Felelős: Bíró Szabolcs
 
@@ -312,7 +328,7 @@ Tartam:  7 nap
 
 Erőforrásigény:  5 személynap
 
-#### 8.3.7 Regisztráció (frontend + backend)
+#### 8.3.9 Regisztráció (frontend + backend)
 
 Felelős: Patyi Péter
 
@@ -320,15 +336,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.8 Felhasználók adatbázis feltöltése adatokkal
-
-Felelős: Szajkó István
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 8.3.9 Bejelentkezés (frontend + backend)
+#### 8.3.10 Bejelentkezés (frontend + backend)
 
 Felelős: Patyi Péter
 
@@ -336,7 +344,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.10 Admin felület (backend)
+#### 8.3.11 Admin felület (backend)
 
 Felelős: Csíkos Martin Nándor
 
@@ -344,23 +352,7 @@ Tartam:  7 nap
 
 Erőforrásigény:  4 személynap
 
-#### 8.3.11 Menetrend alapján lekérdezés (frontend))
-
-Felelős: Kovács János András
-
-Tartam:  5 nap
-
-Erőforrásigény:  3 személynap
-
-#### 8.3.12 Járatok alapján lekérdezés (frontend)
-
-Felelős: Szajkó István
-
-Tartam:  6 nap
-
-Erőforrásigény:  3 személynap
-
-#### 8.3.13 Admin felület (frontend)
+#### 8.3.12 Admin felület (frontend)
 
 Felelős: Bíró Szabolcs
 
@@ -368,13 +360,21 @@ Tartam:  8 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.14 Saját felhasználói profil megtekintése (frontend)
+#### 8.3.13 Menetrend alapján lekérdezés (frontend))
 
 Felelős: Kovács János András
 
 Tartam:  5 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  3 személynap
+
+#### 8.3.14 Járatok alapján lekérdezés (frontend)
+
+Felelős: Szajkó István
+
+Tartam:  6 nap
+
+Erőforrásigény:  3 személynap
 
 #### 8.3.15 Tesztelési dokumentum elkészítése
 
@@ -384,15 +384,7 @@ Tartam:  ``
 
 Erőforrásigény:  1 személynap/fő
 
-#### 8.3.16 Prototípus kitelepítése éles környezetbe
-
-Felelős: Csíkos Martin Nándor
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 8.3.17 Bemutató elkészítése
+#### 8.3.16 Bemutató elkészítése
 
 Felelős: Kovács János András
 
@@ -400,6 +392,13 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
+#### 8.3.17 Prototípus kitelepítése éles környezetbe
+
+Felelős: Csíkos Martin Nándor
+
+Tartam:  3 nap
+
+Erőforrásigény:  1 személynap
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
@@ -407,7 +406,7 @@ Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkciói
 
 Részfeladatai a következők:
 
-#### 8.4.1 Javított minőségű prototípus javított funkciókkal
+#### 8.4.1 Kapcsolat (frontend + backend)
 
 Felelős: Szajkó István
 
@@ -439,7 +438,31 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.4.5 Járatok tesztelése
+#### 8.4.5 Főoldal (frontend)
+
+Felelős: Kovács János András
+
+Tartam:  5 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.6 Felhasználói profil szerkesztése (backend)
+
+Felelős: Makó Ádám
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.7 Megállók tesztelése
+
+Felelős: Patyi Péter
+
+Tartam:  5 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.8 Járatok tesztelése
 
 Felelős: Szajkó István
 
@@ -447,47 +470,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.4.6 Megállók tesztelése
-
-Felelős: Patyi Péter
-
-Tartam:  5 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.4.7 Email-es értésítés tesztelés
-
-Felelős: Kovács János András
-
-Tartam:  5 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.4.8 Felhasználói profil szerkesztése (backend)
-
-Felelős: Makó Ádám
-
-Tartam:  4 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.4.9 Főoldal (frontend)
-
-Felelős: Kovács János András
-
-Tartam:  5 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.4.10 Felhasználói profil szerkesztése (frontend)
-
-Felelős: Patyi Péter
-
-Tartam:  3 nap
-
-Erőforrásigény:  2 személynap
-
-#### 8.4.11 About us (frontend)
+#### 8.4.9 About us (frontend)
 
 Felelős: Makó Ádám
 
@@ -495,7 +478,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.4.12 Kapcsolat (frontend + backend)
+#### 8.4.10 Javított minőségű prototípus javított funkciókkal
 
 Felelős: Szajkó István
 
@@ -503,7 +486,31 @@ Tartam:  7 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.4.13 Nyomtatási kép (menetrend és járat lekérdezések oldal)
+#### 8.4.11 Email-es értésítés tesztelés
+
+Felelős: Kovács János András
+
+Tartam:  5 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.12 Bemutató elkészítése
+
+Felelős: Makó Ádám
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.13 Felhasználói profil szerkesztése (frontend)
+
+Felelős: Patyi Péter
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.4.14 Nyomtatási kép (menetrend és járat lekérdezések oldal)
 
 Felelős: Bíró Szabolcs
 
@@ -511,21 +518,13 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.4.14 Prototípus kitelepítésének frissítése
+#### 8.4.15 Prototípus kitelepítésének frissítése
 
 Felelős: Csíkos Martin Nándor
 
 Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
-
-#### 8.4.15 Bemutató elkészítése
-
-Felelős: Makó Ádám
-
-Tartam:  4 nap
-
-Erőforrásigény:  2 személynap
 
 ## 9. Részletes időbeosztás
 
