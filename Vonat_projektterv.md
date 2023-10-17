@@ -83,7 +83,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - Docker konténerizáló platform
  - XAMPP és Docker által nyújtott MySQL adatbáziskezelő
  - JavaScript kliensoldali szkriptnyelv
- - PHP szerveroldali szkriptnyelv
+ - NodeJS szerveroldali szoftverrendszer
  - Visual Studio Code kódszerkesztő
  - Maven szoftverprojekt menedzselő szoftver
  - Git verziókövető (GitLab)
@@ -306,7 +306,7 @@ Erőforrásigény:  1 személynap
 
 #### 8.3.6. Saját felhasználói profil megtekintése (frontend)
 
-Felelős: Kovács János András
+Felelős: Csíkos Martin Nándor
 
 Tartam:  5 nap
 
@@ -314,7 +314,7 @@ Erőforrásigény:  2 személynap
 
 #### 8.3.7. Menetrend alapján lekérdezés (backend)
 
-Felelős: Csíkos Martin Nándor
+Felelős: Kovács János András
 
 Tartam:  8 nap
 
@@ -346,7 +346,7 @@ Erőforrásigény:  3 személynap
 
 #### 8.3.11. Admin felület (backend)
 
-Felelős: Csíkos Martin Nándor
+Felelős: Kovács János András
 
 Tartam:  7 nap
 
@@ -362,7 +362,7 @@ Erőforrásigény:  3 személynap
 
 #### 8.3.13. Menetrend alapján lekérdezés (frontend))
 
-Felelős: Kovács János András
+Felelős: Csíkos Martin Nándor
 
 Tartam:  5 nap
 
@@ -386,7 +386,7 @@ Erőforrásigény:  1 személynap/fő
 
 #### 8.3.16. Bemutató elkészítése
 
-Felelős: Kovács János András
+Felelős: Szajkó István
 
 Tartam:  4 nap
 
@@ -408,7 +408,7 @@ Részfeladatai a következők:
 
 #### 8.4.1. Kapcsolat (frontend + backend)
 
-Felelős: Szajkó István
+Felelős: Kovács János András
 
 Tartam:  7 nap
 
@@ -432,7 +432,7 @@ Erőforrásigény:  2 személynap
 
 #### 8.4.4. Felhasználói munkamenet tesztelése
 
-Felelős: Kovács János András
+Felelős: Szajkó István
 
 Tartam:  4 nap
 
@@ -440,7 +440,7 @@ Erőforrásigény:  2 személynap
 
 #### 8.4.5. Főoldal (frontend)
 
-Felelős: Kovács János András
+Felelős: Csíkos Martin Nándor
 
 Tartam:  5 nap
 
@@ -488,7 +488,7 @@ Erőforrásigény:  3 személynap
 
 #### 8.4.11. Email-es értésítés tesztelés
 
-Felelős: Kovács János András
+Felelős: Csíkos Martin Nándor
 
 Tartam:  5 nap
 
@@ -538,11 +538,11 @@ Erőforrásigény:  1 személynap
 
 | Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
 |------------------------|-------|-------|------|-------|----------|
-| Csíkos Martin Nándor |  1  |  2  | 13 |  1  |   17   |
+| Csíkos Martin Nándor |  1  |  2  | 9 |  5  |   17   |
 | Bíró Szabolcs        |  3  |  3  | 9  |  2  |   17   |
 | Makó Ádám            |  1  |  2  |  6 |  8  |   17   |
-| Kovács János András  |  1  |  3  |  8 |  6  |   18   |
-| Szajkó István        |  1  |  3  |  5 |  8  |   17   |
+| Kovács János András  |  1  |  3  | 10 |  3  |   17   |
+| Szajkó István        |  1  |  3  |  7 |  7  |   18   |
 | Patyi Péter          |  1  |  4  |  7 |  6  |   18   |
 
 
@@ -550,10 +550,10 @@ Erőforrásigény:  1 személynap
 
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
-| Csíkos Martin Nándor |  1  |  1  |  5 |  1 |    8   |
+| Csíkos Martin Nándor |  1  |  1  |  5 |  3 |   10   |
 | Bíró Szabolcs        |  2  |  1  |  3 |  1 |    7   |
 | Makó Ádám            |  1  |  1  |  4 |  4 |   10   |
-| Kovács János András  |  1  |  1  |  4 |  3 |    9   |
+| Kovács János András  |  1  |  1  |  4 |  1 |    7   |
 | Szajkó István        |  1  |  1  |  3 |  3 |    8   |
 | Patyi Péter          |  1  |  2  |  3 |  3 |    9   |
 
@@ -562,10 +562,10 @@ Erőforrásigény:  1 személynap
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| Csíkos Martin Nándor                | 4       | 15       | 35       |  16      | 70        |
+| Csíkos Martin Nándor                | 4       | 15       | 30       |  21      | 70        |
 | Bíró Szabolcs`                      | 7       | 15       | 30       |  18      | 70        |
 | Makó Ádám`                          | 4       | 15       | 30       |  21      | 70        |
-| Kovács János András                 | 4       | 15       | 30       |  21      | 70        |
+| Kovács János András                 | 4       | 15       | 35       |  16      | 70        |
 | Szajkó István                       | 4       | 15       | 30       |  21      | 70        |
 | Patyi Péter                         | 4       | 20       | 26       |  20      | 70        |
 
