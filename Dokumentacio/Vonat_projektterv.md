@@ -534,7 +534,7 @@ Erőforrásigény:  1 személynap
 
 ## 9. Részletes időbeosztás
 
-![image](./Gantt_diagram.png)
+![image](./Diagramok/Gantt_diagram.png)
 
 ## 10. Projekt költségvetés
 
