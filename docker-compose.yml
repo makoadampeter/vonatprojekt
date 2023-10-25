@@ -1,0 +1,39 @@
+version: '3.1'
+volumes:
+  database:
+
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: vonat_mysql
+    restart: always
+    volumes:
+      - database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: vonat
+      MYSQL_DATABASE: vonat
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: vonat_phpmyadmin
+    environment:
+      PMA_HOST: 'mysql'
+      PMA_USER: 'root'
+      PMA_PASSWORD: 'vonat'
+
+    ports:
+      - 8080:80
+    restart: always
+
+    depends_on:
+      - mysql
+
+  web:
+    build: .
+    command: npm start
+    container_name: vonat_nodejs
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
