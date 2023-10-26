@@ -29,11 +29,11 @@ services:
     depends_on:
       - mysql
 
-  web:
-    build: .
-    command: npm start
-    container_name: vonat_nodejs
-    volumes:
-      - .:/app
-    ports:
-      - 3000:3000
+  #web:
+  #  build: .
+  #  command: npm start
+  #  container_name: vonat_nodejs
+  #  volumes:
+  #    - .:/app
+  #  ports:
+  #    - 3000:3000
