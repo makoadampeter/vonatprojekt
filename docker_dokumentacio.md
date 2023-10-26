@@ -6,16 +6,16 @@ Használat előtt legyen feltelepítve a Docker (vagy az Engine, vagy a Desktop,
 
 ## Telepítés:
     - Debian: https://docs.docker.com/engine/install/debian/
-    - Arch: ``` sudo pacman -S docker ``` (kell egy docker compose plugin is, ez Docker Desktoppal alapból fent lesz, ha az esetleg nem települne fel, akkor annak telepítése (nem biztos hogy működik, nem próbáltam): ``` sudo pacman -S docker-compose ```)
+    - Arch: `sudo pacman -S docker` (kell egy docker compose plugin is, ez Docker Desktoppal alapból fent lesz, ha az esetleg nem települne fel, akkor annak telepítése (nem biztos hogy működik, nem próbáltam): `sudo pacman -S docker-compose`)
 
 
 ## Használat:
     - (Először klónozd le a repot (git clone))
     - Lépj bele a létrehozott git repos mappába (cd vonat)
     - A mappában lesz egy Dockerfile, és egy docker-compose.yml fájl. A docker-compose-t fogjuk használni
-    - környezet futtatása: ``` docker compose up --build ``` (Ez elindítja a weboldalt és az adatbázist + phpmyadmint)
-    - környezet leállítása: ``` docker compose down ``` VAGY ctrl+c
-        - Hasznos paraméter: -d (```docker compose up -d --build```)
+    - környezet futtatása: `docker compose up --build` (Ez elindítja a weboldalt és az adatbázist + phpmyadmint)
+    - környezet leállítása: `docker compose down` VAGY `ctrl+c`
+        - Hasznos paraméter: -d (`docker compose up -d --build`)
             - Ekkor a docker compose a háttérben fog futni (= használhatod tovább a shellt az adott ablakban)
             - Leállításához a docker compose down commandot kell használni
 
