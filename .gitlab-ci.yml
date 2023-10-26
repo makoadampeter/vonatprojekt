@@ -1,26 +1,33 @@
 variables:
-  IMAGE_NAME: $DOCKER_USER/vonat-rf1
-  IMAGE_TAG: vonat_nodejs-1.0
+  IMAGE_NAME: $DOCKER_USER/vonat-web
+  IMAGE_TAG: vonat_web-1.0
 
 stages:
   - build
   - deploy
 
 build-job:
+  stage: build
+  only:
+    - main
   image: docker:24.0.6-cli
   services:
     - docker:24.0.6-dind
   variables:
     DOCKER_TLS_CERTDIR: "/certs"
-  stage: build
   before_script:
     - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   script:
-    - docker compose build
-    - docker compose push
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker push $IMAGE_NAME:$IMAGE_TAG
 
 deploy-job:
   stage: deploy
   environment: production
+  before_script:
+    - chmod 400 $SSH_KEY
   script:
-    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY Vonat@20.238.31.23 ""
+    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY Vonat@20.238.31.23 "
+    docker login -u $DOCKER_USER -p $DOCKER_PASSWORD &&
+    docker ps -aq | xargs docker stop | xargs docker rm &&
+    docker run --name vonat-web -d -p 3000:3000 $IMAGE_NAME:$IMAGE_TAG"
