@@ -32,7 +32,7 @@ services:
   #web:
   #  build: .
   #  command: npm start
-  #  container_name: vonat_nodejs
+  #  container_name: vonat_web
   #  volumes:
   #    - .:/app
   #  ports:
