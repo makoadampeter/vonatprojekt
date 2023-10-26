@@ -28,11 +28,17 @@ A workflow ugyanaz mint XAMPP-nél (XAMPP: elindítod a szervert + adatbázist, 
 Ezt nem fontos már elolvasni és megérteni, de ha valaki kíváncsi, leírom ide.
 
 Dockerfile --> utasítássorozat, hogy hogyan fog működni a backendünk
+
     - FROM node:21-alpine --> lekérjük a Docker Hubról a 21-es NodeJS változatot, ami Alpine Linuxra van tervezve (kis méret, lightweight verzió)
+
     - WORKDIR /app --> (working directory): a mappa, amiben a Docker fog dolgozni, az a konténerében a /app mappa lesz (lényegében megadjuk hogy milyen mappát hozzon létre a Docker, amiben dolgozni fog)
+
     - COPY . . --> átmásoljuk a lokális fájlokat (1. pont) a Docker working directoryjába (2. pont). A lokális fájlokat a Dockerfile helyétől függően másolja át (ha belerakod a Dokumentacio mappába, akkor azokat a fájlokat másolja)
+
     - RUN npm install --> lefuttatjuk az npm install commandot (amivel letöltjük az összes olyan package-et, ami a package.json-ben megtalálható)
+
     - EXPOSE 3000 --> A 3000-es porton fogjuk elérni kívülről az oldalt.
+
     - CMD ["npm", "start"] --> megadjuk, hogy az utolsó utasítás (CMD) az az npm start legyen (= elindítjuk a szervert)
 
 Ezt a Dockerfile-t viszont le is kell buildelni (amiből végül Image lesz), mert önmagában nem fog csinálni semmit. A docker composenál a --build ezt fogja megtenni. (A buildet meg a futtatását nem írom le, bonyolult + nem praktikális lokális fejlesztésnél, a docker-compose fájlban minden le van írva amit nekünk itt manuálisan kellene csinálni)
