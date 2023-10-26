@@ -1,15 +1,26 @@
-stages:          # List of stages for jobs, and their order of execution
+variables:
+  IMAGE_NAME: $DOCKER_USER/vonat-rf1
+  IMAGE_TAG: vonat_nodejs-1.0
+
+stages:
   - build
   - deploy
 
-build-job:       # This job runs in the build stage, which runs first.
+build-job:
+  image: docker:24.0.6-cli
+  services:
+    - docker:24.0.6-dind
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
   stage: build
+  before_script:
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
+    - docker compose build
+    - docker compose push
 
-deploy-job:      # This job runs in the deploy stage.
-  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+deploy-job:
+  stage: deploy
   environment: production
   script:
-    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY Vonat@20.238.31.23
+    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY Vonat@20.238.31.23 ""
