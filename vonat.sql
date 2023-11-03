@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Nov 01, 2023 at 12:37 AM
+-- Generation Time: Nov 03, 2023 at 12:48 PM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.12
 
@@ -52,7 +52,8 @@ CREATE TABLE `leaving` (
 --
 
 CREATE TABLE `line_names` (
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Line name'
+  `id` int NOT NULL COMMENT 'ID',
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Line name (unique)'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -75,7 +76,8 @@ CREATE TABLE `line_stops` (
 --
 
 CREATE TABLE `stops` (
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Stop name'
+  `id` int NOT NULL COMMENT 'ID',
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Stop name (unique)'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -114,7 +116,8 @@ ALTER TABLE `leaving`
 -- Indexes for table `line_names`
 --
 ALTER TABLE `line_names`
-  ADD PRIMARY KEY (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- Indexes for table `line_stops`
@@ -126,7 +129,8 @@ ALTER TABLE `line_stops`
 -- Indexes for table `stops`
 --
 ALTER TABLE `stops`
-  ADD PRIMARY KEY (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- Indexes for table `users`
@@ -139,10 +143,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `line_names`
+--
+ALTER TABLE `line_names`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT 'ID';
+
+--
 -- AUTO_INCREMENT for table `line_stops`
 --
 ALTER TABLE `line_stops`
   MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT 'ID (key)';
+
+--
+-- AUTO_INCREMENT for table `stops`
+--
+ALTER TABLE `stops`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT 'ID';
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
