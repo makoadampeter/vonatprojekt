@@ -1,8 +1,11 @@
 module.exports = function (app){
-    app.get('/', function(req, res, next){
-        res.render('home');
+    //Szerintem ide csak a get kereseket irjuk, a post kereseket meg kulon fajlokba feladatok szerint csoportositva.
+    app.get('/', function(request, response, next){
+        response.render('home');
+        next();
     });
-    app.get('/home', function(req, res, next){
-        res.redirect('/');
+    app.get('/home', function(request, response, next){
+        response.redirect('/');
+        next();
     });
 }

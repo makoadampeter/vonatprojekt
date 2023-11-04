@@ -26,9 +26,11 @@ app.use(function(request, response, next) {
   next();
 });
 
-//Kulso backand javascript fajlok importalasa.
+//Kulso backend javascript fajlok importalasa.
 //A routes-ban feldolgozhatjuk a get kereseket.
 require('./routes/routes')(app);
+require('./routes/admin_felulet')(app, mysql);
+require('./routes/menetrend_alapjan_lekerdezes')(app, mysql);
 
 const hostname = '127.0.0.1';
 const port = 3000;
