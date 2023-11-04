@@ -13,8 +13,8 @@ module.exports = function (app, mysql){
         db.query(`SELECT * FROM line_names 
         LEFT OUTER JOIN line_stops AS line_stops_indulas ON line_stops_indulas.line = line_names.id AND line_stops_indulas.stop = ?
         LEFT OUTER JOIN line_stops AS line_stops_erkezes ON line_stops_erkezes.line = line_names.id AND line_stops_erkezes.stop = ?
-        LEFT OUTER JOIN arriving ON arriving.line_stop_id = line_stops_indulas.id
-        WHERE line_stops_indulas.line = line_stops_erkezes.line AND arriving = ?`, 
+        LEFT OUTER JOIN arriving AS arriving_indulas ON arriving_indulas.line_stop_id = line_stops_indulas.id
+        WHERE line_stops_indulas.line = line_stops_erkezes.line AND arriving_indulas.arrival = ?`, 
         [indulasi_hely, erkezesi_hely, indulasi_ido], (error, data) => {
             if(error){
                 throw error;
