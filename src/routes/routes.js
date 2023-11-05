@@ -10,6 +10,9 @@ module.exports = function (app){
     });
     app.get('/registration', function(request, response, next){
         response.render('registration_page');
+    });
+    app.get('/profile', function (request, response, next) {
+        response.render('profile');
         next();
     });
 }
