@@ -8,4 +8,8 @@ module.exports = function (app){
         response.redirect('/');
         next();
     });
+    app.get('/registration', function(request, response, next){
+        response.render('registration_page');
+        next();
+    });
 }
