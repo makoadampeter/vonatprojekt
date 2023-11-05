@@ -8,4 +8,8 @@ module.exports = function (app){
         response.redirect('/');
         next();
     });
+    app.get('/profile', function (request, response, next) {
+        response.render('profile');
+        next();
+    });
 }
