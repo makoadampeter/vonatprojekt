@@ -32,9 +32,9 @@ deploy-job:
     - main
     environment: production
     before_script:
-        - chmod 400 $SSH_KEY
+        - chmod 700 $SSH_KEY
     script:
-        - ssh -o StrictHostKeyChecking=no -i "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCs35IMYTOj6PI+FxxR1VUE8uToB16J9JBMlWm2DBpc5jr/yRBClK6xtZ5rPLZmjucrb/UQQ0OcBygjQr2JWQ9upmyk4kqjH7EAnnxG8RXdgvmjj1f5t2gMblfNseyYMb8ifREBI2oo+KwlwWhXw9rRWdgWSteCstqLQ7jwq6srPrP25yPXI+e/hr323nNWdy5w7Jcn+rneTPcfnZWawO8WPPNJt7v1Q98j+SSKehKLtRxceSwJ1S0g0xbKczXp2f1aR8qG8WMXs+x2MQe+pi+pNvLHS13CyOJcEacDIPaQCCg3Y4kG9jhni4FeLgsXm8tissn0W1FzQJWXpoBwIFZsv9fd311+P0RAGnTnjmdfilTvvV52Kp+DF/zAUQhgVXP6UNZTWkHbVEpfISgF67v5sD8u4OoAuyRozeo0jJXgHN94COKWDQ3A6wZW5tk7oweCnnry3F+gmLme19DJcHDuVTSQnGgKmXasxfEPmJKbAz7as70m/omDpIrXmDq85H0WxlEThkOLPzBdYQIrsXiHj6BuCOnMXcTZ2QmTItXllif0dn6dbNsRf6FzBpJHAOe05L80a4dYim8w5B/WThS+KHb/Q3p6ZEaFOI+/a+FyhjWtfu03h4eG9o1AOcdElNyQWv9xE1oUQo4E2JlLev1LVOo74x3wGQGoTNVKbXsc2w== csikos.martin17@gmail.com" root@138.68.115.115
+        - ssh -o StrictHostKeyChecking=no -i "SSH_KEY" root@138.68.115.115
         - docker login -u $DOCKER_USER -p "$DOCKER_PASSWORD" &&
         - docker ps -aq | xargs docker stop | xargs docker rm &&
         - docker run --name vonat-web -d -p 3000:3000 $IMAGE_NAME:$IMAGE_TAG
