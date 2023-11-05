@@ -15,11 +15,4 @@ module.exports = function (app){
         response.render('profile');
         next();
     });
-    app.get('/profile', function (request, response, next) {
-        response.render('profile');
-    });
-    app.get('/registration', function(request, response, next){
-        response.render('registration_page');
-        next();
-    });
 }
