@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztráció</title>
+    <title>Bejelentkezés</title>
+
     <link rel="stylesheet" href="./css/check_profile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -58,53 +59,26 @@
     <!--Header-->
 
 <!-- A gomb, ami megjeleníti a lenyíló tartalmat -->
-<button class="dropdown-button" onclick="toggleDropdown()">Regisztráció</button>
+<button class="dropdown-button" onclick="toggleDropdown()">Bejelentkezés</button>
 
 <!-- A lenyíló tartalom doboza -->
 <div class="dropdown-content" id="dropdownContent">
     <div class="registration-form">
-        <h2>Regisztrációs Űrlap</h2>
+        <h2>Bejelentkezés</h2>
 
         <div>
-            <div class="one_line">
-                <label for="firstName">Keresztnév:</label>
-                <input type="text" id="firstName" name="firstName">
-            </div>
-            <div class="one_line">
-                <label for="surName">Vezetéknév:</label>
-                <input type="text" id="surName" name="surName">
-            </div> 
-        </div>
-
-        <div>
-            <div class="one_line">
+            <div>
                 <label for="username">Felhasználónév:</label>
                 <input type="text" id="username" name="username">
             </div>
-            <div class="one_line">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
-            </div> 
-        </div>
-
-        <div>
-            <div class="one_line">
+            <div>
                 <label for="passwd">Jelszó:</label>
                 <input type="password" id="passwd" name="passwd">
             </div>
-            <div class="one_line">
-                <label for="passwd-check">Jelszó ismétlés:</label>
-                <input type="text" id="passwd-check" name="passwd-check">
-            </div> 
-        </div>
+             <button type="submit">Bejelentkezés</button>
+        </div>        
 
-        <div>
-            <label for="adatkezelesi_szab">Tudomásul veszem az adatkezelési szamályzatot!</label>
-            <input type="checkbox" id="adatkezelesi_szab" name="adatkezelesi_szab">
-        </div>
         
-
-        <button type="submit">Regisztráció</button>
     </div>
 </div>
 

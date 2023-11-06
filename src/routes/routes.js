@@ -15,4 +15,7 @@ module.exports = function (app){
         response.render('profile');
         next();
     });
+    app.get('/login', function(request, response, next){
+        response.render('login_page');
+    });
 }
