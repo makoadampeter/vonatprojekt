@@ -1,0 +1,59 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #45a049;
+}
+.log_container {
+    text-align: center; /* Gomb középre igazítása */
+}
+.login-form {
+    display: none; /* none*/
+    border: 2px solid #ccc; /* Szegély hozzáadása */
+    padding: 20px; /* Belső tér a szegély körül */
+    max-width: 400px; /* Maximális szélesség beállítása */
+    margin: 0 auto;  /*Az űrlap középre igazítása */
+    text-align: center;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.reg_container {
+    text-align: center; /* Gomb középre igazítása */
+}
+.registration-form {
+    display: none; /* none*/
+    border: 2px solid #ccc; /* Szegély hozzáadása */
+    padding: 20px; /* Belső tér a szegély körül */
+    max-width: 500px; /* Maximális szélesség beállítása */
+    margin: 0 auto;  /*Az űrlap középre igazítása */
+    text-align: center;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+}
+
+input:focus { background-color: #BFFFC3; }
+
