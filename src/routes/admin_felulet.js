@@ -12,11 +12,11 @@ module.exports = function (app, mysql){
         });
 
         db.query(`INSERT INTO stops(name) VALUES(?)`, 
-        [megallo_neve], (error, data) => {
+        [megallo_neve], (error) => {
             if(error){
                 throw error;
             }
-            response.send(data);
+            response.send("Success");
             db.end();
             next();
         });
@@ -54,6 +54,28 @@ module.exports = function (app, mysql){
                         }
                     });
                 });
+            }
+            response.send("Success");
+            db.end();
+            next();
+        });
+    });
+    app.post('/megallo_modositasa', function(request, response, next){
+
+        const { jelenlegi_megallo_nev, uj_megallo_nev} = request.body;
+
+        let db = mysql.createConnection({
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'vonat-admin',
+            password: 'AVNS_BdjUT4-cpoduHn2uKQs',
+            database: 'vonat',
+            port: 25060
+        });
+
+        db.query(`UPDATE stops SET name = ? WHERE name LIKE ?`, 
+        [uj_megallo_nev, jelenlegi_megallo_nev], (error) => {
+            if(error){
+                throw error;
             }
             response.send("Success");
             db.end();
