@@ -27,7 +27,7 @@ module.exports = function (app, mysql){
 
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'vonat-admin',
+            user: 'vonat_mysql',
             password: 'AVNS_BdjUT4-cpoduHn2uKQs',
             database: 'vonat',
             port: 25060,
@@ -66,7 +66,7 @@ module.exports = function (app, mysql){
 
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'vonat-admin',
+            user: 'vonat_mysql',
             password: 'AVNS_BdjUT4-cpoduHn2uKQs',
             database: 'vonat',
             port: 25060
@@ -88,7 +88,7 @@ module.exports = function (app, mysql){
 
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'vonat-admin',
+            user: 'vonat_mysql',
             password: 'AVNS_BdjUT4-cpoduHn2uKQs',
             database: 'vonat',
             port: 25060,
