@@ -30,6 +30,7 @@ app.use(function(request, response, next) {
 //A routes-ban feldolgozhatjuk a get kereseket.
 require('./routes/routes')(app);
 require('./routes/menetrend_alapjan_lekerdezes')(app, mysql);
+require('./routes/admin_felulet')(app, mysql);
 
 const hostname = '0.0.0.0';
 const port = 3000;

@@ -4,10 +4,11 @@ module.exports = function (app, mysql){
         const { indulasi_hely, erkezesi_hely, kezdo_indulasi_ido, kezdo_erkezesi_ido } = request.body;
 
         let db = mysql.createConnection({
-            host: '127.0.0.1',
-            user: 'everybody',
-            password: 'everybody',
-            database: 'vonat'
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'vonat-admin',
+            password: 'AVNS_BdjUT4-cpoduHn2uKQs',
+            database: 'vonat',
+            port: 25060
         });
 
         db.query(`SELECT line_names.name AS JaratID,
