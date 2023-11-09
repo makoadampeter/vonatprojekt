@@ -31,6 +31,7 @@ app.use(function(request, response, next) {
 require('./routes/routes')(app);
 require('./routes/menetrend_alapjan_lekerdezes')(app, mysql);
 require('./routes/admin_felulet')(app, mysql);
+require('./routes/reg')(app, mysql);
 
 const hostname = '0.0.0.0';
 const port = 3000;
