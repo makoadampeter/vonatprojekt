@@ -120,4 +120,34 @@ module.exports = function (app, mysql){
             next();
         });
     });
+    app.post('/jarat_torlese', function(request, response, next){
+
+        const { JaratID } = request.body;
+
+        let db = mysql.createConnection({
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'vonat_mysql',
+            password: 'AVNS_BdjUT4-cpoduHn2uKQs',
+            database: 'vonat',
+            port: 25060,
+            multipleStatements: true
+        });
+
+        db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
+        [JaratID], async (error, jarat) => {
+            if(error){
+                throw error;
+            }
+            db.query(`DELETE FROM line_names WHERE name = ?;
+            ALTER TABLE line_names AUTO_INCREMENT = 1;
+            DELETE FROM line_stops WHERE line = ?;
+            ALTER TABLE line_stops AUTO_INCREMENT = 1;`,
+            [JaratID, jarat[0].id], (error) => {
+                if(error) throw error;
+                response.send("Success");
+                db.end();
+                next();
+            });
+        });
+    });
 }
