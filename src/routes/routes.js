@@ -18,4 +18,11 @@ module.exports = function (app){
     app.get('/login', function(request, response, next){
         response.render('login_page');
     });
+    app.get('/logout', function(request, response, next){
+
+        request.session.destroy();
+    
+        response.redirect("/");
+    
+    });
 }
