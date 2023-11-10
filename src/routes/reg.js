@@ -27,7 +27,7 @@ module.exports = function (app, mysql){
             felhaszn = "";
             db.connect();
 
-            query = `SELECT * FROM users WHERE user = ?`;
+            query = `SELECT * FROM users WHERE username = ?`;
 
             db.query(query, [username], (error, results, fields) => {
                 if (error) throw error;
