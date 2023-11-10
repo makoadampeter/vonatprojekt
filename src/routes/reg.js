@@ -24,12 +24,7 @@ module.exports = function (app, mysql){
             
             res.render('registration_page');
         } else {
-            /*  Lehet, hogy átrakom ezt a részt az M4-be
-                mert most nem tudom megoldani hogy ha van ugyan az a felhasználó név
-                akkor maradjon ezen az oldalon (pl. registration_page)
-                vagy ha van valakinek ötlete, akkor szivesen várom,
-                nekem valamiért mindig error-t dob.
-            */
+            felhaszn = "";
             db.connect();
 
             query = `SELECT * FROM users WHERE user = ?`;
@@ -38,15 +33,23 @@ module.exports = function (app, mysql){
                 if (error) throw error;
 
                 if (results.length > 0) {
-                    res.send("Van ilyen felhasználó");
+                    // A felhasználónév már létezik, akkor maradunk az oldalon
+                    res.render('registration_page');
+                } else {
+                    // A felhasználónév még nem létezik, folytatjuk az adatok beszúrásával
+                    query = `INSERT INTO users (firstname, surname, user, email, password) VALUES (?, ?, ?, ?, ?)`;
+                    db.query(query, [firstname, surname, username, email, password], (error, results, fields) => {
+                        if (error) throw error;
+
+
+
+                        // Sikeres beszúrás esetén a home oldalra átirányítom
+                        res.render('home');
+                        db.end();
+                    });
                 }
-                res.render('/registration');
-                db.end();
+                
             });
-
-            // Ide jön az adatok beszúrása az adatbázisba (Még nincs kész)
-
-            res.render('home');
         }
     });    
 }
