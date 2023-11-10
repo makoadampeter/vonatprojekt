@@ -11,6 +11,7 @@ module.exports = function (app, mysql){
             port: 25060
         });
 
+        db.connect();
         db.query(`SELECT line_names.name AS JaratID,
         ABS(TIMEDIFF(arriving_indulas.arrival, arriving_erkezes.arrival)) AS Menetido,
         arriving_indulas.arrival AS Indulasi_ido, arriving_erkezes.arrival AS Erkezesi_ido,

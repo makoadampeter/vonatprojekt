@@ -11,6 +11,7 @@ module.exports = function (app, mysql){
             port: 25060
         });
 
+        db.connect();
         db.query(`INSERT INTO stops(name) VALUES(?)`, 
         [megallo_neve], (error) => {
             if(error){
@@ -34,6 +35,7 @@ module.exports = function (app, mysql){
             multipleStatements: true
         });
 
+        db.connect();
         db.query(`INSERT INTO line_names(name) VALUES(?);
         SELECT id FROM line_names WHERE name LIKE ?;`, 
         [JaratID, JaratID], async (error, jarat) => {
@@ -72,6 +74,7 @@ module.exports = function (app, mysql){
             port: 25060
         });
 
+        db.connect();
         db.query(`UPDATE stops SET name = ? WHERE name LIKE ?`, 
         [uj_megallo_nev, jelenlegi_megallo_nev], (error) => {
             if(error){
@@ -95,6 +98,7 @@ module.exports = function (app, mysql){
             multipleStatements: true
         });
 
+        db.connect();
         db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
         [JaratID], async (error, jarat) => {
             if(error){
@@ -133,6 +137,7 @@ module.exports = function (app, mysql){
             multipleStatements: true
         });
 
+        db.connect();
         db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
         [JaratID], async (error, jarat) => {
             if(error){
