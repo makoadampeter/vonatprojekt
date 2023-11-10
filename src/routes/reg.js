@@ -1,5 +1,5 @@
 module.exports = function (app, mysql){
-    app.post('/register', function(req, res, next){
+    app.post('/auth/register', function(req, res, next){
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
             user: 'vonat-admin',

@@ -1,7 +1,7 @@
 const { request } = require("express");
 
 module.exports = function (app, mysql){
-    app.post('/login', function(req, res, next){
+    app.post('/auth/login', function(req, res, next){
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
             user: 'vonat-admin',
@@ -30,6 +30,8 @@ module.exports = function (app, mysql){
 
 
                 if (results.length > 0) {
+                    request.session.user = results[0].username;
+                    request.session.user = results[0].is_admin;
                     request.session.regenerate;
                     res.render('home');
 
