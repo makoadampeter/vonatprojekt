@@ -1,3 +1,5 @@
+const { request } = require("express");
+
 module.exports = function (app, mysql){
     app.post('/login', function(req, res, next){
         let db = mysql.createConnection({
@@ -28,6 +30,7 @@ module.exports = function (app, mysql){
 
 
                 if (results.length > 0) {
+                    request.session.regenerate;
                     res.render('home');
 
                 } else {
