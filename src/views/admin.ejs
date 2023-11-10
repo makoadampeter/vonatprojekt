@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin site</title>
+    <link rel="stylesheet" href="../public/css/admin.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="newStation" class="modifyBox">
+            <h2 class="boxTag">Új megálló hozzáadása</h2>
+            <label for="stationName">Megálló neve:</label>
+            <input type="text" name="stationName" id="stationName">
+            <button>Hozzáad</button>
+        </div>
+
+        <div id="newLine" class="modifyBox">
+            <h2 class="boxTag">Új járat hozzáadása</h2>
+
+            <div id="baseData">
+                <label for="lineID">JáratID</label>
+                <input type="text" name="lineID" id="lineID">
+                <label for="depart">Indulás</label>
+                <input type="text" name="depart" id="depart">
+                <label for="arrive">Érkezés</label>
+                <input type="text" name="arrive" id="arrive">
+            </div>
+            
+            <div id="stationContainer">
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+            </div>
+            
+            <div id="stationController">
+                <button>Megálló hozzáadás</button>
+                <button>Megálló eltávolítás</button>
+            </div>
+
+            <button>Járat hozzáadása</button>
+        </div>
+
+        <div id="editStation" class="modifyBox">
+            <h2 class="boxTag">Megálló módosítása</h2>
+            <label for="oldStationName">Jelenlegi megállónév:</label>
+            <input type="text" name="oldStationName" id="oldStationName">
+            <label for="newStationName">Új megállónév:</label>
+            <input type="text" name="newStationName" id="newStationName">
+            <button>Módosít</button>
+        </div>
+
+        <div id="editLine" class="modifyBox">
+            <h2 class="boxTag">Járat módosítása</h2>
+
+            <label for="lineSearch">Keresés</label>
+            <input type="text" name="lineSearch" id="lineSearch">
+
+            <div id="baseData">
+                <label for="lineID">JáratID</label>
+                <input type="text" name="lineID" id="lineID">
+                <label for="depart">Indulás</label>
+                <input type="text" name="depart" id="depart">
+                <label for="arrive">Érkezés</label>
+                <input type="text" name="arrive" id="arrive">
+            </div>
+            
+            <div id="stationContainer">
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+                <div class="stationBox">
+                    <label for="station">Megálló</label>
+                    <input type="text" name="station" id="station">
+                    <label for="station">Érkezési idő</label>
+                    <input type="text" name="arriveTime" id="arriveTime">
+                </div>
+            </div>
+            
+            <div id="stationController">
+                <button>Megálló hozzáadás</button>
+                <button>Megálló eltávolítás</button>
+            </div>
+
+            <button>Járat módosítás</button>
+        </div>
+
+        <div id="deleteLine" class="modifyBox">
+            <h2 class="boxTag">Járat törlése</h2>
+            <label for="deleteLineID">JáratID:</label>
+            <input type="text" name="deleteLineID" id="deleteLineID">
+            <div class="selectInput">
+                <label for="verifyDelete">Biztosan törölni szeretném</label>
+                <input type="checkbox" name="verifyDelete" id="verifyDelete">
+            </div>
+            <button>Törlés</button>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
