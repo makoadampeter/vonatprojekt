@@ -7,7 +7,7 @@ module.exports = function (app, mysql){
             let db = mysql.createConnection({
                 host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
                 user: 'doadmin',
-                password: 'AVNS_BdjUT4-cpoduHn2uKQs',
+                password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
                 database: 'vonat',
                 port: 25060
             });
