@@ -2,7 +2,7 @@ module.exports = function (app, mysql){
     app.post('/auth/register', function(req, res, next){
         let db = mysql.createConnection({
             host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'vonat-admin',
+            user: 'doadmin',
             password: 'AVNS_BdjUT4-cpoduHn2uKQs',
             database: 'vonat',
             port: 25060
