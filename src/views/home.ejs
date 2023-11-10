@@ -1,6 +1,35 @@
 <%- include('header') %>
-<h1>Hello World</h1>
-<h1><a href="/registration">Regisztráció</a></h1>
-<h1><a href="/login">Bejelentkezés</a></h1>
-<h1><a href="/profile">Saját profil</a></h1>
-<%- include('footer') %>
+    <h1>Hello World</h1>
+    <h1><a href="/registration">Regisztráció</a></h1>
+    <h1><a href="/login">Bejelentkezés</a></h1>
+    <h1><a href="/profile">Saját profil</a></h1>
+
+    <!--NE SUBMITELJ, BE FOG CRASHELNI AZ EGÉSZ-->
+    <div class="queries">
+        <div class="schedule_based_query">
+            <h1 class="container-header">Menetrend alapján keresés</h1>
+
+            <form action="/menetrend_alapjan_lekerdezes" method="post">
+                <input type="text" name="indulasi_hely" id="indulasi_hely" placeholder="Honnan?" required>
+                <input type="text" name="erkezesi_hely" id="erkezesi_hely" placeholder="Hová?" required>
+                <br>
+
+                <input type="time" name="kezdo_indulasi_ido" id="kezdo_indulasi_ido" required>-tól/től
+
+                <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+            </form>
+        </div>
+
+        <p>VAGY</p>
+
+        <div class="schedule_based_query">
+            <h1 class="container-header">Járat alapján keresés</h1>
+        
+            <form action="" method="get">
+                <input type="text" name="indulasi_hely" id="indulasi_hely" placeholder="Járat neve" required>
+        
+                <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+    <%- include('footer') %>
