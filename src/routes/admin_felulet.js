@@ -16,7 +16,7 @@ module.exports = function (app, mysql){
             if(error){
                 throw error;
             }
-            response.send("Success");
+            response.send('<script>alert("Megálló hozzáadása sikeres."); history.back();</script>');
             db.end();
             next();
         });
@@ -55,7 +55,7 @@ module.exports = function (app, mysql){
                     });
                 });
             }
-            response.send("Success");
+            response.send('<script>alert("Járat hozzáadása sikeres."); history.back();</script>');
             db.end();
             next();
         });
@@ -77,7 +77,7 @@ module.exports = function (app, mysql){
             if(error){
                 throw error;
             }
-            response.send("Success");
+            response.send('<script>alert("Megálló módosítása sikeres."); history.back();</script>');
             db.end();
             next();
         });
@@ -115,7 +115,7 @@ module.exports = function (app, mysql){
                     });
                 });
             }
-            response.send("Success");
+            response.send('<script>alert("Járat módosítása sikeres."); history.back();</script>');
             db.end();
             next();
         });
@@ -144,7 +144,7 @@ module.exports = function (app, mysql){
             ALTER TABLE line_stops AUTO_INCREMENT = 1;`,
             [JaratID, jarat[0].id], (error) => {
                 if(error) throw error;
-                response.send("Success");
+                response.send('<script>alert("Járat törlése sikeres."); history.back();</script>');
                 db.end();
                 next();
             });
