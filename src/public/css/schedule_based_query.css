@@ -1,0 +1,42 @@
+.schedule_user_input form {
+    display: flex;
+    justify-content: center;
+}
+
+.schedule_user_input form input {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.schedule_user_input form p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.schedule_based_query {
+    width: 600px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.schedule_based_query form {
+    text-align: center;
+}
+
+.schedule_based_query form input[type="text"] {
+    margin: 15px;
+}
+
+.schedule_based_query form input[type="time"] {
+    margin: 15px 2px 15px 15px;
+}
+
+.schedule_based_query form input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
