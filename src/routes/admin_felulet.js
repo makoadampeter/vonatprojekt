@@ -1,7 +1,7 @@
 module.exports = function (app, mysql){
     app.post('/uj_megallo_hozzaadasa', function(request, response, next){
 
-        if(request.session.admin === 1){
+        if(request.session.is_admin === 1){
             const { megallo_neve } = request.body;
 
             let db = mysql.createConnection({
@@ -28,7 +28,7 @@ module.exports = function (app, mysql){
     });
     app.post('/uj_jarat_hozzaadasa', function(request, response, next){
 
-        if(request.session.admin === 1){
+        if(request.session.is_admin === 1){
             const { JaratID, Megallok } = request.body;
 
             let db = mysql.createConnection({
@@ -72,7 +72,7 @@ module.exports = function (app, mysql){
     });
     app.post('/megallo_modositasa', function(request, response, next){
 
-        if(request.session.admin === 1){
+        if(request.session.is_admin === 1){
             const { jelenlegi_megallo_nev, uj_megallo_nev} = request.body;
 
             let db = mysql.createConnection({
@@ -99,7 +99,7 @@ module.exports = function (app, mysql){
     });
     app.post('/jarat_modositasa', function(request, response, next){
 
-        if(request.session.admin === 1){
+        if(request.session.is_admin === 1){
             const { JaratID, Megallok } = request.body;
 
             let db = mysql.createConnection({
@@ -142,7 +142,7 @@ module.exports = function (app, mysql){
     });
     app.post('/jarat_torlese', function(request, response, next){
 
-        if(request.session.admin === 1){
+        if(request.session.is_admin === 1){
             const { JaratID } = request.body;
 
             let db = mysql.createConnection({

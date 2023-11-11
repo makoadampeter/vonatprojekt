@@ -1,5 +1,3 @@
-const { request } = require("express");
-
 module.exports = function (app, mysql){
     app.post('/auth/login', function(req, res, next){
         let db = mysql.createConnection({
@@ -20,7 +18,7 @@ module.exports = function (app, mysql){
         if(password == "" || username == "") {
             
             
-            res.render('login_page');
+            res.redirect('/login');
         } else {
             db.connect();
 
@@ -30,15 +28,26 @@ module.exports = function (app, mysql){
 
 
                 if (results.length > 0) {
-                    request.session.user = results[0].username;
-                    request.session.admin = results[0].is_admin;
-                    request.session.regenerate;
-                    res.render('home');
+                    req.session.regenerate(function (err) {
+                        if (err) throw error;
+
+                        req.session.username = results[0].username;
+                        req.session.email = results[0].email;
+                        req.session.firstname = results[0].firstname;
+                        req.session.surname = results[0].surname;
+                        req.session.is_admin = results[0].is_admin;
+                        req.session.registration_date = results[0].registration_date;
+
+                        res.redirect('/');
+                        db.end();
+                        next();
+                    });
 
                 } else {
-                    res.render('login_page');
+                    res.redirect('/login');
+                    db.end();
+                    next();
                 }
-                db.end();
             });
         }
                 

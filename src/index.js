@@ -22,7 +22,12 @@ app.use(session({
 
 app.use(function(request, response, next) {
   //Bejelentkezes utan igy tarolhatjuk el a user adata(i)t a sessionben.
-  response.locals.user = request.session.user;
+  response.locals.username = request.session.username;
+  response.locals.email = request.session.email;
+  response.locals.firstname = request.session.firstname;
+  response.locals.surname = request.session.surname;
+  response.locals.is_admin = request.session.is_admin;
+  response.locals.registration_date = request.session.registration_date;
   next();
 });
 
