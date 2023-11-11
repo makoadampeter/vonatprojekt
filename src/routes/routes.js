@@ -15,6 +15,12 @@ module.exports = function (app){
         response.render('profile');
         next();
     });
+    app.get('/admin', function (request, response, next) {
+        if(request.session.is_admin === 1)
+        {response.render('admin');}
+        else{response.redirect('/');}
+        next();
+    });
     app.get('/login', function(request, response, next){
         response.render('login_page');
     });
