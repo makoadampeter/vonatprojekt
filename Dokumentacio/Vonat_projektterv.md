@@ -139,6 +139,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Csíkos Martin Nándor, Makó Ádám, Szajkó István, Kovács János András, Patyi Péter
  - Érintett témák: Eddig elkészült vagy folyamatban lévő feladatok áttekintése, el nem kezdett feladatokról az esetleges kérdések megbeszélése
 
+6. megbeszélés:
+ - Időpont: 2023.11.11.
+ - Hely: Online platformon (Discord)
+ - Résztvevők: Csíkos Martin Nándor, Bíró Szabolcs, Makó Ádám, Szajkó István, Kovács János András, Patyi Péter
+ - Érintett témák: Eddig elkészült vagy folyamatban lévő feladatok áttekintése, kérdések megbeszélése
+
 ### 6.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
