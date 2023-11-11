@@ -1,9 +1,21 @@
+main{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .modifyBox{
     border: solid 3px black;
-    margin: 10%;
+    margin: 5%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+form{
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
