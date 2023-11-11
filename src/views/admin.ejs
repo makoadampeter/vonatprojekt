@@ -5,66 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin site</title>
-    <link rel="stylesheet" href="../public/css/admin.css">
+    <link rel="stylesheet" href="../public/css/admin_style.css">
+    <script src="../routes/admin_felulet.js"></script>
 </head>
 <body>
     <header></header>
     <main>
         <div id="newStation" class="modifyBox">
             <h2 class="boxTag">Új megálló hozzáadása</h2>
-            <label for="stationName">Megálló neve:</label>
-            <input type="text" name="stationName" id="stationName">
-            <button>Hozzáad</button>
+            <form action="uj_megallo_hozzaadasa" method="post">
+                <label for="megallo_neve">Megálló neve:</label>
+                <input type="text" name="megallo_neve" id="megallo_neve">
+                <input type="submit" value="Hozzáad">
+            </form>
+            
         </div>
 
         <div id="newLine" class="modifyBox">
             <h2 class="boxTag">Új járat hozzáadása</h2>
 
-            <div id="baseData">
-                <label for="lineID">JáratID</label>
-                <input type="text" name="lineID" id="lineID">
-                <label for="depart">Indulás</label>
-                <input type="text" name="depart" id="depart">
-                <label for="arrive">Érkezés</label>
-                <input type="text" name="arrive" id="arrive">
-            </div>
-            
-            <div id="stationContainer">
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
+            <form action="/uj_jarat_hozzaadasa" method="post">
+                <div id="baseData">
+                    <label for="JaratID">JáratID</label>
+                    <input type="text" name="JaratID" id="JaratID">
+                    <label for="kezdo_indulasi_ido">Indulás</label>
+                    <input type="time" name="kezdo_indulasi_ido" id="kezdo_indulasi_ido" required>
+                    <label for="kezdo_indulasi_ido">Érkezés</label>
+                    <input type="time" name="kezdo_indulasi_ido" id="kezdo_indulasi_ido" required>
                 </div>
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
+                
+                <div id="stationContainer">
+                    <div class="stationBox">
+                        <label for="station">Megálló</label>
+                        <input type="text" name="station" id="station">
+                        <label for="station">Érkezési idő</label>
+                        <input type="time" name="arriveTime" id="arriveTime" required>
+                    </div>
+                    <!-- Ide kerülnek a hozzáadandó megállók -->
                 </div>
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
+                <div id="stationController">
+                    <button>Megálló hozzáadás</button>
+                    <button>Megálló eltávolítás</button>
                 </div>
-            </div>
-            
-            <div id="stationController">
-                <button>Megálló hozzáadás</button>
-                <button>Megálló eltávolítás</button>
-            </div>
-
-            <button>Járat hozzáadása</button>
+                <input type="submit" value="Járat hozzáadása">
+            </form>
         </div>
 
         <div id="editStation" class="modifyBox">
             <h2 class="boxTag">Megálló módosítása</h2>
-            <label for="oldStationName">Jelenlegi megállónév:</label>
-            <input type="text" name="oldStationName" id="oldStationName">
-            <label for="newStationName">Új megállónév:</label>
-            <input type="text" name="newStationName" id="newStationName">
-            <button>Módosít</button>
+            <form action="/megallo_modositasa" method="post">
+                <label for="jelenlegi_megallo_nev">Jelenlegi megállónév:</label>
+                <input type="text" name="jelenlegi_megallo_nev" id="jelenlegi_megallo_nev">
+                <label for="uj_megallo_nev">Új megállónév:</label>
+                <input type="text" name="uj_megallo_nev" id="uj_megallo_nev">
+                <input type="submit" value="Módosít">
+            </form>
+            
         </div>
 
         <div id="editLine" class="modifyBox">
@@ -73,53 +69,41 @@
             <label for="lineSearch">Keresés</label>
             <input type="text" name="lineSearch" id="lineSearch">
 
-            <div id="baseData">
-                <label for="lineID">JáratID</label>
-                <input type="text" name="lineID" id="lineID">
-                <label for="depart">Indulás</label>
-                <input type="text" name="depart" id="depart">
-                <label for="arrive">Érkezés</label>
-                <input type="text" name="arrive" id="arrive">
-            </div>
+            <form action="/jarat_modositasa" method="post">
+                <div id="baseData">
+                    <label for="JaratID">JáratID</label>
+                    <input type="text" name="JaratID" id="JaratID">
+                    <label for="depart">Indulás</label>
+                    <input type="text" name="depart" id="depart">
+                    <label for="arrive">Érkezés</label>
+                    <input type="text" name="arrive" id="arrive">
+                </div>
+                
+                <div id="stationContainer">
+                    <!-- lekérdezett megállók -->
+                </div>
+                
+                <div id="stationController">
+                    <button>Megálló hozzáadás</button>
+                    <button>Megálló eltávolítás</button>
+                </div>
+                
+                <input type="submit" value="Járat módosítás">
+            </form>
             
-            <div id="stationContainer">
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
-                </div>
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
-                </div>
-                <div class="stationBox">
-                    <label for="station">Megálló</label>
-                    <input type="text" name="station" id="station">
-                    <label for="station">Érkezési idő</label>
-                    <input type="text" name="arriveTime" id="arriveTime">
-                </div>
-            </div>
-            
-            <div id="stationController">
-                <button>Megálló hozzáadás</button>
-                <button>Megálló eltávolítás</button>
-            </div>
-
-            <button>Járat módosítás</button>
         </div>
 
         <div id="deleteLine" class="modifyBox">
             <h2 class="boxTag">Járat törlése</h2>
-            <label for="deleteLineID">JáratID:</label>
-            <input type="text" name="deleteLineID" id="deleteLineID">
-            <div class="selectInput">
-                <label for="verifyDelete">Biztosan törölni szeretném</label>
-                <input type="checkbox" name="verifyDelete" id="verifyDelete">
-            </div>
-            <button>Törlés</button>
+            <form action="" method="post">
+                <label for="JaratID">JáratID:</label>
+                <input type="text" name="JaratID" id="JaratID">
+                <div class="selectInput">
+                    <label for="verifyDelete">Biztosan törölni szeretném</label>
+                    <input type="checkbox" name="verifyDelete" id="verifyDelete" required>
+                </div>
+                <input type="submit" value="Törlés">
+            </form>
         </div>
     </main>
     <footer></footer>
