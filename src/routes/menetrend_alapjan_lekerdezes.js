@@ -11,7 +11,56 @@ module.exports = function (app, mysql){
             port: 25060
         });
 
+        let time = kezdo_indulasi_ido.split(':');
+        let hour = time[0];
+        let minute = time[1];
+
         db.connect();
+        db.query(`SELECT line_names.name AS JaratID,
+        ABS(arriving_erkezes.arrival - arriving_indulas.arrival) AS Menetido,
+        arriving_indulas.arrival AS Indulasi_ido,
+        arriving_erkezes.arrival AS Erkezesi_ido,
+        ABS(line_stops_indulas.stop_number - line_stops_erkezes.stop_number) AS Megallok_szama,
+        users_favouriteLines.line AS saved
+        FROM line_names
+        LEFT OUTER JOIN line_stops AS line_stops_indulas ON line_stops_indulas.line = line_names.id AND line_stops_indulas.stop = ?
+        LEFT OUTER JOIN line_stops AS line_stops_erkezes ON line_stops_erkezes.line = line_names.id AND line_stops_erkezes.stop = ?
+        LEFT OUTER JOIN arriving AS arriving_indulas ON arriving_indulas.line_stop_id = line_stops_indulas.id
+        LEFT OUTER JOIN arriving AS arriving_erkezes ON arriving_erkezes.line_stop_id = arriving_erkezes.line_stop_id
+        LEFT OUTER JOIN users_favouriteLines ON users_favouriteLines.line = line_names.id AND users_favouriteLines.username = ?
+        WHERE line_stops_indulas.line = line_stops_erkezes.line AND arriving_indulas.arrival = ?`, 
+        [indulasi_hely, erkezesi_hely, request.session.username, parseInt(minute)], async (error, data) => {
+            if(error){
+                throw error;
+            }
+
+            response.send(data);
+            db.end();
+            next();
+            return;
+
+            let return_value = [];
+
+            for (let i = 0; i < data.length; i++) {
+                return_value.push({
+                    "JaratID": data[i].JaratID,
+                    "Menetido": data[i].Menetido,
+                    "Indulasi_ido": hour + ':' + data[i].Indulasi_ido,
+                    "Erkezesi_ido": hour + ':' + data[i].Erkezesi_ido,
+                    "Megallok_szama": data[i].Megallok_szama,
+                    "saved": data[i].saved
+                });
+                console.log(i);
+                if(i === data.length - 1){
+                    response.send(return_value);
+                    db.end();
+                    next();
+                }
+            }
+        });
+
+        //time tipussa
+        /*
         db.query(`SELECT line_names.name AS JaratID,
         ABS(TIMEDIFF(arriving_indulas.arrival, arriving_erkezes.arrival)) AS Menetido,
         arriving_indulas.arrival AS Indulasi_ido, arriving_erkezes.arrival AS Erkezesi_ido,
@@ -23,7 +72,7 @@ module.exports = function (app, mysql){
         LEFT OUTER JOIN arriving AS arriving_indulas ON arriving_indulas.line_stop_id = line_stops_indulas.id
         LEFT OUTER JOIN arriving AS arriving_erkezes ON arriving_erkezes.line_stop_id = arriving_erkezes.id
         LEFT OUTER JOIN users_favouriteLines ON users_favouriteLines.line = line_names.id AND users_favouriteLines.username = ?
-        WHERE line_stops_indulas.line = line_stops_erkezes.line AND (arriving_indulas.arrival >= ?)`, 
+        WHERE line_stops_indulas.line = line_stops_erkezes.line AND arriving_indulas.arrival >= ?`, 
         [indulasi_hely, erkezesi_hely, request.session.username, kezdo_indulasi_ido], (error, data) => {
             if(error){
                 throw error;
@@ -32,6 +81,8 @@ module.exports = function (app, mysql){
             db.end();
             next();
         });
+        */
+
     });
     app.post('/kedvenc_jarat_hozzaadasa', function(request, response, next){
 
