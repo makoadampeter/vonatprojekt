@@ -48,7 +48,7 @@ module.exports = function (app, mysql){
             
             db.connect();
             db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
-            [JaratID], async (error, jarat) => {
+            [JaratID], (error, jarat) => {
                 if(error){
                     throw error;
                 }
@@ -81,7 +81,7 @@ module.exports = function (app, mysql){
             
             db.connect();
             db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
-            [JaratID], async (error, jarat) => {
+            [JaratID], (error, jarat) => {
                 if(error){
                     throw error;
                 }
@@ -94,6 +94,32 @@ module.exports = function (app, mysql){
                     db.end();
                     next();
                 });
+            });
+        }else{
+            response.redirect('/');
+        }
+    });
+    app.post('/kedvenc_jaratok', function(request, response, next){
+
+        if(request.session.username){
+
+            let db = mysql.createConnection({
+                host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+                user: 'doadmin',
+                password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+                database: 'vonat',
+                port: 25060
+            });
+            
+            db.connect();
+            db.query(`SELECT * FROM users_favouriteLines WHERE username LIKE ?`, 
+            [request.session.username], (error, kedvenc_jaratok) => {
+                if(error){
+                    throw error;
+                }
+                response.send(kedvenc_jaratok);
+                db.end();
+                next();
             });
         }else{
             response.redirect('/');
