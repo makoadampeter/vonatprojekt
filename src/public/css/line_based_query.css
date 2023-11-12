@@ -1,10 +1,47 @@
+.line_based_query {
+    width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    border: 2px solid black;
+}
+
+.line_based_query form input[type="text"] {
+    margin: 15px;
+}
+
+.line_based_query form input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.user_input form {
+    display: flex;
+    justify-content: center;
+}
+
+.user_input form input {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 table, td {
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 20px; 
 }
 
-td {
-    border: 1px solid black;
+td{
+    border-top: 1px solid black;
 }
+
+table {
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+
+
+
+
