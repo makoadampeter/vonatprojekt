@@ -9,33 +9,51 @@
   <link rel="stylesheet" href="./css/line_based_query.css">
 </head>
 <body>
-    <table>
-      <tr>
-       <td colspan="2"> 
-        <form action="" method="get">
-          <input type="text" name="jarat_neve" id="jarat_neve" placeholder="Járat neve" required>
-  
-          <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
-        </form>
-       </td>
-      </tr>
-      <tr>
-       <td>Kezdő állomás: állomás <br>
-           Indulási idő: perc </td>
-       <td rowspan="2">Kezdő állomásról való indulási idők: </td>
-      </tr>
-      <tr>
-       <td>Kezdő állomás: állomás <br>
-           Indulási idő: perc </td>
-      </tr>
-      <tr>
-        <td>Kezdő állomás: állomás <br>
-            Indulási idő: perc </td>
-       </tr>
-       <tr>
-        <td>Kezdő állomás: állomás <br>
-            Indulási idő: perc </td>
-       </tr>
-     </table>
+  <div class="line_based_query">
+    <div class="user_input">
+      <form action="" method="get">
+        <input type="text" name="jarat_neve" id="jarat_neve" placeholder="Járat neve" required>
+
+        <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+      </form>
+    </div>
+    <div>
+      <table>
+        <tr>
+         <td colspan="3">Kezdő állomásról való indulási idők:</td>
+        </tr>
+        <tr>
+          <td>Idő</td>
+          <td>Idő</td>
+          <td>Idő</td>
+         </tr>
+         <tr>
+          <td>Idő</td>
+          <td>Idő</td>
+          <td>Idő</td>
+         </tr>
+       </table>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>Kezdő állomás: állomás <br>
+              Indulási idő: perc </td>
+         </tr>
+        <tr>
+         <td>Kezdő állomás: állomás <br>
+             Indulási idő: perc </td>
+        </tr>
+        <tr>
+          <td>Kezdő állomás: állomás <br>
+              Indulási idő: perc </td>
+         </tr>
+         <tr>
+          <td>Kezdő állomás: állomás <br>
+              Indulási idő: perc </td>
+         </tr>
+       </table>
+    </div>
+</div>
 </body>
 </html>
