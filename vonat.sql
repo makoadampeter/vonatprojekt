@@ -9890,6 +9890,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `email`, `password`, `firstname`, `surname`, `is_admin`, `registration_date`) VALUES
+('admin', 'admin@vonat.org', 'admin', 'Alex', 'Jackson', 1, '2023-07-10 00:00:00'),
 ('alex_jackson', 'alex.jackson@example.org', 'securePwd789', 'Alex', 'Jackson', 0, '2023-07-10 00:00:00'),
 ('alex_wilson', 'alex.wilson@mailservice.net', 'secureAlex456', 'Alex', 'Wilson', 0, '2024-07-10 00:00:00'),
 ('alice_smith', 'alice.smith@emailprovider.com', 'securePwd42', 'Alice', 'Smith', 0, '2023-02-20 00:00:00'),
