@@ -12,7 +12,9 @@ module.exports = function (app){
         response.render('registration_page');
     });
     app.get('/profile', function (request, response, next) {
-        response.render('profile');
+        if(request.session.username)
+        {response.render('profile');}
+        else{response.redirect('/');}
         next();
     });
     app.get('/admin', function (request, response, next) {
