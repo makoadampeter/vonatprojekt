@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="hu">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin site</title>
-    <link rel="stylesheet" href="./css/admin_style.css">
-</head>
-<body>
-    <header></header>
+<%- include('header') %>
     <main>
         <div id="newStation" class="modifyBox">
             <h2 class="boxTag">Új megálló hozzáadása</h2>
@@ -92,13 +82,25 @@
             </form>
         </div>
     </main>
-    <footer></footer>
-</body>
-</html>
+<%- include('footer') %>
 <script>
     const container = document.getElementById('stationContainer');
     var inputCount = 0;
     addInput();
+
+    function addNewLine(){
+        let Megallok = [];
+        for (let i = 0; i < inputCount; i++){
+            Megallok.push({
+                "megallo_neve": $(`#station${i}`).val(),
+                "erkezes": $(`#arriveTime${i}`).val()
+            });
+        }
+        $.post("/uj_jarat_hozzaadasa", {Megallok: Megallok}, (res) => {
+        if(res){
+            alert("Járat hozzáadása sikeres."); history.back();
+        }
+    });}
     
     function addInput(){
         inputCount++;
@@ -112,4 +114,5 @@
         else
             alert("A járatnak legalább egy megállóból kell állnia!");
     }
+    
 </script>
