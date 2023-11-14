@@ -24,3 +24,16 @@
 #result-container table td {
     text-align: center;
 }
+
+table.fav-line-row {
+    border-collapse: collapse;
+}
+
+table.fav-line-row td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.fav-line-row tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

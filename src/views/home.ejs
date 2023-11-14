@@ -12,7 +12,7 @@
                 <input type="time" name="kezdo_indulasi_ido" id="kezdo_indulasi_ido" required>-tól/től
 
                 <br>
-                <input type="button" onclick="Kereses()" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+                <input type="button" onclick="MenetrendKereses()" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
             </form>
         </div>
 
@@ -22,9 +22,9 @@
             <h1 class="container-header">Járat alapján keresés</h1>
         
             <form action="" method="get">
-                <input type="text" name="indulasi_hely" id="indulasi_hely" placeholder="Járat neve" required>
+                <input type="text" name="jarat_id" id="jarat_id" placeholder="Járat neve" required>
         
-                <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+                <input type="button" onclick="JaratKereses()" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
             </form>
         </div>
     </div>
@@ -33,7 +33,7 @@
 <div id="result-container"></div>
 
 <script defer>
-    function Kereses() {
+    function MenetrendKereses() {
         let resultContainer = $("#result-container");
         resultContainer.empty();
 
@@ -61,18 +61,66 @@
                     table.append(row1);
                     table.append(row2);
 
-                    let buttonRow = $("<tr></tr>");
+                    //let buttonRow = $("<tr></tr>");
                     //let buttonCell = $("<td colspan='3'></td>");
                     //let button = $("<button class='btn btn-primary'>Elmentés/eltávolítás a kedvencekből</button>");
                     //buttonCell.append(button);
                     //buttonRow.append(buttonCell);
-                    table.append(buttonRow);
+                    //table.append(buttonRow);
 
                     resultContainer.append(table);
                 }
             }
         });
     }
+    
+    function JaratKereses() {
+        let resultContainer = $("#result-container");
+        resultContainer.empty();
+
+        $.post("/jarat_alapjan_lekerdezes", {
+            JaratID: $("#jarat_id").val()
+        }, (result) => {
+            if (result == "") {
+                alert("Hibás járat.");
+            } else {
+                console.log(result);
+                let table = $("<table class='fav-line-row'></table>");
+
+                let header1 = $("<tr></tr>");
+                header1.append(`<td colspan="3">Megállók, érkezési idővel</td>`);
+                table.append(header1);
+
+                for (let i = 0; i < result.length; i += 3) {
+                    let row1 = $("<tr></tr>");
+                    for (let j = 0; j < 3; j++) {
+                        if (i + j < result.length) {
+                            row1.append(`<td>${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
+                        } else {
+                            row1.append("<td></td>");
+                        }
+                    }
+                    table.append(row1);
+
+                    let row2 = $("<tr></tr>");
+                    for (let j = 0; j < 3; j++) {
+                        if (i + j < result.length) {
+                            row2.append(`<td>${i + j + 1}. idő: ${result[i + j].ido}</td>`);
+                        } else {
+                            row2.append("<td></td>");
+                        }
+                    }
+                    table.append(row2);
+                }
+
+                resultContainer.append(table);
+            }
+        });
+    }
+
+
+
+
 </script>
 
 <%- include('footer') %>
