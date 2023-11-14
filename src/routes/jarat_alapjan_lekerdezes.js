@@ -13,13 +13,14 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+        /*
         let localdb = mysql.createConnection({
             host: 'localhost',
             user: 'root',
             password: '',
             database: 'vonat',
-            multipleStatements: true
         });
+        */
 
         db.connect(function(err) {
 			if (err) throw err;
@@ -48,13 +49,14 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+        /*
         let localdb = mysql.createConnection({
             host: 'localhost',
             user: 'root',
             password: '',
             database: 'vonat',
-            multipleStatements: true
         });
+        */
 
         db.connect(function(err) {
 			if (err) throw err;
@@ -82,12 +84,14 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+        /*
         let localdb = mysql.createConnection({
             host: 'localhost',
             user: 'root',
             password: '',
             database: 'vonat',
         });
+        */
     
         db.connect(function(err) {
             if (err) throw err;
@@ -111,12 +115,14 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+        /*
         let localdb = mysql.createConnection({
             host: 'localhost',
             user: 'root',
             password: '',
             database: 'vonat',
         });
+        */
     
         db.connect(function(err) {
             if (err) throw err;
@@ -141,12 +147,14 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+        /*
         let localdb = mysql.createConnection({
             host: 'localhost',
             user: 'root',
             password: '',
             database: 'vonat',
         });
+        */
         console.log(JaratID);
         db.connect();
         db.query(`SELECT stops.name AS megallo,
@@ -165,12 +173,10 @@ module.exports = function (app, mysql){
             let return_value = [];
 
             for (let i = 0; i < data.length; i++) {
-                for (let h = 0; h < 24; h++) {
-                    return_value.push({
-                        "ido": (h < 10 ? '0' : '') + h + ":" + (data[i].ido < 10 ? '0' : '') + data[i].ido,
-                        "megallo": data[i].megallo
-                    });
-                }
+                return_value.push({
+                    "ido": data[i].ido,
+                    "megallo": data[i].megallo
+                });
             }
             response.send(return_value);
             db.end();
