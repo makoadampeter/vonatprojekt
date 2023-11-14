@@ -21,19 +21,19 @@ module.exports = function (app, mysql){
             multipleStatements: true
         });
 
-        localdb.connect(function(err) {
+        db.connect(function(err) {
 			if (err) throw err;
 		});
 
 
-        localdb.query(`
+        db.query(`
         SELECT * FROM line_stops WHERE line = ?;`, 
         [jarat_id], (error, data) => {
             if (error) {
                 alert(error);
             }
             else{response.send(data);
-            localdb.end();}
+            db.end();}
         });
 
     });
@@ -56,19 +56,19 @@ module.exports = function (app, mysql){
             multipleStatements: true
         });
 
-        localdb.connect(function(err) {
+        db.connect(function(err) {
 			if (err) throw err;
 		});
 
 
-        localdb.query(`
+        db.query(`
         SELECT arrival FROM arriving WHERE line_stop_id = ?;`, 
         [stop_id], (error, data) => {
             if (error) {
                 alert(error);
             }
             else{response.send(data);
-            localdb.end();}
+            db.end();}
         });
 
     });
@@ -89,15 +89,15 @@ module.exports = function (app, mysql){
             database: 'vonat',
         });
     
-        localdb.connect(function(err) {
+        db.connect(function(err) {
             if (err) throw err;
             
-            localdb.query("SELECT * FROM line_names WHERE name LIKE ?", [`%${jarat_nev}%`], (error, data) => {
+            db.query("SELECT * FROM line_names WHERE name LIKE ?", [`%${jarat_nev}%`], (error, data) => {
                 if (error) {
                     alert(error);
                 }
                 else{response.send(data);
-                localdb.end();}
+                db.end();}
             });
         });
     });
@@ -118,15 +118,15 @@ module.exports = function (app, mysql){
             database: 'vonat',
         });
     
-        localdb.connect(function(err) {
+        db.connect(function(err) {
             if (err) throw err;
             
-            localdb.query("SELECT * FROM stops WHERE id LIKE ?", [`%${stopIDfrom}%`], (error, data) => {
+            db.query("SELECT * FROM stops WHERE id LIKE ?", [`%${stopIDfrom}%`], (error, data) => {
                 if (error) {
                     alert(error);
                 }
                 else{response.send(data);
-                localdb.end();}
+                db.end();}
             });
         });
     });
@@ -148,8 +148,8 @@ module.exports = function (app, mysql){
             database: 'vonat',
         });
         console.log(JaratID);
-        localdb.connect();
-        localdb.query(`SELECT stops.name AS megallo,
+        db.connect();
+        db.query(`SELECT stops.name AS megallo,
         arriving.arrival AS ido FROM stops
         LEFT OUTER JOIN line_stops ON  line_stops.stop  = stops.id
         LEFT OUTER JOIN line_names ON line_names.id = line_stops.line 
@@ -158,7 +158,7 @@ module.exports = function (app, mysql){
         [JaratID], (error, data) => {
             if(error || data.length === 0){
                 response.send(error);
-                localdb.end();
+                db.end();
                 next();
                 return;
             }
@@ -173,7 +173,7 @@ module.exports = function (app, mysql){
                 }
             }
             response.send(return_value);
-            localdb.end();
+            db.end();
             next();
 
         });
