@@ -16,7 +16,6 @@
 </head>
 
 <body>
-<%- include('navbar') %>
     <main>
         <div id="newStation" class="modifyBox">
             <h2 class="boxTag">Új megálló hozzáadása</h2>
@@ -204,7 +203,9 @@
                     modifyInputCount = 0;
                     while (modifyInputCount < data.length){
                         modifyInputCount++;
-                        document.getElementById("stopIDplace"+modifyInputCount).value = data[modifyInputCount-1].stop;
+                        // document.getElementById("stopIDplace"+modifyInputCount).value = data[modifyInputCount-1].stop;
+                        document.getElementById("stopIDplace"+modifyInputCount).value = stopID_to_name(data[modifyInputCount-1].stop, "stopIDplace"+modifyInputCount);
+                        console.log(stopID_to_name(data[modifyInputCount-1].stop));
                         console.log("stop"+modifyInputCount+": " + data[modifyInputCount-1].stop);
                         arriveFor(data[modifyInputCount-1].stop, modifyInputCount);
                     }
@@ -234,6 +235,23 @@
                 }
             });
         }
-        
+        // stopID_to_name(252);
+        async function stopID_to_name(stopIDin, loc){
+            await $.post("/stop_name_from_id", {stopIDfrom: stopIDin}, (data) => {
+                if (data && data.length > 0) {
+                    if (data[0] != null){
+                        // console.log(stopIDin + " -> '" + data[0].name+"'");
+                        document.getElementById(loc).value = data[0].name
+                    }
+                    else{
+                        console.log("NULL value!");
+                    }
+                }
+                else{
+                    console.log("Hibás lekérés!");
+                    alert("Nem található megálló!")
+                }
+            });
+        }
     </script>
 <%- include('footer') %>
