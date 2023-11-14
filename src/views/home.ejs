@@ -11,7 +11,8 @@
 
                 <input type="time" name="kezdo_indulasi_ido" id="kezdo_indulasi_ido" required>-tól/től
 
-                <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
+                <br>
+                <input type="button" onclick="Kereses()" name="kereses" id="kereses" value="Keresés" class="btn btn-primary">
             </form>
         </div>
 
@@ -27,4 +28,65 @@
             </form>
         </div>
     </div>
+
+
+<div id="result-container"></div>
+
+<script defer>
+    function Kereses() {
+        let resultContainer = $("#result-container");
+        resultContainer.empty();
+
+        $.post("/menetrend_alapjan_lekerdezes", {
+            indulasi_hely: $("#indulasi_hely").val(),
+            erkezesi_hely: $("#erkezesi_hely").val(),
+            kezdo_indulasi_ido: $("#kezdo_indulasi_ido").val()
+        }, (result) => {
+            if (result == "") {
+                alert("Hibás megálló.");
+            } else {
+                for (let i = 0; i < result.length; i++) {
+                    let table = $("<table class='fav-line-row'></table>");
+
+                    let row1 = $("<tr></tr>");
+                    row1.append(`<td>${$("#indulasi_hely").val()}</td>`);
+                    row1.append(`<td>${result[i].JaratID}</td>`);
+                    row1.append(`<td>${$("#erkezesi_hely").val()}</td>`);
+
+                    let row2 = $("<tr></tr>");
+                    row2.append(`<td>${result[i].Indulasi_ido}</td>`);
+                    let indulasiIdo = parseTime(result[i].Indulasi_ido);
+                    let erkezesiIdo = parseTime(result[i].Erkezesi_ido);
+                    let hossz = calculateTimeDifference(indulasiIdo, erkezesiIdo);
+                    row2.append(`<td>${hossz} perc</td>`);
+                    row2.append(`<td>${result[i].Erkezesi_ido}</td>`);
+
+                    table.append(row1);
+                    table.append(row2);
+
+                    let buttonRow = $("<tr></tr>");
+                    let buttonCell = $("<td colspan='3'></td>");
+                    let button = $("<button class='btn btn-primary'>Elmentés/eltávolítás a kedvencekből</button>");
+                    buttonCell.append(button);
+                    buttonRow.append(buttonCell);
+                    table.append(buttonRow);
+
+                    resultContainer.append(table);
+                }
+            }
+        });
+    }
+
+    function parseTime(timeString) {
+        let parts = timeString.split(":");
+        return { hours: parseInt(parts[0]), minutes: parseInt(parts[1]) };
+    }
+
+    function calculateTimeDifference(start, end) {
+        let indulasi_ido = start.hours * 60 + start.minutes;
+        let erkezesi_ido = end.hours * 60 + end.minutes;
+        return erkezesi_ido - indulasi_ido;
+    }
+</script>
+
     <%- include('footer') %>

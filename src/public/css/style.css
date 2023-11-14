@@ -10,3 +10,17 @@
     font-weight: bold;
     margin-top: 80px;
 }
+
+#result-container table {
+    border: 1px solid black;
+}
+
+#result-container table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#result-container table td {
+    text-align: center;
+}
