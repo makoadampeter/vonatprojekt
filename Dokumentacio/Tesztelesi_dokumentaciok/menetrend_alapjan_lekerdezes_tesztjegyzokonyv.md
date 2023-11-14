@@ -6,7 +6,7 @@ Az alábbi tesztdokumentum a `Vonat` projekthez tartozó `8.3.7. Menetrend alapj
 
 ### 1.1. Járatok kilistázása hely és idő alapján. 
 - Azonosító: TP-01
-- Tesztesetek: TC-01, TC-02
+- Tesztesetek: TC-01, TC-02, TC-03
 - Leírás: Menetrend alapján keresés funkció tesztelése
     0. lépés: a kezőoldalon a Menetrend alapján keresés ablakot használjuk
     1. lépés: a `Honnan` szövegbeviteli mezőbe írjuk be az indulási helyet
@@ -33,7 +33,7 @@ Az alábbi tesztdokumentum a `Vonat` projekthez tartozó `8.3.7. Menetrend alapj
 - Keresés: nyomjuk meg a `Keresés` gombot
 - Elvárt kimenet: lista a járatokról idő szerint növekvő sorrendben 13:30 után
 
-#### 2.1.3. TC-02
+#### 2.1.3. TC-03
 - TP: TP-01
 - Leírás: Menetrend alapján keresés funkció tesztelése 
 - Bemenet: `Honnan` = "Nemletezo" ; `Hova` = "ozetelmeN" ; `idő` = "00:00"
@@ -58,7 +58,7 @@ Az alábbi tesztdokumentum a `Vonat` projekthez tartozó `8.3.7. Menetrend alapj
     3. lépés: 13:30 órát beírtam
     4. lépés: a Keresés gomb egyszeri megnyomása után helyes listát kaptam (lista a járatokról idő szerint növekvő sorrendben 13:30 után)
 
-#### 3.1.3. TR-02 (TC-02)
+#### 3.1.3. TR-03 (TC-03)
 - TP: TP-01
     1. lépés: Nemletezo-t beírtam
     2. lépés: ozetelmeN-t beírtam
