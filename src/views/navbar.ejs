@@ -6,7 +6,7 @@
         </a>
     </div>
 </header>
-<%if(username){%>
+<%if(username && is_admin == 0){%>
 <nav class="py-2 mb-4 bg-light border-bottom">
     <div class="container d-flex justify-content-between fs-4">
         <ul class="nav">
@@ -23,20 +23,43 @@
         </ul>
     </div>
 </nav>
+<%} else if (username && is_admin == 1) {%>
+<nav class="py-2 mb-4 bg-light border-bottom">
+    <div class="container d-flex justify-content-between fs-4">
+        <ul class="nav">
+            <li class="nav-item"><span class="px-3 nav-link link-dark">Helló, <%=username%></span></li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis link-dark px-3 active"
+                    aria-current="page">Főoldal</a></li>
+            <li class="nav-item"><a href="/profile" class="nav-link link-body-emphasis link-dark px-3">Profil megtekintése</a></li>
+            <li class="nav-item"><a href="/admin" class="nav-link link-body-emphasis link-dark px-3">Admin felület</a></li>
+            <!--<li class="nav-item"><a href="" class="nav-link link-body-emphasis link-dark px-3">Kapcsolat(M4)</a></li>-->
+            <!--<li class="nav-item"><a href="" class="nav-link link-body-emphasis link-dark px-3">Rólunk(M4)</a></li>-->
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="/logout" class="nav-link link-body-emphasis link-dark px-2">Kijelentkezés</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <%} else {%>
     <nav class="py-2 mb-4 bg-light border-bottom">
         <div class="container d-flex justify-content-between fs-4">
             <ul class="nav">
-                <li class="nav-item"><a href="/login" class="nav-link link-body-emphasis link-dark px-2">Bejelentkezés</a></li>
+                <li class="nav-item"><a href="/login"
+                        class="nav-link link-body-emphasis link-dark px-2">Bejelentkezés</a></li>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis link-dark px-3 active" aria-current="page">Főoldal</a></li>
+                <li class="nav-item"><a href="/home" class="nav-link link-body-emphasis link-dark px-3 active"
+                        aria-current="page">Főoldal</a></li>
                 <!--<li class="nav-item"><a href="" class="nav-link link-body-emphasis link-dark px-3">Kapcsolat(M4)</a></li>-->
                 <!--<li class="nav-item"><a href="" class="nav-link link-body-emphasis link-dark px-3">Rólunk(M4)</a></li>-->
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="/registration" class="nav-link link-body-emphasis link-dark px-2">Regisztráció</a></li>
+                <li class="nav-item"><a href="/registration"
+                        class="nav-link link-body-emphasis link-dark px-2">Regisztráció</a></li>
             </ul>
         </div>
     </nav>
-<% } %>
+    <% } %>
