@@ -58,7 +58,7 @@ module.exports = function (app, mysql){
                     });
                 }
             }
-            location.href = '/';
+            window.location.href = '/';
             response.send(return_value);
             db.end();
             next();
