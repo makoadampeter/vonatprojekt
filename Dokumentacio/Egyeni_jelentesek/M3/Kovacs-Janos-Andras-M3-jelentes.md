@@ -61,6 +61,8 @@ ___
 
 #### Egyéb commitok
 
+- Kisebb változtatások
+
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/8860d920548785266d7bc97f3cfb2b066428ec35
 
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/2072dc51c082ef247c94ce51520575f6a89bdc19
