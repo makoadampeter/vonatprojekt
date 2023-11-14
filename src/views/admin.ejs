@@ -1,4 +1,21 @@
-<%- include('header') %>
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/schedule_based_query.css">
+    <link rel="stylesheet" href="./css/check_profile.css">
+    <link rel="stylesheet" href="./css/admin_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="/js/jquery.min.js"></script>
+    <title>Vonat</title>
+</head>
+
+<body>
     <main>
         <div id="newStation" class="modifyBox">
             <h2 class="boxTag">Új megálló hozzáadása</h2>
@@ -13,10 +30,9 @@
         <div id="newLine" class="modifyBox">
             <h2 class="boxTag">Új járat hozzáadása</h2>
             
-            <form action="/uj_jarat_hozzaadasa" method="post">
                 <div id="baseData">
                     <label for="JaratID">JáratID</label>
-                    <input type="text" name="JaratID" id="JaratID" placeholder="azonosító" required>
+                    <input type="text" name="JaratID" id="newLine_JaratID" placeholder="azonosító" required>
                 </div>
                 
                 <div id="stationContainer">
@@ -26,8 +42,8 @@
                     <button type="button" onclick="addInput()">Megálló hozzáadás</button>
                     <button type="button" onclick="removeInput()">Megálló eltávolítás</button>
                 </div>
-                <input type="submit" value="Járat hozzáadása">
-            </form>
+                <input type="button" value="Járat hozzáadása" onclick="addNewLine()">
+            
             
         </div>
 
@@ -35,9 +51,9 @@
             <h2 class="boxTag">Megálló módosítása</h2>
             <form action="/megallo_modositasa" method="post">
                 <label for="jelenlegi_megallo_nev">Jelenlegi megállónév:</label>
-                <input type="text" name="jelenlegi_megallo_nev" id="jelenlegi_megallo_nev">
+                <input type="text" name="jelenlegi_megallo_nev" id="jelenlegi_megallo_nev" placeholder="megálló név">
                 <label for="uj_megallo_nev">Új megállónév:</label>
-                <input type="text" name="uj_megallo_nev" id="uj_megallo_nev">
+                <input type="text" name="uj_megallo_nev" id="uj_megallo_nev" placeholder="megálló név">
                 <input type="submit" value="Módosít">
             </form>
             
@@ -47,22 +63,25 @@
             <h2 class="boxTag">Járat módosítása</h2>
 
             <label for="lineSearch">Keresés</label>
-            <input type="text" name="lineSearch" id="lineSearch">
+            <input type="text" name="lineSearch" id="lineSearch" placeholder="járat név" title="Név alapján meghatározható az ID!">
 
             <form action="/jarat_modositasa" method="post">
                 <div id="baseData">
                     <label for="JaratID">JáratID</label>
-                    <input type="text" name="JaratID" id="JaratID">
+                    <input type="number" name="JaratID" id="JaratID" placeholder="ID" title="ID alapján keresés (Névből konvertálható!)">
+                    <input type="button" value="ID lekérés" onclick="searchLine()" title="NEV -> ID">
+                    <input type="button" value="Listázás" onclick="listStop()" title="Kilistázza 'ID' alapján a járat megállóit!">
                 </div>
                 
-                <div id="stationContainer">
+                <div id="stopContainer">
                     <!-- lekérdezett megállók -->
                 </div>
                 
                 <div id="stationController">
-                    <button>Megálló hozzáadás</button>
-                    <button>Megálló eltávolítás</button>
+                    <input type="button" onclick="addModInput()" value="Megálló hozzáadás">
+                    <input type="button" onclick="removeModInput()" value="Megálló eltávolítás">
                 </div>
+                
                 
                 <input type="submit" value="Járat módosítás">
             </form>
@@ -72,8 +91,8 @@
         <div id="deleteLine" class="modifyBox">
             <h2 class="boxTag">Járat törlése</h2>
             <form action="/jarat_torlese" method="post">
-                <label for="JaratID">JáratID:</label>
-                <input type="text" name="JaratID" id="JaratID">
+                <label for="targetID">JáratID:</label>
+                <input type="text" name="targetID" id="targetID" placeholder="ID">
                 <div class="selectInput">
                     <label for="verifyDelete">Biztosan törölni szeretném</label>
                     <input type="checkbox" name="verifyDelete" id="verifyDelete" required>
@@ -82,37 +101,120 @@
             </form>
         </div>
     </main>
-<%- include('footer') %>
-<script>
-    const container = document.getElementById('stationContainer');
-    var inputCount = 0;
-    addInput();
+    <script>
+        
+        var inputCount = 0;
+        var targetID = 0;
+        var modifyInputCount = 0;
+        addInput();
+    
+        function addNewLine(){
+            let Megallok = [];
+            for (let i = 1; i <= inputCount; i++){
+                Megallok.push({
+                    "megallo_neve": $(`#station${i}`).val(),
+                    "erkezes": $(`#arriveTime${i}`).val()
+                });
+            }
+            console.log(Megallok);
+            console.log($("#newLine_JaratID").val());
+            JaratID = $("#newLine_JaratID").val();
 
-    function addNewLine(){
-        let Megallok = [];
-        for (let i = 0; i < inputCount; i++){
-            Megallok.push({
-                "megallo_neve": $(`#station${i}`).val(),
-                "erkezes": $(`#arriveTime${i}`).val()
+            $.post("/uj_jarat_hozzaadasa", {JaratID: JaratID , Megallok: Megallok}, (res) => {
+            if(res){
+                console.log(res);
+            }
+        });}
+
+        function editLine(){
+            if (modifyInputCount != 0){
+            let Megallok = [];
+            for (let i = 1; i <= inputCount; i++){
+                Megallok.push({
+                    "megallo_neve": $(`#station${i}`).val(),
+                    "erkezes": $(`#arriveTime${i}`).val()
+                });
+            }
+            console.log(Megallok);
+            console.log($("#newLine_JaratID").val());
+            JaratID = $("#newLine_JaratID").val();
+
+            $.post("/jarat_modositasa", {JaratID: JaratID , Megallok: Megallok}, (res) => {
+            if(res){
+                console.log(res);
+            }
+        });}else (alert("Módosítás nem lehetséges!"))
+    }
+        
+        function addInput(){
+            var container = document.getElementById('stationContainer');
+            inputCount++;
+            let input = document.createElement('input');
+            var newInputStation = "<div class=\"stationBox\" id=\"stationBox" + inputCount + "\"><label for=\"station" + inputCount + "\">"+ (inputCount > 9 ? inputCount : '0'+inputCount) +". megálló </label><input type=\"text\" name=\"station" + inputCount + "\" id=\"station" + inputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"arriveTime" + inputCount + "\" id=\"arriveTime" + inputCount + "\" placeholder='00 perc'></div>";
+            container.innerHTML += newInputStation;
+        }
+        function removeInput(){
+            if (inputCount > 1)
+                document.getElementById("stationBox" + inputCount--).remove();
+            else
+                alert("A járatnak legalább egy megállóból kell állnia!");
+        }
+        function addModInput(){
+            var container = document.getElementById('stopContainer');
+            modifyInputCount++;
+            let input = document.createElement('input');
+            var newInputStation = "<div class=\"stationBox\" id=\"stopBox" + modifyInputCount + "\"><label for=\"stop" + modifyInputCount + "\">"+ (modifyInputCount > 9 ? modifyInputCount : '0'+modifyInputCount) +". megálló </label><input type=\"text\" name=\"stop" + modifyInputCount + "\" id=\"stopIDplace" + modifyInputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"stopTime" + modifyInputCount + "\" id=\"stopTime" + modifyInputCount + "\" placeholder='00 perc'></div>";
+            container.innerHTML += newInputStation;
+        }
+        function removeModInput(){
+            if (modifyInputCount > 0)
+                document.getElementById("stopBox" + modifyInputCount--).remove();
+            else
+                alert("0-nál nem lehet kevesebb megálló!");
+        }
+        function searchLine(){
+            
+            
+            var searchName = document.getElementById("lineSearch").value;
+            $.post("/jarat_id_from_name", {jarat_nev: searchName}, (data) => {
+                if (data && data.length > 0) {
+                    document.getElementById("JaratID").value = data[0].id;
+                    
+                    targetID = data[0].id;
+                }
+            });
+           
+        }
+        function listStop(){
+            const container = document.getElementById('stopContainer');
+            container.innerHTML = "";
+            modifyInputCount = 0;
+            $.post("/jarat_megallok", {jarat_id: targetID}, (data) => {
+                console.log("_target: " + targetID);
+                if (targetID == 1){document.getElementById("JaratID").value = 1;}
+                if (data && data.length > 0) {
+                    while (modifyInputCount < data.length){
+                        if (data[modifyInputCount].stop != null){
+                            modifyInputCount++;
+                            var newInputStation = "<div class=\"stationBox\" id=\"stopBox" + modifyInputCount + "\"><label for=\"stop" + modifyInputCount + "\">"+ (modifyInputCount > 9 ? modifyInputCount : '0'+modifyInputCount) +". megálló </label><input type=\"text\" name=\"stop" + modifyInputCount + "\" id=\"stopIDplace" + modifyInputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"stopTime" + modifyInputCount + "\" id=\"stopTime" + modifyInputCount + "\" placeholder='00 perc'></div>";
+                            container.innerHTML += newInputStation;
+                        }
+                        else{
+                            console.log("NULL value!");
+                        }
+                    }
+                    modifyInputCount = 0;
+                    while (modifyInputCount < data.length){
+                        modifyInputCount++;
+                        document.getElementById("stopIDplace"+modifyInputCount).value = data[modifyInputCount-1].stop;
+                        console.log("stop"+modifyInputCount+": " + data[modifyInputCount-1].stop);
+                    }
+                }
+                else{
+                    console.log("Hibás lekérés!");
+                    alert("Nem található megálló!")
+                }
             });
         }
-        $.post("/uj_jarat_hozzaadasa", {Megallok: Megallok}, (res) => {
-        if(res){
-            alert("Járat hozzáadása sikeres."); history.back();
-        }
-    });}
-    
-    function addInput(){
-        inputCount++;
-        let input = document.createElement('input');
-        var newInputStation = "<div class=\"stationBox\" id=\"stationBox" + inputCount + "\"><label for=\"station" + inputCount + "\">"+ inputCount +". megálló </label><input type=\"text\" name=\"station" + inputCount + "\" id=\"station" + inputCount + "\" placeholder=\"megálló neve\"><input type=\"time\" name=\"arriveTime" + inputCount + "\" id=\"arriveTime" + inputCount + "\"></div>";
-        container.innerHTML += newInputStation;
-    }
-    function removeInput(){
-        if (inputCount > 1)
-            document.getElementById("stationBox" + inputCount--).remove();
-        else
-            alert("A járatnak legalább egy megállóból kell állnia!");
-    }
-    
-</script>
+    </script>
+<%- include('footer') %>
