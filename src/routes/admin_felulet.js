@@ -73,13 +73,11 @@ module.exports = function (app, mysql){
                                 return;
                             }
 
-                            let time = Megallok[i].erkezes.split(':');
-                            let hour = parseInt(time[0]);
-                            let minute = parseInt(time[1]);
+                            
 
                             db.query(`INSERT INTO line_stops(line, stop, stop_number) VALUES(?, ?, ?);
                             INSERT INTO arriving(line_stop_id, arrival) VALUES(?, ?);`, 
-                            [jarat[0].id, megallo[0].id, i, jarat[0].id, minute], (error, data) => {
+                            [jarat[0].id, megallo[0].id, i, jarat[0].id, Megallok[i].erkezes], (error, data) => {
                                 if(error){
                                     response.send(error);
                                     db.end();
@@ -130,7 +128,7 @@ module.exports = function (app, mysql){
                     next();
                     return;
                 }
-                response.send('<script>alert("Megálló módosítása sikeres."); history.back();</script>');
+                response.send('Success');
                 db.end();
                 next();
                 return;
@@ -146,13 +144,13 @@ module.exports = function (app, mysql){
         if(request.session.is_admin === 1 && JaratID !== null && Megallok !== null){
 
             let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060,
-            multipleStatements: true
-        });
+                host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+                user: 'doadmin',
+                password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+                database: 'vonat',
+                port: 25060,
+                multipleStatements: true
+            });
 
             db.connect();
             db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
@@ -182,7 +180,7 @@ module.exports = function (app, mysql){
                                 return;
                             }
                             if(i+1 === Megallok.length){
-                                response.send('<script>alert("Járat módosítása sikeres."); history.back();</script>');
+                                response.send('Success');
                                 db.end();
                                 next();
                                 return;
