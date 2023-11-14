@@ -55,10 +55,7 @@
 
                     let row2 = $("<tr></tr>");
                     row2.append(`<td>${result[i].Indulasi_ido}</td>`);
-                    let indulasiIdo = parseTime(result[i].Indulasi_ido);
-                    let erkezesiIdo = parseTime(result[i].Erkezesi_ido);
-                    let hossz = calculateTimeDifference(indulasiIdo, erkezesiIdo);
-                    row2.append(`<td>${$(result[i]).Menetido} perc</td>`);
+                    row2.append(`<td>${result[i].Megallok_szama} db megálló</td>`);
                     row2.append(`<td>${result[i].Erkezesi_ido}</td>`);
 
                     table.append(row1);
@@ -75,17 +72,6 @@
                 }
             }
         });
-    }
-
-    function parseTime(timeString) {
-        let parts = timeString.split(":");
-        return { hours: parseInt(parts[0]), minutes: parseInt(parts[1]) };
-    }
-
-    function calculateTimeDifference(start, end) {
-        let indulasi_ido = start.hours * 60 + start.minutes;
-        let erkezesi_ido = end.hours * 60 + end.minutes;
-        return erkezesi_ido - indulasi_ido;
     }
 </script>
 
