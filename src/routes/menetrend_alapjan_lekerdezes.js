@@ -58,7 +58,7 @@ module.exports = function (app, mysql){
                     });
                 }
             }
-            response.redirect('/');
+            response.render('/');
             response.send(return_value);
             db.end();
             next();
