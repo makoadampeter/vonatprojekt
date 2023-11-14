@@ -55,6 +55,8 @@ ___
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/65bd571bc32d3e2030a4eb94adbbd51422e67e10
      
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/82e9da68346e02c5942982412da9038f259bc558
+
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/67a776e19a9759a87bbdf1f81d7a9ce62d8e67c2
      
 
 ___
