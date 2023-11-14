@@ -22,9 +22,8 @@ module.exports = function (app, mysql){
         if(password !== passwordre || adatkezelesi_szab != 1 || email == "" || firstname == "" || surname == "" || username == "" || password == "" || passwordre == "") {
             
             
-            res.render('registration_page');
+            res.redirect('/registration');
         } else {
-            felhaszn = "";
             db.connect();
 
             query = `SELECT * FROM users WHERE username = ?`;
@@ -46,7 +45,7 @@ module.exports = function (app, mysql){
 
 
                         // Sikeres beszúrás esetén a home oldalra átirányítom
-                        res.render('home');
+                        res.redirect('/');
                         db.end();
                     });
                 }

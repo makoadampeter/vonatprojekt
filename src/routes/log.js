@@ -15,7 +15,7 @@ module.exports = function (app, mysql){
 
         
 
-        if(password == "" || username == "") {
+        if(password == "" || username == "" || req.session.username) {
             
             
             res.redirect('/login');
