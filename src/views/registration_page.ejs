@@ -11,10 +11,8 @@
 </head>
 <body>
 <%- include('navbar') %>
-<div class="reg_container">
-  <button class="button" onclick="toggleForm()">Regisztráció</button>
-</div>
-<div id="registrationForm" class="registration-form">
+
+<div id="registrationForm" class="registration-form" style="display: block;">
   <form action="/auth/register" method="post">
     <table class="table">
       <tr>
@@ -70,17 +68,4 @@
 
 
 </div>
-<script>
-  function toggleForm() {
-    var form = document.getElementById("registrationForm");
-    if (form.style.display === "none" || form.style.display === "") {
-      form.style.display = "block";
-    } else {
-      form.style.display = "none";
-    }
-  }
-
-
-
-</script>
 <%- include('footer') %>

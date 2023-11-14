@@ -25,6 +25,8 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .reg_container {
@@ -35,18 +37,20 @@
     border: 2px solid #ccc; /* Szegély hozzáadása */
     padding: 20px; /* Belső tér a szegély körül */
     max-width: 500px; /* Maximális szélesség beállítása */
-    margin: 0 auto;  /*Az űrlap középre igazítása */
+    margin-left: auto;  /*Az űrlap középre igazítása */
+    margin-right: auto;
     text-align: center;
     background-color: #f1f1f1;
     min-width: 200px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
-
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0d6efd;;
     color: #FFF;
     border: none;
     outline: none;
