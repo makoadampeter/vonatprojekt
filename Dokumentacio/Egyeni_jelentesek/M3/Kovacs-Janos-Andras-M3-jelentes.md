@@ -77,19 +77,6 @@ ___
 
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/c96b365cdaeeb4a53a4025ad6294a305b5ef7f0e
 
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
-
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
 #### Megjegyzések
 A laptopomon használok gitet és az alapértelmezett felhasználónevem: kovjani, az email: kovacs.janos212@gmail.com. Van néhány commitom amiket ebben az állapotban pusholtam. Később átírtam a saját nevemre és egyetemi email címre.
