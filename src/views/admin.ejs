@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <%- include('navbar') %>
     <main>
         <div id="newStation" class="modifyBox">
             <h2 class="boxTag">Új megálló hozzáadása</h2>
@@ -68,8 +67,8 @@
 
             <form action="/jarat_modositasa" method="post">
                 <div id="baseData">
-                    <label for="JaratID">JáratID</label>
-                    <input type="number" name="JaratID" id="JaratID" placeholder="ID" title="ID alapján keresés (Névből konvertálható!)">
+                    <label for="edit_JaratID">JáratID</label>
+                    <input type="number" name="edit_JaratID" id="edit_JaratID" placeholder="ID" title="ID alapján keresés (Névből konvertálható!)">
                     <input type="button" value="ID lekérés" onclick="searchLine()" title="NEV -> ID">
                     <input type="button" value="Listázás" onclick="listStop()" title="Kilistázza 'ID' alapján a járat megállóit!">
                 </div>
@@ -84,7 +83,7 @@
                 </div>
                 
                 
-                <input type="submit" value="Járat módosítás">
+                <input type="button" onclick="editLine()" value="Járat módosítás">
             </form>
             
         </div>
@@ -117,8 +116,6 @@
                     "erkezes": $(`#arriveTime${i}`).val()
                 });
             }
-            console.log(Megallok);
-            console.log($("#newLine_JaratID").val());
             JaratID = $("#newLine_JaratID").val();
 
             $.post("/uj_jarat_hozzaadasa", {JaratID: JaratID , Megallok: Megallok}, (res) => {
@@ -127,24 +124,22 @@
             }
         });}
 
-        function editLine(){
+        function editLine(){    
             if (modifyInputCount != 0){
             let Megallok = [];
-            for (let i = 1; i <= inputCount; i++){
+            for (let i = 1; i <= modifyInputCount; i++){
                 Megallok.push({
-                    "megallo_neve": $(`#station${i}`).val(),
-                    "erkezes": $(`#arriveTime${i}`).val()
+                    "megallo_neve": $(`#stop${i}`).val(),
+                    "erkezes": $(`#stopTime${i}`).val()
                 });
             }
-            console.log(Megallok);
-            console.log($("#newLine_JaratID").val());
-            JaratID = $("#newLine_JaratID").val();
+            edit_JaratID = $("#edit_JaratID").val();
 
-            $.post("/jarat_modositasa", {JaratID: JaratID , Megallok: Megallok}, (res) => {
-            if(res){
+            $.post("/jarat_modositasa", {JaratID: edit_JaratID , Megallok: Megallok}, (res) => {
                 console.log(res);
-            }
         });}else (alert("Módosítás nem lehetséges!"))
+        
+
     }
         
         function addInput(){
@@ -179,7 +174,7 @@
             var searchName = document.getElementById("lineSearch").value;
             $.post("/jarat_id_from_name", {jarat_nev: searchName}, (data) => {
                 if (data && data.length > 0) {
-                    document.getElementById("JaratID").value = data[0].id;
+                    document.getElementById("edit_JaratID").value = data[0].id;
                     
                     targetID = data[0].id;
                 }
