@@ -193,6 +193,7 @@
                 console.log("_target: " + targetID);
                 if (targetID == 1){document.getElementById("JaratID").value = 1;}
                 if (data && data.length > 0) {
+                    
                     while (modifyInputCount < data.length){
                         if (data[modifyInputCount].stop != null){
                             modifyInputCount++;
@@ -208,6 +209,26 @@
                         modifyInputCount++;
                         document.getElementById("stopIDplace"+modifyInputCount).value = data[modifyInputCount-1].stop;
                         console.log("stop"+modifyInputCount+": " + data[modifyInputCount-1].stop);
+                        arriveFor(data[modifyInputCount-1].stop, modifyInputCount);
+                    }
+                    
+                }
+                else{
+                    console.log("Hibás lekérés!");
+                    alert("Nem található megálló!")
+                }
+            });
+        }
+        function arriveFor(ls_id, currentRow){
+            $.post("/jarat_megallo_ido", {stop_id: ls_id}, (data) => {
+                console.log("_target: " + ls_id + ": " + data[0].arrival);
+                if (data && data.length > 0) {
+                    if (data[0] != null){
+                        document.getElementById("stopTime" + currentRow).value = data[0].arrival;
+                        // console.log("stopTime" + currentRow + ": " + data[0].arrival);
+                    }
+                    else{
+                        console.log("NULL value!");
                     }
                 }
                 else{
@@ -216,5 +237,6 @@
                 }
             });
         }
+        
     </script>
 <%- include('footer') %>
