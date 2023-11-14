@@ -61,33 +61,33 @@ ___
 
 #### Egyéb commitok
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/8860d920548785266d7bc97f3cfb2b066428ec35
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/8860d920548785266d7bc97f3cfb2b066428ec35
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/2072dc51c082ef247c94ce51520575f6a89bdc19
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/2072dc51c082ef247c94ce51520575f6a89bdc19
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/8c871111dc504dc57608b499bc8397357b44ecdb
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/8c871111dc504dc57608b499bc8397357b44ecdb
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/4ca448531e94a69afda529bc6a12324d4db0fd1e
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/4ca448531e94a69afda529bc6a12324d4db0fd1e
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/554ece8aba1a8358bebaa85157a25905ee6e056b
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/554ece8aba1a8358bebaa85157a25905ee6e056b
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/d5705ab63fd9fbd29e930776450d15e5398f0250
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/d5705ab63fd9fbd29e930776450d15e5398f0250
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/c96b365cdaeeb4a53a4025ad6294a305b5ef7f0e
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/c96b365cdaeeb4a53a4025ad6294a305b5ef7f0e
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
-    - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/cc522322d00a5ceb0db562cba40accc2ab08ce26
 
 #### Megjegyzések
 A laptopomon használok gitet és az alapértelmezett felhasználónevem: kovjani, az email: kovacs.janos212@gmail.com. Van néhány commitom amiket ebben az állapotban pusholtam. Később átírtam a saját nevemre és egyetemi email címre.
