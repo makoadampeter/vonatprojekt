@@ -1,5 +1,4 @@
 main{
-    /* border: solid 1px red; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,10 +11,29 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
+}
+#stationContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#baseData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 form{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+input[type=text]{width: 45%;}
+input[type=number]{width: 25%;}
+#stopContainer{width: 98%;}
+#stationContainer{width: 98%;}
+#JaratID{width: 30%;}
+#lineSearch{width: 20%;}
+#megallo_neve{width: 100%;}
+#jelenlegi_megallo_nev{width: 100%;}
+#uj_megallo_nev{width: 100%;}
