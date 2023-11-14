@@ -33,7 +33,7 @@ ___
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/d9e8198b4623e2c9580d515ac4b704c0fd9c3f5c
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/d299ff344b36341c20b4dd1c06ff6b6a70d6b5c5
 
- -8.3.5 Header - footer
+ - 8.3.5 Header - footer
 
     ##### A feladathoz tartozó issue(k):
 
