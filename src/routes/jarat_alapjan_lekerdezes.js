@@ -101,6 +101,35 @@ module.exports = function (app, mysql){
             });
         });
     });
+    app.post('/stop_name_from_id', function(request, response) {
+        const { stopIDfrom } = request.body;
+        
+        let db = mysql.createConnection({
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'doadmin',
+            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+            database: 'vonat',
+            port: 25060
+        });
+        let localdb = mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            password: '',
+            database: 'vonat',
+        });
+    
+        localdb.connect(function(err) {
+            if (err) throw err;
+            
+            localdb.query("SELECT * FROM stops WHERE id LIKE ?", [`%${stopIDfrom}%`], (error, data) => {
+                if (error) {
+                    alert(error);
+                }
+                else{response.send(data);
+                localdb.end();}
+            });
+        });
+    });
     
 
 
