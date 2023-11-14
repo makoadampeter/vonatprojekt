@@ -378,7 +378,7 @@ Tartam:  8 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.13. Menetrend alapján lekérdezés (frontend))
+#### 8.3.13. Menetrend alapján lekérdezés (frontend)
 
 Felelős: Csíkos Martin Nándor
 
