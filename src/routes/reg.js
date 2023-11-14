@@ -33,13 +33,11 @@ module.exports = function (app, mysql){
 
                 if (results.length > 0) {
                     // A felhasználónév már létezik, akkor maradunk az oldalon
-                    res.render('registration_page');
+                    res.redirect('/registration')
                 } else {
-                    const registrationDate = new Date();
-                    const formattedDate = registrationDate.toISOString().split('T')[0];
                     // A felhasználónév még nem létezik, folytatjuk az adatok beszúrásával
-                    query = `INSERT INTO users (username, email, password, firstname, surname, is_admin, registration_date) VALUES (?, ?, ?, ?, ?, ?, ?)`;
-                    db.query(query, [username, email, password, firstname, surname, 0, formattedDate], (error, results, fields) => {
+                    query = `INSERT INTO users (username, email, password, firstname, surname) VALUES (?, ?, ?, ?, ?)`;
+                    db.query(query, [username, email, password, firstname, surname], (error, results, fields) => {
                         if (error) throw error;
 
 
