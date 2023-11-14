@@ -58,17 +58,17 @@
                     let indulasiIdo = parseTime(result[i].Indulasi_ido);
                     let erkezesiIdo = parseTime(result[i].Erkezesi_ido);
                     let hossz = calculateTimeDifference(indulasiIdo, erkezesiIdo);
-                    row2.append(`<td>${hossz} perc</td>`);
+                    row2.append(`<td>${$(result[i]).Menetido} perc</td>`);
                     row2.append(`<td>${result[i].Erkezesi_ido}</td>`);
 
                     table.append(row1);
                     table.append(row2);
 
                     let buttonRow = $("<tr></tr>");
-                    let buttonCell = $("<td colspan='3'></td>");
-                    let button = $("<button class='btn btn-primary'>Elmentés/eltávolítás a kedvencekből</button>");
-                    buttonCell.append(button);
-                    buttonRow.append(buttonCell);
+                    //let buttonCell = $("<td colspan='3'></td>");
+                    //let button = $("<button class='btn btn-primary'>Elmentés/eltávolítás a kedvencekből</button>");
+                    //buttonCell.append(button);
+                    //buttonRow.append(buttonCell);
                     table.append(buttonRow);
 
                     resultContainer.append(table);
@@ -89,4 +89,4 @@
     }
 </script>
 
-    <%- include('footer') %>
+<%- include('footer') %>
