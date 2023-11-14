@@ -34,7 +34,7 @@ ___
      
 ---
      
- - 8.3.7. Menetrend alapján lekérdezés (backend)
+ - 8.3.11. Admin felület (backend)
 
     ##### A feladathoz tartozó issue(k):
 
