@@ -95,6 +95,13 @@ Az alábbi tesztdokumentum a `Vonat` projekthez tartozó `8.3.11. Admin felület
 - Művelet: kattintsunk rá a kijelentkezésre 
 - Elvárt kimenet: az eredmény mező tartalma: vissza a főoldalra
 
+#### 2.2.2. TC-04
+- TP: TP-03
+- Leírás: Új járat hozzáadása tesztelés több megállóval
+- Bemenet: `TEXT` = asdasdasd
+- Művelet: kattintsunk rá a kijelentkezésre 
+- Elvárt kimenet: az eredmény mező tartalma: vissza a főoldalra
+
 ## 2.6. Járat törlése tesztesetek
 
 #### 2.6.1. TC-XX
@@ -121,10 +128,10 @@ Az alábbi tesztdokumentum a `Vonat` projekthez tartozó `8.3.11. Admin felület
     2. lépés: gombot megnyomtam
     3. lépés: hibás eredményt kaptam (JSON-ös MySQL error, ER_DUP_ENTRY, egy új oldalon)
 
-### 3.6. Kijelentkezés funkció tesztriportjai
+### 3.6. Járat törlése tesztriportjai
 
 #### 3.6.1. TR-01 (TC-01)
-- TP: TP-02
+- TP: TP-06
     1. lépés: beírtam az id-t
     2. lépés: checkboxot kipipáltam
     3. lépés: törlés gombra nyomtam
