@@ -130,7 +130,55 @@ module.exports = function (app, mysql){
             });
         });
     });
-    
+    app.post('/jarat_alapjan_lekerdezes', function(request, response, next){
+
+        const { JaratID} = request.body;
+
+        let db = mysql.createConnection({
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'doadmin',
+            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+            database: 'vonat',
+            port: 25060
+        });
+        let localdb = mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            password: '',
+            database: 'vonat',
+        });
+        console.log(JaratID);
+        localdb.connect();
+        localdb.query(`SELECT stops.name AS megallo,
+        arriving.arrival AS ido FROM stops
+        LEFT OUTER JOIN line_stops ON  line_stops.stop  = stops.id
+        LEFT OUTER JOIN line_names ON line_names.id = line_stops.line 
+        INNER JOIN arriving ON line_stops.id = arriving.line_stop_id
+        WHERE line_names.name = ?`,
+        [JaratID], (error, data) => {
+            if(error || data.length === 0){
+                response.send(error);
+                localdb.end();
+                next();
+                return;
+            }
+            let return_value = [];
+
+            for (let i = 0; i < data.length; i++) {
+                for (let h = 0; h < 24; h++) {
+                    return_value.push({
+                        "ido": (h < 10 ? '0' : '') + h + ":" + (data[i].ido < 10 ? '0' : '') + data[i].ido,
+                        "megallo": data[i].megallo
+                    });
+                }
+            }
+            response.send(return_value);
+            localdb.end();
+            next();
+
+        });
+
+    });
 
 
 }
