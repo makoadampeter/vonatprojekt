@@ -11,6 +11,9 @@ module.exports = function (app){
     app.get('/registration', function(request, response, next){
         response.render('registration_page');
     });
+    app.get('/contact', function(request, response, next){
+        response.render('contact');
+    });
     app.get('/profile', function (request, response, next) {
         if(request.session.username)
         {response.render('profile');}

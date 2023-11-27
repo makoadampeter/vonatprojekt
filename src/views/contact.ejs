@@ -1,0 +1,13 @@
+<%- include('header') %>
+<%- include('navbar') %>
+
+<form action="/contact_post" method="post">
+    <input type="text" name="last_name" id="last_name" placeholder="Vezetéknév"><br>
+    <input type="text" name="first_name" id="first_name" placeholder="Keresztnév"><br><br>
+    <input type="email" name="email" id="email" placeholder="Email cím"><br><br>
+    <label for="subject">Subject</label><br><br>
+    <textarea id="subject" name="subject" placeholder="Email szövege..." style="height:200px"></textarea><br><br>
+    <input type="submit" value="Küldés">
+</form>
+
+<%- include('footer') %>
