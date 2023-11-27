@@ -28,6 +28,7 @@ app.use(function(request, response, next) {
   response.locals.surname = request.session.surname;
   response.locals.is_admin = request.session.is_admin;
   response.locals.registration_date = request.session.registration_date;
+  response.locals.password = request.session.password;
   next();
 });
 

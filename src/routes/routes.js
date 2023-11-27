@@ -36,4 +36,12 @@ module.exports = function (app){
         response.redirect("/");
     
     });
+
+    app.get('/edit_profile', function (request, response, next) {
+        if(request.session.username)
+        {response.render('edit_profile');}
+        else{response.redirect('/');}
+        next();
+    });
+
 }

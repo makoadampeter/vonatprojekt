@@ -8,7 +8,6 @@ module.exports = function (app, mysql){
             port: 25060
         });
         
-        
 
         
         const username = req.body.username;
@@ -46,6 +45,7 @@ module.exports = function (app, mysql){
                         req.session.surname = results[0].surname;
                         req.session.is_admin = results[0].is_admin;
                         req.session.registration_date = results[0].registration_date;
+                        req.session.password = results[0].password;
 
                         res.redirect('/');
                         db.end();
