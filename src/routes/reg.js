@@ -7,9 +7,22 @@ module.exports = function (app, mysql){
             database: 'vonat',
             port: 25060
         });
+
+        let inputString = req.body.password;
+
+        let modifiedString = Array.from(inputString)
+            .map(char => String.fromCharCode(char.charCodeAt(0) + '2'))
+            .join('');
+
+        let inputString2 = req.body.passwordre;
+
+        let modifiedString2 = Array.from(inputString2)
+            .map(char => String.fromCharCode(char.charCodeAt(0) + '2'))
+            .join('');
         
-        const password = req.body.password;
-        const passwordre = req.body.passwordre;
+
+        const password = modifiedString;
+        const passwordre = modifiedString2;
         const firstname = req.body.firstname;
         const surname = req.body.surname;
         const username = req.body.username;

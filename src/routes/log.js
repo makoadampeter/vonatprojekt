@@ -8,11 +8,20 @@ module.exports = function (app, mysql){
             port: 25060
         });
         
+        
 
         
         const username = req.body.username;
-        const password = req.body.password;
 
+        let inputString = req.body.password;
+
+        let modifiedString = Array.from(inputString)
+            .map(char => String.fromCharCode(char.charCodeAt(0) + '2'))
+            .join('');
+
+
+
+        const password = modifiedString;
         
 
         if(password == "" || username == "" || req.session.username) {
