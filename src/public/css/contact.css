@@ -1,0 +1,12 @@
+#contact_container, #btn_container{
+    width: min-content;
+    margin: auto;
+}
+form{
+    display: inline-block;
+}
+input[type="submit"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
