@@ -6,6 +6,7 @@ const mysql = require('mysql2');
 const bcrypt = require("bcryptjs");
 const fs = require('fs');
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -40,6 +41,7 @@ require('./routes/jarat_alapjan_lekerdezes')(app, mysql);
 require('./routes/admin_felulet')(app, mysql);
 require('./routes/reg')(app, mysql);
 require('./routes/log')(app, mysql);
+require('./routes/contact')(app, nodemailer);
 
 const hostname = '0.0.0.0';
 const port = 3000;
