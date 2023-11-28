@@ -17,10 +17,11 @@
 <%- include('navbar') %>
 <div id="contact_container">
     <form action="/send_email" method="post">
-        <input type="text" name="last_name" id="last_name" placeholder="Vezetéknév"><br><br>
-        <input type="text" name="first_name" id="first_name" placeholder="Keresztnév"><br><br>
-        <input type="email" name="email" id="email" placeholder="Email cím"><br><br>
-        <textarea id="subject" name="subject" placeholder="Email szövege..." style="height:200px"></textarea><br><br>
+        <!-- <input type="text" name="last_name" id="last_name" placeholder="Vezetéknév"><br><br>
+        <input type="text" name="first_name" id="first_name" placeholder="Keresztnév"><br><br> -->
+        <input type="email" name="email" id="email" placeholder="Email cím" required><br><br>
+        <input type="text" name="subject" id="subject" placeholder="Tárgy" required><br><br>
+        <textarea id="text" name="text" placeholder="Email szövege..." style="height:200px" required></textarea><br><br>
         <div id="btn_container"><input class="btn btn-primary" type="submit" value="Küldés"></div>
     </form>
 </div>
