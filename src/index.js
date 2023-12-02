@@ -42,6 +42,7 @@ require('./routes/admin_felulet')(app, mysql);
 require('./routes/reg')(app, mysql);
 require('./routes/log')(app, mysql);
 require('./routes/contact')(app, nodemailer);
+require('./routes/profile')(app, mysql);
 
 const hostname = '0.0.0.0';
 const port = 3000;
