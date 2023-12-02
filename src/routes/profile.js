@@ -1,10 +1,11 @@
 module.exports = function (app, mysql){
     app.post('/profile_edit', function(req, res, next){
         let db = mysql.createConnection({
-            host: '127.0.0.1',
-            user: 'root',
-            password: '',
-            database: 'vonat'
+            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
+            user: 'doadmin',
+            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+            database: 'vonat',
+            port: 25060
         });
 
         let inputString = req.body.password;
