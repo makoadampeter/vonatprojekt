@@ -43,6 +43,7 @@ require('./routes/reg')(app, mysql);
 require('./routes/log')(app, mysql);
 require('./routes/contact')(app, nodemailer);
 require('./routes/profile')(app, mysql);
+require('./routes/profile_delete')(app, mysql);
 
 const hostname = '0.0.0.0';
 const port = 3000;
