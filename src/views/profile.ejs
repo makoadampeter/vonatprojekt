@@ -13,7 +13,7 @@
         function deleteUserAlert() {
             if (document.getElementById("del-user-checkbox").checked) {
                 if (confirm("Ez egy visszafordíthatalan esemény. A törléshez nyomd meg az OK gombot.")) {
-                    //NodeJS törlés backend átirányításs
+                    document.delete_form.submit();
                 }
             }
         }
@@ -136,7 +136,7 @@
     <div class="delete-user">
         <h1 class="container-header">Profil törlése</h1>
 
-        <form action="/profile_delete" method="post">
+        <form action="/profile_delete" method="post" name="delete_form">
             <div class="form-check delete-user-check">
                 <input type="checkbox" name="delete" id="del-user-checkbox" class="form-check-input" required>
                 <label for="del-user-checkbox" class="form-check-label">Törölni szeretném a profilomat. Tudtában vagyok,
@@ -144,7 +144,7 @@
                     visszavonhatatlan.</label>
             </div>
 
-            <input type="submit" value="Fiók törlése" class="btn btn-primary" onclick="deleteUserAlert()">
+            <input type="button" value="Fiók törlése" class="btn btn-primary" onclick="deleteUserAlert()">
         </form>
     </div>
 
