@@ -70,7 +70,7 @@
     margin: 20px !important;
 }
 
-.delete-user input[type="submit"] {
+.delete-user input[type="button"] {
     margin-bottom: 20px;
 }
 
@@ -105,6 +105,11 @@
 }
 
 input[type="submit"] {
+    display: block;
+    margin: auto;
+}
+
+input[type="button"] {
     display: block;
     margin: auto;
 }
