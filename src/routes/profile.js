@@ -8,13 +8,13 @@ module.exports = function (app, mysql){
             port: 25060
         });
 
-        let inputString = req.body.password;
+        let inputString = (req.body.password !== "") ? req.body.password : req.session.password;
 
         let modifiedString = Array.from(inputString)
             .map(char => String.fromCharCode(char.charCodeAt(0) + '2'))
             .join('');
 
-        let inputString2 = req.body.passwordre;
+        let inputString2 = (req.body.passwordre !== "") ? req.body.passwordre : req.session.password;
 
         let modifiedString2 = Array.from(inputString2)
             .map(char => String.fromCharCode(char.charCodeAt(0) + '2'))
@@ -22,8 +22,8 @@ module.exports = function (app, mysql){
 
 
         const username = req.session.username;
-        const password = (modifiedString !== "") ? modifiedString : req.session.password;
-        const passwordre = (modifiedString2 !== "") ? modifiedString2 : req.session.password;
+        const password = modifiedString;
+        const passwordre = modifiedString2;
         const firstname = (req.body.firstname !== "") ? req.body.firstname : req.session.firstname;
         const surname = (req.body.surname !== "") ? req.body.surname : req.session.surname;
         const email = (req.body.email !== "") ? req.body.email : req.session.email;
