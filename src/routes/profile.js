@@ -21,15 +21,15 @@ module.exports = function (app, mysql){
             .join('');
 
 
-        const password = modifiedString;
-        const passwordre = modifiedString2;
-        const firstname = req.body.firstname;
-        const surname = req.body.surname;
         const username = req.session.username;
-        const email = req.body.email;
-        const emailre = req.body.emailre;
+        const password = (modifiedString !== "") ? modifiedString : req.session.password;
+        const passwordre = (modifiedString2 !== "") ? modifiedString2 : req.session.password;
+        const firstname = (req.body.firstname !== "") ? req.body.firstname : req.session.firstname;
+        const surname = (req.body.surname !== "") ? req.body.surname : req.session.surname;
+        const email = (req.body.email !== "") ? req.body.email : req.session.email;
+        const emailre = (req.body.emailre !== "") ? req.body.emailre : req.session.email;
 
-        if(password !== passwordre || email !== emailre ||  email == "" || firstname == "" || surname == "" || password == "" || passwordre == "") {
+        if(password !== passwordre || email !== emailre) {
             res.redirect('/profile');
         } else {
             db.connect();
