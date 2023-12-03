@@ -25,7 +25,7 @@ module.exports = function (app, nodemailer){
                 response.send(`<script>alert("Hiba történt."); history.back();</script>`);
             } else {
                 console.log('Email sent: ' + info.response);
-                response.send(`<script>alert("Email elküldve."); history.back();</script>`);
+                response.send(`<script>alert("Email küldése sikeres."); location.replace("/home");</script>`);
             }
         });
     });
