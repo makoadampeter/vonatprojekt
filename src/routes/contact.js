@@ -16,7 +16,7 @@ module.exports = function (app, nodemailer){
         let options = {
             to: 'vonat.rf@gmail.com',
             subject: subject,
-            text: `Küldő: ${email}\n${text}`
+            text: `Feladó: ${email}\n\n${text}`
         };
 
         transporter.sendMail(options, function(error, info){
