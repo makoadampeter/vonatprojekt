@@ -112,10 +112,18 @@
                 for (let i = 0; i < result.length; i += 3) {
                     let row1 = $("<tr></tr>");
                     for (let j = 0; j < 3; j++) {
-                        if (i + j < result.length) {
-                            row1.append(`<td rowspan="2">${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
+                        if (i % 2 == 0) {
+                            if (i + j < result.length) {
+                                row1.append(`<td rowspan="2">${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
+                            } else {
+                                row1.append("<td></td>");
+                            }
                         } else {
-                            row1.append("<td></td>");
+                            if (i + j < result.length) {
+                                row1.append(`<td>${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
+                            } else {
+                                row1.append("<td></td>");
+                            }
                         }
                     }
                     table.append(row1);
