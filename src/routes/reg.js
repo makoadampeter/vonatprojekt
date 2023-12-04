@@ -44,7 +44,7 @@ module.exports = function (app, mysql){
                         if (error) throw error;
         
                         if (results.length > 0) {
-                            res.redirect('/login');
+                            res.render('/login');
                         }
                     });
                     query = `INSERT INTO users (username, email, password, firstname, surname) VALUES (?, ?, ?, ?, ?)`;
