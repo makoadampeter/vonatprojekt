@@ -1,5 +1,23 @@
 <%- include('header') %>
 <%- include('navbar') %>
+
+    <div class="bemutatkozas">
+        <h2>Üdvözöljük a Vonat oldalon!</h2>
+
+        <p>
+            Fedezze fel velünk a vonatozás világát! Itt böngészheti a legfrissebb menetrendeket, és könnyedén lekérdezheti a vonatok
+            indulási időpontjait és útvonalait az adatbázisunk segítségével. Nálunk
+            mindig naprakész információkat talál a vonatokról. Kényelmesen tervezheti utazását, és mindig időben értesülhet az
+            aktuális útvonalakról.
+        </p>
+
+        <p>
+            A weboldalunk célja, hogy segítse Önt az utazás tervezésében, legyen szó munkába járásról, kirándulásról vagy üzleti
+            találkozóról. A felhasználóbarát felületünk és megbízható információink segítenek abban, hogy mindig időben és
+            zökkenőmentesen elérje úti célját.
+        </p>
+    </div>
+
     <div class="queries">
         <div class="schedule_based_query">
             <h1 class="container-header">Menetrend alapján keresés</h1>
@@ -95,7 +113,7 @@
                     let row1 = $("<tr></tr>");
                     for (let j = 0; j < 3; j++) {
                         if (i + j < result.length) {
-                            row1.append(`<td>${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
+                            row1.append(`<td rowspan="2">${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
                         } else {
                             row1.append("<td></td>");
                         }
