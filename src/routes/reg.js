@@ -44,14 +44,15 @@ module.exports = function (app, mysql){
                         if (error) throw error;
         
                         if (results.length > 0) {
-                            res.render('/login');
+                            res.redirect('/registration');
+                        } else {
+                            query = `INSERT INTO users (username, email, password, firstname, surname) VALUES (?, ?, ?, ?, ?)`;
+                            db.query(query, [username, email, password, firstname, surname], (error, results, fields) => {
+                                if (error) throw error;
+                                res.redirect('/login');
+                                db.end();
+                            });
                         }
-                    });
-                    query = `INSERT INTO users (username, email, password, firstname, surname) VALUES (?, ?, ?, ?, ?)`;
-                    db.query(query, [username, email, password, firstname, surname], (error, results, fields) => {
-                        if (error) throw error;
-                        res.redirect('/');
-                        db.end();
                     });
                 }
             });
