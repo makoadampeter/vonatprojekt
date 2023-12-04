@@ -106,7 +106,7 @@
                 let table = $("<table class='fav-line-row'></table>");
 
                 let header1 = $("<tr></tr>");
-                header1.append(`<td colspan="3">Megállók, érkezési idővel</td>`);
+                header1.append(`<td colspan="2">Megállók, érkezési idővel</td>`);
                 table.append(header1);
 
                 for (let i = 0; i < result.length; i += 3) {
@@ -114,12 +114,15 @@
 
                     for (let j = 0; j < 3; j++) {
                         if (i + j < result.length) {
+                            // Create the first cell with rowspan="2"
                             let cell1 = $(`<td rowspan="2">${i + j + 1}. megálló: ${result[i + j].megallo}</td>`);
                             row.append(cell1);
 
+                            // Create the second cell
                             let cell2 = $(`<td>${i + j + 1}. idő: ${result[i + j].ido}</td>`);
                             row.append(cell2);
                         } else {
+                            // If there is no data, create empty cells
                             row.append("<td></td>");
                             row.append("<td></td>");
                         }
@@ -128,11 +131,11 @@
                     table.append(row);
                 }
 
-
                 resultContainer.append(table);
             }
         });
     }
+
 
 
 
