@@ -7,28 +7,72 @@
   <title>Profil szerkesztése</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/profile_edit.css" />
+  <link rel="stylesheet" href="./css/check_profile.css" />
 </head>
 <%- include('navbar') %>
 
 <body>
     <h1>Adatok módosítása</h1>
     
-    <form action="/profile_edit" method="POST">
+    <div class="update-user-data">
+      <form action="/profile_edit" method="post">
+        <table class="table">
+          <tr>
+            <th colspan="2" class="table-header">Adatok módosítása</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" class="form-control" value="<%= email %>">
+            </td>
+            <td>
+              <label for="email-re">E-mail újra</label>
+              <input type="email" name="emailre" id="emailre" class="form-control" value="<%= email %>">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Jelszó</label>
+              <input type="password" name="password" id="password" class="form-control" value="<%= password %>">
+            </td>
+            <td>
+              <label for="password-re">Jelszó újra</label>
+              <input type="password" name="passwordre" id="passwordre" class="form-control" value="<%= password %>">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="surname">Vezetéknév</label>
+              <input type="text" name="surname" id="surname" class="form-control" value="<%= surname %>">
+            </td>
+            <td>
+              <label for="firstname">Keresztnév</label>
+              <input type="text" name="firstname" id="firstname" class="form-control" value="<%= firstname %>">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Kitöltött adatok frissítése" class="btn btn-primary">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
 
-        <label for="surname">Vezetéknév:</label>
-        <input type="text" id="surname" name="surname" value="<%= surname %>">
+    <div class="delete-user">
+      <h1 class="container-header">Profil törlése</h1>
+    
+      <form action="/profile_delete" method="post" name="delete_form">
+        <div class="form-check delete-user-check">
+          <input type="checkbox" name="delete" id="del-user-checkbox" class="form-check-input" required>
+          <label for="del-user-checkbox" class="form-check-label">Törölni szeretném a profilomat. Tudtában vagyok,
+            hogy ez
+            visszavonhatatlan.</label>
+        </div>
+    
+        <input type="button" value="Fiók törlése" class="btn btn-primary" onclick="deleteUserAlert()">
+      </form>
+    </div>
 
-        <label for="firstname">Keresztnév:</label>
-        <input type="text" id="firstname" name="firstname" value="<%= firstname %>">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="<%= email %>">
-
-        <label for="password">Jelszó:</label>
-        <input type="password" id="password" name="password" value="<%= password %>">
-
-        <input type="submit" value="Mentés">
-    </form>
 </body>
 <%- include('footer') %>
