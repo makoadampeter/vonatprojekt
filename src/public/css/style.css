@@ -1,8 +1,8 @@
 .queries {
     display: flex;
     justify-content: center;
-    margin-top: 250px;
-    margin-bottom: 250px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .queries p {
@@ -36,4 +36,19 @@ table.fav-line-row td {
 
 table.fav-line-row tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.bemutatkozas {
+    width: 1000px;
+    margin: auto;
+    display: block;
+
+    text-align: justify;
+}
+
+.bemutatkozas h2 {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 50px;
 }
