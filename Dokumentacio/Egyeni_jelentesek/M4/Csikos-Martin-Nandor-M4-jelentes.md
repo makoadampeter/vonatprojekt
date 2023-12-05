@@ -15,13 +15,17 @@ ___
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/issues/48
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/issues/51
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/issues/37
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/issues/52
 
     ##### A feladat elvégzését alátámasztó commit(ok):
 
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/82386f3f7758110c8e21b777d9e98bc17ba17b3a
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/3088eb64c688a3f7a5d89309124613f8f239c0ac
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/dc1e17c2c537677a579d669091fdd41e0932b4a2
-     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/d1510616e20591e19b239a870dc6ae2cf36425ea
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/b9b9209d1c88276ea15d2dded5d57c1b8021c3f8
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/fe68221be24e3ac06e1eb2e9ff42a9423cd3ae7b
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/53b7d2dd43b18de15a200e3f69baf1cc039197a0
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/e501fb7c3e4c1c52238edba04c2e8ff493e84c9e
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/afb6678e88738d82a4c83316d56a4f9a692a30c6
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/6aae945370c14a57e43d4df0f7d58363274b28a6
+
      
 ___
 
