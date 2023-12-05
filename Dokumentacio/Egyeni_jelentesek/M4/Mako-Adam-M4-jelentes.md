@@ -1,4 +1,4 @@
-### Összefoglaló a 3. mérföldkőben végzett munkáról
+### Összefoglaló a 4. mérföldkőben végzett munkáról
 
 ### Projekt tag: Makó Ádám
 
