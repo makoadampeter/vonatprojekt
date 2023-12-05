@@ -79,7 +79,7 @@
                 </div>
                 
                 <div id="stationController">
-                    <input type="button" onclick="addModInput()" value="Megálló hozzáadás">
+                    <input type="button" onclick="addModifyInput()" value="Megálló hozzáadás">
                     <input type="button" onclick="removeModInput()" value="Megálló eltávolítás">
                 </div>
                 
@@ -143,25 +143,40 @@
 
     }
         
-        function addInput(){
-            var container = document.getElementById('stationContainer');
-            inputCount++;
-            let input = document.createElement('input');
-            var newInputStation = "<div class=\"stationBox\" id=\"stationBox" + inputCount + "\"><label for=\"station" + inputCount + "\">"+ (inputCount > 9 ? inputCount : '0'+inputCount) +". megálló </label><input type=\"text\" name=\"station" + inputCount + "\" id=\"station" + inputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"arriveTime" + inputCount + "\" id=\"arriveTime" + inputCount + "\" placeholder='00 perc'></div>";
-            container.innerHTML += newInputStation;
-        }
+    function addInput() {
+        var container = document.getElementById('stationContainer');
+        inputCount++;
+
+        var newInputStation = `
+            <div class="stationBox" id="stationBox${inputCount}">
+                <label for="station${inputCount}">${inputCount > 9 ? inputCount : '0' + inputCount}. megálló </label>
+                <input type="text" name="station${inputCount}" id="station${inputCount}" placeholder="megálló neve">
+                <input type="number" name="arriveTime${inputCount}" id="arriveTime${inputCount}" placeholder="00 perc">
+            </div>`;
+
+        container.insertAdjacentHTML('beforeend', newInputStation);
+    }
+    function addModifyInput() {
+    var container = document.getElementById('stopContainer');
+    modifyInputCount++;
+
+    var newModifyInputStation = `
+        <div class="stationBox" id="stopBox${modifyInputCount}">
+            <label for="stop${modifyInputCount}">${modifyInputCount > 9 ? modifyInputCount : '0' + modifyInputCount}. megálló </label>
+            <input type="text" name="stop${modifyInputCount}" id="stopIDplace${modifyInputCount}" placeholder="megálló neve">
+            <input type="number" name="stopTime${modifyInputCount}" id="stopTime${modifyInputCount}" placeholder="00 perc">
+        </div>`;
+
+    container.insertAdjacentHTML('beforeend', newModifyInputStation);
+}
+
+
+
         function removeInput(){
             if (inputCount > 1)
                 document.getElementById("stationBox" + inputCount--).remove();
             else
                 alert("A járatnak legalább egy megállóból kell állnia!");
-        }
-        function addModInput(){
-            var container = document.getElementById('stopContainer');
-            modifyInputCount++;
-            let input = document.createElement('input');
-            var newInputStation = "<div class=\"stationBox\" id=\"stopBox" + modifyInputCount + "\"><label for=\"stop" + modifyInputCount + "\">"+ (modifyInputCount > 9 ? modifyInputCount : '0'+modifyInputCount) +". megálló </label><input type=\"text\" name=\"stop" + modifyInputCount + "\" id=\"stopIDplace" + modifyInputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"stopTime" + modifyInputCount + "\" id=\"stopTime" + modifyInputCount + "\" placeholder='00 perc'></div>";
-            container.innerHTML += newInputStation;
         }
         function removeModInput(){
             if (modifyInputCount > 0)
@@ -193,9 +208,7 @@
                     
                     while (modifyInputCount < data.length){
                         if (data[modifyInputCount].stop != null){
-                            modifyInputCount++;
-                            var newInputStation = "<div class=\"stationBox\" id=\"stopBox" + modifyInputCount + "\"><label for=\"stop" + modifyInputCount + "\">"+ (modifyInputCount > 9 ? modifyInputCount : '0'+modifyInputCount) +". megálló </label><input type=\"text\" name=\"stop" + modifyInputCount + "\" id=\"stopIDplace" + modifyInputCount + "\" placeholder=\"megálló neve\"><input type=\"number\" name=\"stopTime" + modifyInputCount + "\" id=\"stopTime" + modifyInputCount + "\" placeholder='00 perc'></div>";
-                            container.innerHTML += newInputStation;
+                            addModifyInput();
                         }
                         else{
                             console.log("NULL value!");
