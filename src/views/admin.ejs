@@ -238,7 +238,7 @@
                         var arrivalTimeParts = arrivalTime.split(':');
 
                         if (arrivalTimeParts.length === 3) {
-                            var minutes = parseInt(arrivalTimeParts[1], 10);
+                            var minutes = parseInt(arrivalTimeParts[2], 10);
                             document.getElementById("stopTime" + currentRow).value = minutes;
                         }
                     } else {
