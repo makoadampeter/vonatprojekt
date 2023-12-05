@@ -217,10 +217,7 @@
                     modifyInputCount = 0;
                     while (modifyInputCount < data.length){
                         modifyInputCount++;
-                        // document.getElementById("stopIDplace"+modifyInputCount).value = data[modifyInputCount-1].stop;
                         document.getElementById("stopIDplace"+modifyInputCount).value = stopID_to_name(data[modifyInputCount-1].stop, "stopIDplace"+modifyInputCount);
-                        console.log(stopID_to_name(data[modifyInputCount-1].stop));
-                        console.log("stop"+modifyInputCount+": " + data[modifyInputCount-1].stop);
                         arriveFor(data[modifyInputCount-1].stop, modifyInputCount);
                     }
                     
@@ -231,24 +228,25 @@
                 }
             });
         }
-        function arriveFor(ls_id, currentRow){
-            $.post("/jarat_megallo_ido", {stop_id: ls_id}, (data) => {
+        function arriveFor(ls_id, currentRow) {
+            $.post("/jarat_megallo_ido", { stop_id: ls_id }, (data) => {
                 console.log("_target: " + ls_id + ": " + data[0].arrival);
-                if (data && data.length > 0) {
-                    if (data[0] != null){
-                        document.getElementById("stopTime" + currentRow).value = data[0].arrival;
-                        // console.log("stopTime" + currentRow + ": " + data[0].arrival);
-                    }
-                    else{
+
+                if (data.length > 0) {
+                    if (data[0] != null) {
+                        var arrivalTime = data[0].arrival;
+                        document.getElementById("stopTime" + currentRow).value = parseInt(arrivalTime);
+                    } else {
                         console.log("NULL value!");
                     }
-                }
-                else{
+                } else {
                     console.log("Hibás lekérés!");
-                    alert("Nem található megálló!")
+                    alert("Nem található megálló!");
                 }
             });
         }
+
+
         // stopID_to_name(252);
         async function stopID_to_name(stopIDin, loc){
             await $.post("/stop_name_from_id", {stopIDfrom: stopIDin}, (data) => {
