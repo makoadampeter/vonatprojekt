@@ -52,3 +52,21 @@ table.fav-line-row tr:nth-child(even) {
     margin-bottom: 80px;
     font-size: 50px;
 }
+
+@media print {
+    header,
+    footer,
+    nav,
+    div,
+    .queries,
+    .bemutatkozas {
+        display: none;
+    }
+    #result-container {
+        display: block;
+    }
+    #result-container:empty::before {
+        content: "Nincs megjelenítendő menetrend, kérjen le egyet és próbálja újra!";
+        display: block;
+      }
+}
