@@ -12,7 +12,20 @@
     <script src="/js/jquery.min.js"></script>
     <title>Kapcsolat</title>
 </head>
-
+<style>
+    @media print {
+    header,
+    footer,
+    nav,
+    div {
+        display: none;
+    }
+    .read-user-data {
+        border: solid 0 black;
+          display: block;
+    }
+}
+</style>
 <body>
 <%- include('navbar') %>
 <div id="contact_container">
