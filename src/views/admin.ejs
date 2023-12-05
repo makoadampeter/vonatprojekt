@@ -236,9 +236,7 @@
                 console.log("_target: " + ls_id + ": " + data[0].arrival);
                 if (data && data.length > 0) {
                     if (data[0] != null){
-                        var timeString = data[0].arrival;
-                        var timeParts = timeString.split(':');
-                        document.getElementById("stopTime" + currentRow).value = timeParts[2];
+                        document.getElementById("stopTime" + currentRow).value = data[0].arrival;
                         // console.log("stopTime" + currentRow + ": " + data[0].arrival);
                     }
                     else{
