@@ -235,7 +235,12 @@
                 if (data.length > 0) {
                     if (data[0] != null) {
                         var arrivalTime = data[0].arrival;
-                        document.getElementById("stopTime" + currentRow).value = parseInt(arrivalTime);
+                        var arrivalTimeParts = arrivalTime.split(':');
+
+                        if (arrivalTimeParts.length === 3) {
+                            var minutes = parseInt(arrivalTimeParts[1], 10);
+                            document.getElementById("stopTime" + currentRow).value = minutes;
+                        }
                     } else {
                         console.log("NULL value!");
                     }
