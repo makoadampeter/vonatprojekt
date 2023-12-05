@@ -131,3 +131,16 @@ input[type="button"] {
 .favorite-lines .table {
     margin-bottom: 0px;
 }
+
+@media print {
+    header,
+    footer,
+    nav,
+    div {
+        display: none;
+    }
+    .read-user-data {
+        border: solid 0 black;
+          display: block;
+    }
+}
