@@ -236,7 +236,7 @@
                 console.log("_target: " + ls_id + ": " + data[0].arrival);
                 if (data && data.length > 0) {
                     if (data[0] != null){
-                        document.getElementById("stopTime" + currentRow).value = data[0].arrival;
+                        document.getElementById("stopTime" + currentRow).value = explode(':', data[0].arrival)[2];
                         // console.log("stopTime" + currentRow + ": " + data[0].arrival);
                     }
                     else{
