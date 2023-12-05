@@ -32,3 +32,9 @@ ___
 	 - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/5e6f518bbca38278aa55debe822a623d8fd5a6fb
 	 - https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/5a3add15860bc10f05211b9f273a6eea9c291118
      
+___
+
+#### Megjegyzések
+
+	- https://git-okt.sed.inf.szte.hu/2023_ib153i-4_vonat/vonat/-/commit/9166679d3f30821507b8359b72daab3b5a5e7f36
+	Commit elnevezése elmaradt, így default "Upload New File", ezt korrigálási céllal új commit "4. mérföldkő egyéni jelentés" néven
