@@ -40,3 +40,20 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+@media print {
+    header,
+    footer,
+    nav,
+    div,
+    .queries {
+        display: none;
+    }
+    #result-container {
+        display: block;
+    }
+    #result-container:empty::before {
+        content: "Nincs megjelenítendő menetrend, kérjen le egyet és próbálja újra!";
+        display: block;
+    }
+}
