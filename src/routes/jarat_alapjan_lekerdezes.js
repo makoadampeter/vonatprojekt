@@ -7,20 +7,12 @@ module.exports = function (app, mysql){
         const { jarat_id } = request.body;
 
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060
-        });
-        /*
-        let localdb = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             user: 'root',
             password: '',
             database: 'vonat',
+            port: 3306
         });
-        */
 
         db.connect(function(err) {
 			if (err) throw err;
@@ -43,20 +35,12 @@ module.exports = function (app, mysql){
         const { stop_id } = request.body;
 
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060
-        });
-        /*
-        let localdb = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             user: 'root',
             password: '',
             database: 'vonat',
+            port: 3306
         });
-        */
 
         db.connect(function(err) {
 			if (err) throw err;
@@ -78,20 +62,12 @@ module.exports = function (app, mysql){
         const { jarat_nev } = request.body;
         
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060
-        });
-        /*
-        let localdb = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             user: 'root',
             password: '',
             database: 'vonat',
+            port: 3306
         });
-        */
     
         db.connect(function(err) {
             if (err) throw err;
@@ -109,20 +85,12 @@ module.exports = function (app, mysql){
         const { stopIDfrom } = request.body;
         
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060
-        });
-        /*
-        let localdb = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             user: 'root',
             password: '',
             database: 'vonat',
+            port: 3306
         });
-        */
     
         db.connect(function(err) {
             if (err) throw err;
@@ -141,20 +109,12 @@ module.exports = function (app, mysql){
         const { JaratID} = request.body;
 
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
-            database: 'vonat',
-            port: 25060
-        });
-        /*
-        let localdb = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             user: 'root',
             password: '',
             database: 'vonat',
+            port: 3306
         });
-        */
         console.log(JaratID);
         db.connect();
         db.query(`SELECT stops.name AS megallo,

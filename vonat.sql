@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `vonat`
 --
-CREATE DATABASE IF NOT EXISTS `vonat` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE DATABASE IF NOT EXISTS `vonat` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `vonat`;
 
 -- --------------------------------------------------------
@@ -32,7 +32,7 @@ USE `vonat`;
 CREATE TABLE `arriving` (
   `line_stop_id` int NOT NULL COMMENT 'Line stop ID',
   `arrival` int NOT NULL COMMENT 'Time of arrival'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `arriving`
@@ -3383,8 +3383,8 @@ INSERT INTO `arriving` (`line_stop_id`, `arrival`) VALUES
 
 CREATE TABLE `line_names` (
   `id` int NOT NULL COMMENT 'ID',
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Line name (unique)'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'Line name (unique)'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `line_names`
@@ -3634,7 +3634,7 @@ CREATE TABLE `line_stops` (
   `line` int NOT NULL COMMENT 'Line ID',
   `stop` int NOT NULL COMMENT 'Stop ID',
   `stop_number` int NOT NULL COMMENT 'The number of the stop on the line (starts at 1)'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `line_stops`
@@ -6986,8 +6986,8 @@ INSERT INTO `line_stops` (`id`, `line`, `stop`, `stop_number`) VALUES
 
 CREATE TABLE `stops` (
   `id` int NOT NULL COMMENT 'ID',
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Stop name (unique)'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'Stop name (unique)'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `stops`
@@ -9883,7 +9883,7 @@ CREATE TABLE `users` (
   `surname` varchar(255) NOT NULL COMMENT 'Surname',
   `is_admin` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'If user is admin, value is 1, else it''s 0 (default is 0)',
   `registration_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Date and time when the user registered (auto generated)'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`

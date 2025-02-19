@@ -4,11 +4,11 @@ module.exports = function (app, mysql){
         if(indulasi_hely === null || erkezesi_hely === null || kezdo_indulasi_ido === null) return;
 
         let db = mysql.createConnection({
-            host: 'vonat-do-user-14988675-0.c.db.ondigitalocean.com',
-            user: 'doadmin',
-            password: 'AVNS_qw2rI_fp_NOn4kq1u9-',
+            host: '127.0.0.1',
+            user: 'root',
+            password: '',
             database: 'vonat',
-            port: 25060
+            port: 3306
         });
 
         let time = kezdo_indulasi_ido.split(':');
@@ -85,106 +85,4 @@ module.exports = function (app, mysql){
         */
 
     });
-    /*app.post('/kedvenc_jarat_hozzaadasa', function(request, response, next){
-
-        const { JaratID } = request.body;
-        if(request.session.username && JaratID !== null){
-
-            let db = mysql.createConnection({
-                host: '127.0.0.1',
-                user: 'root',
-                password: '',
-                database: 'vonat'
-            });
-            
-            db.connect();
-            db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
-            [JaratID], (error, jarat) => {
-                if(error || jarat.length === 0){
-                    response.send(error);
-                    db.end();
-                    next();
-                    return;
-                }
-                db.query(`INSERT INTO users_favouritelines(username, line) VALUES(?, ?)`, 
-                [request.session.username, jarat[0].id], (error) => {
-                    if(error){
-                        response.send(error);
-                        db.end();
-                        next();
-                        return;
-                    }
-                    response.send('<script>alert("Kedvenc járat mentése sikeres."); history.back();</script>');
-                    db.end();
-                    next();
-                });
-            });
-        }else{
-            response.redirect('/');
-        }
-    });
-    app.post('/kedvenc_jarat_torlese', function(request, response, next){
-
-        const { JaratID } = request.body;
-        if(request.session.username && JaratID !== null){
-            let db = mysql.createConnection({
-                host: '127.0.0.1',
-                user: 'root',
-                password: '',
-                database: 'vonat'
-            });
-            
-            db.connect();
-            db.query(`SELECT id FROM line_names WHERE name LIKE ?`, 
-            [JaratID], (error, jarat) => {
-                if(error || jarat.length === 0){
-                    response.send(error);
-                    db.end();
-                    next();
-                    return;
-                }
-                db.query(`DELETE FROM users_favouritelines WHERE username LIKE ? AND line = ?`, 
-                [request.session.username, jarat[0].id], (error) => {
-                    if(error){
-                        response.send(error);
-                        db.end();
-                        next();
-                        return;
-                    }
-                    response.send('<script>alert("Kedvenc járat törlése sikeres."); history.back();</script>');
-                    db.end();
-                    next();
-                });
-            });
-        }else{
-            response.redirect('/');
-        }
-    });
-    app.post('/kedvenc_jaratok', function(request, response, next){
-
-        if(request.session.username){
-            let db = mysql.createConnection({
-                host: '127.0.0.1',
-                user: 'root',
-                password: '',
-                database: 'vonat'
-            });
-            
-            db.connect();
-            db.query(`SELECT * FROM users_favouritelines WHERE username LIKE ?`, 
-            [request.session.username], (error, kedvenc_jaratok) => {
-                if(error || kedvenc_jaratok.length === 0){
-                    response.send(error);
-                    db.end();
-                    next();
-                    return;
-                }
-                response.send(kedvenc_jaratok);
-                db.end();
-                next();
-            });
-        }else{
-            response.redirect('/');
-        }
-    });*/
 }
